@@ -4,7 +4,7 @@
 
 # ---------------------------- structure of a compiler
 
-# compiler: frontend, optimizer and backend
+compiler: frontend, optimizer and backend
 
 # frontend: scanner, parser and elaborator
 
