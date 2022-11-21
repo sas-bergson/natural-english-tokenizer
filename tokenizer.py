@@ -1,7 +1,8 @@
 import json
-# import statement
+from statement import statement_tokenizer
 
-class QTokenizer:
+
+class QTokenizer(statement_tokenizer):
     """Tokenizes all english words that start with Q"""
     
     def __init__(self, text:str) -> None:
@@ -35,3 +36,6 @@ class QTokenizer:
     @staticmethod
     def __load_data() -> dict:
         """with open()"""
+
+
+open("data/DQ.json")
