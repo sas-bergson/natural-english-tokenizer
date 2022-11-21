@@ -1,28 +1,60 @@
-import os
 import re
 
 
 class StatementTokenizer:
+    """!The statement tokenizer class.
+    Tokenize a statement into nouns, adjectives, verbs and also into punctuation elements namely ',', '?','.'
+    """
 
     def __init__(self):
-        self._statements_regex = re.compile(r"\.")
-        self._noun_regex = re.compile(r"[a-zA-Z]")
+        """!The StatementTokenizer class initializer."""
+
+        # Regular expression for match full stop in a sentence
+        self._noun_regex = re.compile(r"[a-zA-Z][0-9]*")
+        # Regular expression for match comma in a sentence
         self._comma_regex = re.compile(r",")
+        # Regular expression for match interrogation point in a sentence
         self._interrogation_point_regex = re.compile(r"\?")
+        # Regular expression for match full stop in a sentence
         self._full_stop_regex = re.compile(r"\.")
+        # Regular expression for match white space
         self._white_space_regex = re.compile(r"\s")
+        # Array of tokens
         self._tokens = []
+        # Load dictionary words from 'dictionary.txt' file which contains the 100 first words in natural english
+        # language
+        file = open('dictionary.txt', 'r')
+        lines = file.readlines()
+        count = 0
+        self.dictionary = []
+        for line in lines:
+            count += 1
+            values = line.strip().split(',')
+            self.dictionary.append({
+                'type': values[1],
+                'value': values[0]
+            })
 
-    def get_statements(self, input_expression) -> list:
-        return re.split(self._statements_regex, input_expression)
+    def find_word(self, value: str) -> object:
+        """! Find a word object from dictionary of words.
+        @param value   The input value to use for the search.
+        @return  The corresponding word object.
+        """
 
-    def __str__(self) -> str:
-        for s in self._tokens:
-            print(f"statement -> {s}")
+        for x in self.dictionary:
+            if x['value'] == value:
+                return x
 
-    @staticmethod
-    def tokenize_pattern(input_type, pattern, input_expression, current):
-        char = input_expression[current]
+    def tokenize_pattern(self, word_type: str, pattern, expression: str, current: int) -> list:
+        """! Find a word object from dictionary of words.
+        @param word_type   The word type (if exists) to set.
+        @param pattern   The pattern to use like regular expression to filter the input expression.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
+
+        char = expression[current]
         consumed_chars = 0
         if re.match(pattern, char):
             value = ''
@@ -30,38 +62,81 @@ class StatementTokenizer:
                 value += char
                 consumed_chars += 1
                 try:
-                    char = input_expression[current + consumed_chars]
+                    char = expression[current + consumed_chars]
                 except:
                     char = None
 
-            return [consumed_chars, {'type': input_type, 'value': value}]
+            if word_type:
+                return [consumed_chars, {'type': word_type, 'value': value}]
+            else:
+                word = self.find_word(value.lower())
+                if word:
+                    return [consumed_chars, {'type': word['type'], 'value': word['value']}]
+                else:
+                    return [consumed_chars, {'type': 'unknown type', 'value': value}]
         return [0, None]
 
-    def tokenize_noun(self, input_expression, current):
-        return StatementTokenizer.tokenize_pattern("noun", self._noun_regex, input_expression, current)
+    def tokenize_string(self, expression: str, current: int) -> list:
+        """! Extract a string which match a given pattern.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
 
-    def tokenize_comma(self, input_expression, current):
-        return StatementTokenizer.tokenize_pattern("comma", self._comma_regex, input_expression, current)
+        return self.tokenize_pattern(None, self._noun_regex, expression, current)
 
-    def tokenize_interrogation_point(self, input_expression, current):
-        return StatementTokenizer.tokenize_pattern("interrogation point", self._interrogation_point_regex,
-                                                   input_expression, current)
+    def tokenize_comma(self, expression: str, current: int) -> list:
+        """! Extract a comma.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
 
-    def tokenize_full_stop(self, input_expression, current):
-        return StatementTokenizer.tokenize_pattern("full stop", self._full_stop_regex, input_expression, current)
+        return self.tokenize_pattern("comma", self._comma_regex, expression, current)
 
-    def skip_white_space(self, input_expression, current):
-        if re.match(self._white_space_regex, input_expression[current]):
+    def tokenize_interrogation_point(self, expression: str, current: int) -> list:
+        """! Extract an interrogation point.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
+
+        return self.tokenize_pattern("interrogation point", self._interrogation_point_regex, expression, current)
+
+    def tokenize_full_stop(self, expression: str, current: int) -> list:
+        """! Extract a full stop.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
+
+        return self.tokenize_pattern("full stop", self._full_stop_regex, expression, current)
+
+    def skip_white_space(self, expression: str, current: int) -> list:
+        """! Check if current char is white space.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array without token.
+        """
+
+        if re.match(self._white_space_regex, expression[current]):
             return [1, None]
         else:
             return [0, None]
 
     @staticmethod
-    def tokenize_sentence(input_expression, current):
-        if re.match(re.compile(r"[A-Z]"), input_expression[current]):
+    def tokenize_sentence(expression: str, current: int) -> list:
+        """! Extract a sentence.
+        @param expression   The input expression to tokenize.
+        @param current   The current position in the loop of expression.
+        @return  The array containing token.
+        """
+
+        # Check if expression begin with uppercase letter
+        if re.match(re.compile(r"[A-Z]"), expression[current]):
             value = ''
             consumed_chars = 0
-            char = input_expression[current + consumed_chars]
+            char = expression[current + consumed_chars]
             while char != '.':
                 if char is None:
                     raise Exception("Unterminated sentence")
@@ -69,9 +144,11 @@ class StatementTokenizer:
                 value += char
                 consumed_chars += 1
                 try:
-                    char = input_expression[current + consumed_chars]
+                    char = expression[current + consumed_chars]
                 except:
                     char = None
+
+            # If end of expression, add full stop at the end of token
             if char == '.':
                 value += char
 
@@ -79,7 +156,11 @@ class StatementTokenizer:
 
         return [0, None]
 
-    def get_sentences(self, statement):
+    def get_sentences(self, statement: str) -> list[str]:
+        """! Extract list of sentences which composed the statement.
+        @param statement   The input expression to tokenize.
+        @return  The array of sentences.
+        """
         sentences = []
         current = 0
         # Load mini tokenizers
@@ -87,7 +168,7 @@ class StatementTokenizer:
 
         while current < len(statement):
             tokenized = False
-            # Loop in all mini tokenizers in order to categorize found tokens
+            # Loop in all mini tokenizers in order to get sentences
             for function in tokenizers:
                 if tokenized:
                     break
@@ -99,12 +180,18 @@ class StatementTokenizer:
                     sentences.append(result[1]['value'])
         return sentences
 
-    def tokenizer(self, statement):
+    def tokenizer(self, statement: str):
+        """! Tokenizes statement.
+        @param statement   The input statement to tokenize.
+        """
+
         sentences = self.get_sentences(statement)
+        # Loop over the array of sentences and tokenize each of them
         for sentence in sentences:
             current = 0
             # Load mini tokenizers
-            tokenizers = [self.skip_white_space, self.tokenize_noun, self.tokenize_comma, self.tokenize_interrogation_point, self.tokenize_full_stop]
+            tokenizers = [self.skip_white_space, self.tokenize_string, self.tokenize_comma,
+                          self.tokenize_interrogation_point, self.tokenize_full_stop]
             while current < len(sentence):
                 tokenized = False
                 char = sentence[current]
