@@ -1,3 +1,3 @@
 # natural-english-tokenizer
 
-# some basic defs
+# some defs
