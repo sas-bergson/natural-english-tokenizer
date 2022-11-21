@@ -21,5 +21,8 @@ class statement_tokenizer:
         return self._tokens
 
     def __str__(self) -> str:
+        """
+        This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+        it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method."""
         for s in self._tokens:
             print(f"statement -> {s}")
