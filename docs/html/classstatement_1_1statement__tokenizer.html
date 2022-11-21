@@ -130,11 +130,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<pre class="fragment">This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.</pre> 
 <p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00023">23</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   23</span>    <span class="keyword">def </span>__str__(self) -&gt; str:</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">for</span> s <span class="keywordflow">in</span> self._tokens:</div>
-<div class="line"><span class="lineno">   25</span>            print(f<span class="stringliteral">&quot;statement -&gt; {s}&quot;</span>)</div>
+<div class="line"><span class="lineno">   24</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   25</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the printing of the tokens that are returned by the get_tokens method.</div>
+<div class="line"><span class="lineno">   26</span>        it takes no arguments <span class="keywordflow">and</span> returns a string of the tokens. it basically overites the default __str__ method.<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   27</span><span class="stringliteral">        </span><span class="keywordflow">for</span> s <span class="keywordflow">in</span> self._tokens:</div>
+<div class="line"><span class="lineno">   28</span>            print(f<span class="stringliteral">&quot;statement -&gt; {s}&quot;</span>)</div>
 </div><!-- fragment -->
 </div>
 </div>
