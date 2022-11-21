@@ -1,0 +1,83 @@
+\hypertarget{classstatement_1_1statement__tokenizer}{}\doxysection{statement.\+statement\+\_\+tokenizer Class Reference}
+\label{classstatement_1_1statement__tokenizer}\index{statement.statement\_tokenizer@{statement.statement\_tokenizer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classstatement_1_1statement__tokenizer_a539e367f627418c7f0d210d6f1983f2b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+list \mbox{\hyperlink{classstatement_1_1statement__tokenizer_af31fdead83a1bf102c9c769855cc5965}{get\+\_\+tokens}} (self, text)
+\item 
+str \mbox{\hyperlink{classstatement_1_1statement__tokenizer_a9449283c6a72dff3aa0ede6aed4f0186}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{statement_8py_source_l00005}{5}} of file \mbox{\hyperlink{statement_8py_source}{statement.\+py}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstatement_1_1statement__tokenizer_a539e367f627418c7f0d210d6f1983f2b}\label{classstatement_1_1statement__tokenizer_a539e367f627418c7f0d210d6f1983f2b}} 
+\index{statement.statement\_tokenizer@{statement.statement\_tokenizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!statement.statement\_tokenizer@{statement.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def statement.\+statement\+\_\+tokenizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{statement_8py_source_l00007}{7}} of file \mbox{\hyperlink{statement_8py_source}{statement.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007     \textcolor{keyword}{def }\_\_init\_\_(self):}
+\DoxyCodeLine{00008         self.\_pattern = \textcolor{stringliteral}{'r"{}[A-\/Z]+[a-\/z]*\(\backslash\)s\(\backslash\)."{}'}}
+\DoxyCodeLine{00009         self.\_regex = re.compile(self.\_pattern)}
+\DoxyCodeLine{00010         self.\_tokens = []}
+\DoxyCodeLine{00011 }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstatement_1_1statement__tokenizer_a9449283c6a72dff3aa0ede6aed4f0186}\label{classstatement_1_1statement__tokenizer_a9449283c6a72dff3aa0ede6aed4f0186}} 
+\index{statement.statement\_tokenizer@{statement.statement\_tokenizer}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!statement.statement\_tokenizer@{statement.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str statement.\+statement\+\_\+tokenizer.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{statement_8py_source_l00016}{16}} of file \mbox{\hyperlink{statement_8py_source}{statement.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016     \textcolor{keyword}{def }\_\_str\_\_(self) -\/> str:}
+\DoxyCodeLine{00017         \textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} self.\_tokens:}
+\DoxyCodeLine{00018             print(f\textcolor{stringliteral}{"{}statement -\/> \{s\}"{}})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classstatement_1_1statement__tokenizer_af31fdead83a1bf102c9c769855cc5965}\label{classstatement_1_1statement__tokenizer_af31fdead83a1bf102c9c769855cc5965}} 
+\index{statement.statement\_tokenizer@{statement.statement\_tokenizer}!get\_tokens@{get\_tokens}}
+\index{get\_tokens@{get\_tokens}!statement.statement\_tokenizer@{statement.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens()}{get\_tokens()}}
+{\footnotesize\ttfamily  list statement.\+statement\+\_\+tokenizer.\+get\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{statement_8py_source_l00012}{12}} of file \mbox{\hyperlink{statement_8py_source}{statement.\+py}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012     \textcolor{keyword}{def }get\_tokens(self, text) -\/> list:}
+\DoxyCodeLine{00013         self.\_tokens = self.\_regex.split(text)}
+\DoxyCodeLine{00014         \textcolor{keywordflow}{return} self.\_tokens}
+\DoxyCodeLine{00015 }
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+statement.\+py\end{DoxyCompactItemize}
