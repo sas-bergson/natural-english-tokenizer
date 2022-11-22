@@ -21,7 +21,7 @@ class Dict_Data:
         self.__load_data()
 
     def __load_data(self) -> None:
-        """Never all this method it is conviniently called at the proper moment at run time"""
+        """Never call this method it is conviniently called at the proper moment at run time"""
 
         path = os.path.join(self.__dir, self.__letter)
         path += ".json"
