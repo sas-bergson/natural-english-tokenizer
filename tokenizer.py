@@ -25,7 +25,7 @@ class QTokenizer(Statement_Tokenizer):
 
     
     def __parse_words(self):
-        """Will be called at the appropria moment at run time"""
+        """This method will be called at the appropria moment at run time"""
         words = list(filter(lambda w: w.startswith("Q"), self.words))
         for word in words:
             for key, value in self.__ref.items():
@@ -40,16 +40,16 @@ class QTokenizer(Statement_Tokenizer):
     
 
     def get_listed_tokens(self) ->  dict:
-        """Returns a dictionary of tokens with the keys representing the nine 
+        """It just returns a dictionary of tokens with the keys representing the nine 
         fundamental types of the english words and the values being a list of such words found in 
-        the _tokens property"""
+        the _tokens property."""
 
         return  self.__tokens
 
     def get_tokens_with_number(self)->dict:
-        """Returns a dictionary of tokens with the keys representing the nine 
+        """It just turns a dictionary of tokens with the keys representing the nine 
         fundamental types of the english words and the values being a total number of such words found in the 
-        _tokens property"""
+        _tokens property."""
 
         return {key : len(value)  for key, value in self.__tokens.items()
         }
