@@ -1,4 +1,3 @@
-import json
 from statement import Statement_Tokenizer
 from data import Dict_Data
 
@@ -30,6 +29,8 @@ class QTokenizer(Statement_Tokenizer):
         words = list(filter(lambda w: w.startswith("Q"), self.words))
         for word in words:
             for key, value in self.__ref.items():
+                ## Need to emplement an algorithm that will best determine the type of the
+                ## within the context of the sentence
                 if word in value:
                     self.__tokens[key].append(word)
                     break
@@ -60,7 +61,9 @@ class QTokenizer(Statement_Tokenizer):
         return super().__str__()
 
 if __name__ == "__main__":
-    q_t = QTokenizer("Qatar 2022. I went, to be : qualified. Question? not Question")
+    q_t = QTokenizer("""Cameroon is qualified for the Qatar 2022 world cup of nations. Did you know Qaddafi went 
+    to heaven? Indeed that is not questionable! Quantum coding is quickly gaining popularity. Queenly follow the 
+    QTokenizer module. Keep quiete. Software engineer don't quarrel like philosophers but they too have quote.""")
     print(q_t)
     print(q_t.get_listed_tokens())
     print(q_t.get_tokens_with_number())

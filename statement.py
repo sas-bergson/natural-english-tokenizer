@@ -3,18 +3,23 @@ import re
 class Statement_Tokenizer:
     """Is the base class of tokenization system. """
     
-    def __init__(self, text):
+    def __init__(self, text:str) -> None:
         self.__statement_pattern = '[\.!?]'
         self.__word_regex = re.compile('[^a-zA-Z]')
         self.__words = []
+        text = re.sub(r"\s+", " ", text)
         self._get_tokens(text)
         
-    def _get_tokens(self, text):
+    def _get_tokens(self, text:str) -> None:
         """Would be called at the appropriate moment at run time. It will split the given text in 
         statements and then in words so as to make the words available for the child classes that are going 
         to parse them"""
 
+        if not text.strip():
+            return
         self.__statements = re.split(self.__statement_pattern, text)
+        if not self.__statements[-1]:
+            self.__statements.pop()
         for statement in self.__statements:
             self.__words.extend(
                 [self.__word_regex.sub("", word.upper()) for word in statement.split(" ") if word.strip()]
