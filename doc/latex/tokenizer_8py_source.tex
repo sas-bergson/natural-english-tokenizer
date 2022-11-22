@@ -1,0 +1,74 @@
+\doxysection{tokenizer.\+py}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{from} statement \textcolor{keyword}{import} Statement\_Tokenizer}
+\DoxyCodeLine{00002 \textcolor{keyword}{from} data \textcolor{keyword}{import} Dict\_Data}
+\DoxyCodeLine{00003 }
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \textcolor{keyword}{class }QTokenizer(Statement\_Tokenizer):}
+\DoxyCodeLine{00006     \textcolor{stringliteral}{"{}"{}"{}Tokenizes all english words that start with Q"{}"{}"{}}}
+\DoxyCodeLine{00007     }
+\DoxyCodeLine{00008     \textcolor{keyword}{def }\_\_init\_\_(self, text:str) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00009         super().\_\_init\_\_(text)}
+\DoxyCodeLine{00010         ref = Dict\_Data(\textcolor{stringliteral}{"{}Q"{}})}
+\DoxyCodeLine{00011         self.\_\_ref = ref.data}
+\DoxyCodeLine{00012         self.\_\_tokens = \{}
+\DoxyCodeLine{00013             \textcolor{stringliteral}{"{}noun"{}}:[], }
+\DoxyCodeLine{00014             \textcolor{stringliteral}{"{}pronoun"{}}:[], }
+\DoxyCodeLine{00015             \textcolor{stringliteral}{"{}verb"{}}:[],}
+\DoxyCodeLine{00016             \textcolor{stringliteral}{"{}article"{}}:[],}
+\DoxyCodeLine{00017             \textcolor{stringliteral}{"{}adjective"{}}:[],}
+\DoxyCodeLine{00018             \textcolor{stringliteral}{"{}adverb"{}}:[],}
+\DoxyCodeLine{00019             \textcolor{stringliteral}{"{}preposition"{}}:[],}
+\DoxyCodeLine{00020             \textcolor{stringliteral}{"{}conjunction"{}}:[],}
+\DoxyCodeLine{00021             \textcolor{stringliteral}{"{}interjection"{}}:[],}
+\DoxyCodeLine{00022             \textcolor{stringliteral}{"{}no\_match"{}}:[]}
+\DoxyCodeLine{00023         \}}
+\DoxyCodeLine{00024         self.\_\_parse\_words()}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     }
+\DoxyCodeLine{00027     \textcolor{keyword}{def }\_\_parse\_words(self):}
+\DoxyCodeLine{00028         \textcolor{stringliteral}{"{}"{}"{}This method will be called at the appropria moment at run time"{}"{}"{}}}
+\DoxyCodeLine{00029         words = list(filter(\textcolor{keyword}{lambda} w: w.startswith(\textcolor{stringliteral}{"{}Q"{}}), self.words))}
+\DoxyCodeLine{00030         \textcolor{keywordflow}{for} word \textcolor{keywordflow}{in} words:}
+\DoxyCodeLine{00031             \textcolor{keywordflow}{for} key, value \textcolor{keywordflow}{in} self.\_\_ref.items():}
+\DoxyCodeLine{00032                 }
+\DoxyCodeLine{00034                 \textcolor{keywordflow}{if} word \textcolor{keywordflow}{in} value:}
+\DoxyCodeLine{00035                     self.\_\_tokens[key].append(word)}
+\DoxyCodeLine{00036                     \textcolor{keywordflow}{break}}
+\DoxyCodeLine{00037             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{00038                 self.\_\_tokens[\textcolor{stringliteral}{"{}no\_match"{}}].append(word)}
+\DoxyCodeLine{00039 }
+\DoxyCodeLine{00040     }
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042     \textcolor{keyword}{def }get\_listed\_tokens(self) -\/>  dict:}
+\DoxyCodeLine{00043         \textcolor{stringliteral}{"{}"{}"{}It just returns a dictionary of tokens with the keys representing the nine }}
+\DoxyCodeLine{00044 \textcolor{stringliteral}{        fundamental types of the english words }\textcolor{keywordflow}{and} the values being a list of such words found \textcolor{keywordflow}{in} }
+\DoxyCodeLine{00045         the \_tokens property.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00046 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00047 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return}  self.\_\_tokens}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049     \textcolor{keyword}{def }get\_tokens\_with\_number(self)-\/>dict:}
+\DoxyCodeLine{00050         \textcolor{stringliteral}{"{}"{}"{}It just turns a dictionary of tokens with the keys representing the nine }}
+\DoxyCodeLine{00051 \textcolor{stringliteral}{        fundamental types of the english words }\textcolor{keywordflow}{and} the values being a total number of such words found \textcolor{keywordflow}{in} the }
+\DoxyCodeLine{00052         \_tokens property.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00053 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00054 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} \{key : len(value)  \textcolor{keywordflow}{for} key, value \textcolor{keywordflow}{in} self.\_\_tokens.items()}
+\DoxyCodeLine{00055         \}}
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057     \textcolor{keyword}{def }get\_total\_word(self) -\/> int:}
+\DoxyCodeLine{00058         \textcolor{keywordflow}{return} sum(self.get\_tokens\_with\_number().values())}
+\DoxyCodeLine{00059 }
+\DoxyCodeLine{00060     \textcolor{keyword}{def }\_\_str\_\_(self) -\/> str:}
+\DoxyCodeLine{00061         \textcolor{keywordflow}{return} super().\_\_str\_\_()}
+\DoxyCodeLine{00062 }
+\DoxyCodeLine{00063 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{00064     q\_t = QTokenizer(\textcolor{stringliteral}{"{}"{}"{}Cameroon is qualified for the Qatar 2022 world cup of nations. Did you know Qaddafi went }}
+\DoxyCodeLine{00065 \textcolor{stringliteral}{    to heaven? Indeed that }\textcolor{keywordflow}{is} \textcolor{keywordflow}{not} questionable! Quantum coding \textcolor{keywordflow}{is} quickly gaining popularity. Queenly follow the }
+\DoxyCodeLine{00066     QTokenizer module. Keep quiete. Software engineer don\textcolor{stringliteral}{'t quarrel like philosophers but they too have quote."{}"{}"{})}}
+\DoxyCodeLine{00067 \textcolor{stringliteral}{    print(q\_t)}}
+\DoxyCodeLine{00068 \textcolor{stringliteral}{    print(q\_t.get\_listed\_tokens())}}
+\DoxyCodeLine{00069 \textcolor{stringliteral}{    print(q\_t.get\_tokens\_with\_number())}}
+\DoxyCodeLine{00070 \textcolor{stringliteral}{    print("{}Total words: "{}}, q\_t.get\_total\_word())}
+
+\end{DoxyCode}

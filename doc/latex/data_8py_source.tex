@@ -1,0 +1,71 @@
+\doxysection{data.\+py}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{import} json}
+\DoxyCodeLine{00002 \textcolor{keyword}{import} os}
+\DoxyCodeLine{00003 }
+\DoxyCodeLine{00004 \textcolor{keyword}{class }Dict\_Data:}
+\DoxyCodeLine{00005     \textcolor{stringliteral}{"{}"{}"{}!This class takes care of the origine of the reference against which the tokonization will be }}
+\DoxyCodeLine{00006 \textcolor{stringliteral}{    performed. For this purpose, a json file containing most words of the English language }\textcolor{keywordflow}{is} used \textcolor{keyword}{as} a reference.}
+\DoxyCodeLine{00007     \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00008 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00009 \textcolor{stringliteral}{    }\textcolor{keyword}{def }\_\_init\_\_(self, alphabet\_letter="{}Q"{}, dir="{}data"{}) -\/> None:}
+\DoxyCodeLine{00010         \textcolor{stringliteral}{"{}"{}"{}!It fetches Data from a json dictionary saved in python and parses it for tokonization purpose}}
+\DoxyCodeLine{00011 \textcolor{stringliteral}{            }\textcolor{preprocessor}{@param} str Q alphabet\_letter pecifies on which letter of the alphabet the the \textcolor{keyword}{class }should work from}
+\DoxyCodeLine{00012             \textcolor{preprocessor}{@param} str data reprents the directory \textcolor{keywordflow}{in} which the json files containing the documents are located}
+\DoxyCodeLine{00013         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00014 \textcolor{stringliteral}{        self.\_\_data = \{}}
+\DoxyCodeLine{00015 \textcolor{stringliteral}{            "{}noun"{}}:set(), }
+\DoxyCodeLine{00016             \textcolor{stringliteral}{"{}pronoun"{}}:set(), }
+\DoxyCodeLine{00017             \textcolor{stringliteral}{"{}verb"{}}:set(),}
+\DoxyCodeLine{00018             \textcolor{stringliteral}{"{}article"{}}:set(),}
+\DoxyCodeLine{00019             \textcolor{stringliteral}{"{}adjective"{}}:set(),}
+\DoxyCodeLine{00020             \textcolor{stringliteral}{"{}adverb"{}}:set(),}
+\DoxyCodeLine{00021             \textcolor{stringliteral}{"{}preposition"{}}:set(),}
+\DoxyCodeLine{00022             \textcolor{stringliteral}{"{}conjunction"{}}:set(),}
+\DoxyCodeLine{00023             \textcolor{stringliteral}{"{}interjection"{}}:set()}
+\DoxyCodeLine{00024         \}}
+\DoxyCodeLine{00025         self.\_\_letter= \textcolor{stringliteral}{"{}"{}}.join([\textcolor{stringliteral}{"{}D"{}}, alphabet\_letter])}
+\DoxyCodeLine{00026         self.\_\_dir = dir}
+\DoxyCodeLine{00027         self.\_\_load\_data()}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keyword}{def }\_\_load\_data(self) -\/> None:}
+\DoxyCodeLine{00030         \textcolor{stringliteral}{"{}"{}"{}!Never call this method it is conviniently called at the proper moment at run time. }}
+\DoxyCodeLine{00031 \textcolor{stringliteral}{        It loads data }\textcolor{keyword}{from} a predifined dictionary saved \textcolor{keywordflow}{in} json format \textcolor{keywordflow}{and} structures it \textcolor{keywordflow}{in} accordance \textcolor{keyword}{with} the }
+\DoxyCodeLine{00032         nine (9) fundamental types of the English language words\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00033 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00034 \textcolor{stringliteral}{        path = os.path.join(self.\_\_dir, self.\_\_letter)}}
+\DoxyCodeLine{00035 \textcolor{stringliteral}{        path += "{}.json"{}}}
+\DoxyCodeLine{00036         \textcolor{keywordflow}{try}:}
+\DoxyCodeLine{00037             \textcolor{keyword}{with} open(path) \textcolor{keyword}{as} file:}
+\DoxyCodeLine{00038                 data = json.load(file)}
+\DoxyCodeLine{00039             \textcolor{keywordflow}{for} word, explanations \textcolor{keywordflow}{in} data.items():}
+\DoxyCodeLine{00040                 meanings = explanations.get(\textcolor{stringliteral}{"{}MEANINGS"{}}, \{\})}
+\DoxyCodeLine{00041                 \textcolor{keywordflow}{for} definition \textcolor{keywordflow}{in} meanings.values():}
+\DoxyCodeLine{00042                     \textcolor{keywordflow}{if} definition:}
+\DoxyCodeLine{00043                         fund\_type = definition[0].lower()}
+\DoxyCodeLine{00044                         \textcolor{keywordflow}{if} fund\_type \textcolor{keywordflow}{in} self.\_\_data:}
+\DoxyCodeLine{00045                             self.\_\_data[fund\_type].add(word)}
+\DoxyCodeLine{00046         \textcolor{keywordflow}{except} FileNotFoundError \textcolor{keyword}{as} e:}
+\DoxyCodeLine{00047             print(e)}
+\DoxyCodeLine{00048     }
+\DoxyCodeLine{00049     \textcolor{preprocessor}{@property}}
+\DoxyCodeLine{00050     \textcolor{keyword}{def }data(self):}
+\DoxyCodeLine{00051         \textcolor{stringliteral}{"{}"{}"{}!converts all the sets in the \_\_data private property for it to be conveniently be stored in json"{}"{}"{}}}
+\DoxyCodeLine{00052 }
+\DoxyCodeLine{00053         \textcolor{keywordflow}{return} \{key:list(value) \textcolor{keywordflow}{for} key, value \textcolor{keywordflow}{in} self.\_\_data.items()\}}
+\DoxyCodeLine{00054         }
+\DoxyCodeLine{00055 }
+\DoxyCodeLine{00056 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{00057     \textcolor{stringliteral}{"{}"{}"{}!Testing"{}"{}"{}}}
+\DoxyCodeLine{00058     \textcolor{keyword}{import} string}
+\DoxyCodeLine{00059     A\_Z = list(string.ascii\_uppercase)}
+\DoxyCodeLine{00060     os.makedirs(\textcolor{stringliteral}{"{}data\_treamed"{}}, exist\_ok=\textcolor{keyword}{True})}
+\DoxyCodeLine{00061     \textcolor{keywordflow}{for} letter \textcolor{keywordflow}{in} A\_Z:}
+\DoxyCodeLine{00062         d\_d = Dict\_Data(alphabet\_letter=letter)}
+\DoxyCodeLine{00063         \textcolor{keyword}{with} open(\textcolor{stringliteral}{"{}data\_treamed/Bayi\_"{}}+letter+\textcolor{stringliteral}{"{}.json"{}}, \textcolor{stringliteral}{"{}w"{}}) \textcolor{keyword}{as} file:}
+\DoxyCodeLine{00064             json.dump(d\_d.data, file, indent=4)}
+\DoxyCodeLine{00065     }
+\DoxyCodeLine{00066 }
+
+\end{DoxyCode}

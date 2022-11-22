@@ -1,0 +1,59 @@
+\doxysection{statement.\+py}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{import} re}
+\DoxyCodeLine{00002 }
+\DoxyCodeLine{00003 \textcolor{keyword}{class }Statement\_Tokenizer:}
+\DoxyCodeLine{00004     \textcolor{stringliteral}{"{}"{}"{}!This is the base class of tokenization system. "{}"{}"{}}}
+\DoxyCodeLine{00005     }
+\DoxyCodeLine{00006     \textcolor{keyword}{def }\_\_init\_\_(self, text:str) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00007         \textcolor{stringliteral}{"{}"{}"{}!}}
+\DoxyCodeLine{00008 \textcolor{stringliteral}{        It abstracts the details of splitting the given text into tokens }\textcolor{keywordflow}{and} let the client}
+\DoxyCodeLine{00009         worry only about the results \textcolor{keyword}{as} she \textcolor{keywordflow}{or} he can get them though the statements property \textcolor{keywordflow}{or} words property.}
+\DoxyCodeLine{00010         \textcolor{preprocessor}{@param} str text : it \textcolor{keywordflow}{is} the gevin text on which the the \textcolor{keyword}{class }operates and yield the result to the client.}
+\DoxyCodeLine{00011         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00012 \textcolor{stringliteral}{        self.\_\_statement\_pattern = '[\(\backslash\).!?]'}}
+\DoxyCodeLine{00013         self.\_\_word\_regex = re.compile(\textcolor{stringliteral}{'[\string^a-\/zA-\/Z]'})}
+\DoxyCodeLine{00014         self.\_\_words = []}
+\DoxyCodeLine{00015         text = re.sub(\textcolor{stringliteral}{r"{}\(\backslash\)s+"{}}, \textcolor{stringliteral}{"{} "{}}, text)}
+\DoxyCodeLine{00016         self.\_get\_tokens(text)}
+\DoxyCodeLine{00017         }
+\DoxyCodeLine{00018     \textcolor{keyword}{def }\_get\_tokens(self, text:str) -\/> \textcolor{keywordtype}{None}:}
+\DoxyCodeLine{00019         \textcolor{stringliteral}{"{}"{}"{}!This method Would be called at the appropriate moment at run time. It will split the given text in }}
+\DoxyCodeLine{00020 \textcolor{stringliteral}{        statements }\textcolor{keywordflow}{and} then \textcolor{keywordflow}{in} words so \textcolor{keyword}{as} to make the words available \textcolor{keywordflow}{for} the child classes that are going }
+\DoxyCodeLine{00021         to parse them.}
+\DoxyCodeLine{00022         \textcolor{preprocessor}{@param} str text : it \textcolor{keywordflow}{is} the gevin text on which the the method operates.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{00023 \textcolor{stringliteral}{}}
+\DoxyCodeLine{00024 \textcolor{stringliteral}{        }\textcolor{keywordflow}{if} \textcolor{keywordflow}{not} text.strip():}
+\DoxyCodeLine{00025             \textcolor{keywordflow}{return}}
+\DoxyCodeLine{00026         self.\_\_statements = re.split(self.\_\_statement\_pattern, text)}
+\DoxyCodeLine{00027         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} self.\_\_statements[-\/1]:}
+\DoxyCodeLine{00028             self.\_\_statements.pop()}
+\DoxyCodeLine{00029         \textcolor{keywordflow}{for} statement \textcolor{keywordflow}{in} self.\_\_statements:}
+\DoxyCodeLine{00030             self.\_\_words.extend(}
+\DoxyCodeLine{00031                 [self.\_\_word\_regex.sub(\textcolor{stringliteral}{"{}"{}}, word.upper()) \textcolor{keywordflow}{for} word \textcolor{keywordflow}{in} statement.split(\textcolor{stringliteral}{"{} "{}}) \textcolor{keywordflow}{if} word.strip()]}
+\DoxyCodeLine{00032             )}
+\DoxyCodeLine{00033     \textcolor{preprocessor}{@property}}
+\DoxyCodeLine{00034     \textcolor{keyword}{def }statements(self):}
+\DoxyCodeLine{00035         \textcolor{stringliteral}{"{}"{}"{}Returns a list of the statements derived from the inputed text."{}"{}"{}}}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037         \textcolor{keywordflow}{return} self.\_\_statements}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039     \textcolor{preprocessor}{@property}}
+\DoxyCodeLine{00040     \textcolor{keyword}{def }words(self):}
+\DoxyCodeLine{00041         \textcolor{stringliteral}{"{}Returns a list of single words that can easily be further prossessed."{}}}
+\DoxyCodeLine{00042         \textcolor{keywordflow}{return} self.\_\_words}
+\DoxyCodeLine{00043     }
+\DoxyCodeLine{00044     \textcolor{keyword}{def }\_\_str\_\_(self) -\/> str:}
+\DoxyCodeLine{00045        repr = [f\textcolor{stringliteral}{"{}statement \{n\} -\/> \{s\}"{}} \textcolor{keywordflow}{for} n, s \textcolor{keywordflow}{in} enumerate(self.\_\_statements, 1)]}
+\DoxyCodeLine{00046        \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}\(\backslash\)n"{}}.join(repr)}
+\DoxyCodeLine{00047 }
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049 \textcolor{keywordflow}{if} \_\_name\_\_ == \textcolor{stringliteral}{"{}\_\_main\_\_"{}}:}
+\DoxyCodeLine{00050     \textcolor{stringliteral}{"{}"{}"{}! @test"{}"{}"{}}}
+\DoxyCodeLine{00051     s\_t = Statement\_Tokenizer(\textcolor{stringliteral}{"{}Qatar 2022. I went, to be : qualified. Question? not Question"{}})}
+\DoxyCodeLine{00052     print(s\_t.statements)}
+\DoxyCodeLine{00053     print(s\_t.words)}
+\DoxyCodeLine{00054     print(s\_t)}
+
+\end{DoxyCode}

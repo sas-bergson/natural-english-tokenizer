@@ -1,0 +1,113 @@
+\doxysection{tokenizer.\+QTokenizer Class Reference}
+\label{classtokenizer_1_1_q_tokenizer}\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+Inheritance diagram for tokenizer.\+QTokenizer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classtokenizer_1_1_q_tokenizer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \textbf{ \+\_\+\+\_\+init\+\_\+\+\_\+} (self, str text)
+\begin{DoxyCompactList}\small\item\em It abstracts the details of splitting the given text into tokens and let the client worry only about the results as she or he can get them though the statements property or words property. \end{DoxyCompactList}\item 
+dict \textbf{ get\+\_\+listed\+\_\+tokens} (self)
+\item 
+dict \textbf{ get\+\_\+tokens\+\_\+with\+\_\+number} (self)
+\item 
+int \textbf{ get\+\_\+total\+\_\+word} (self)
+\item 
+str \textbf{ \+\_\+\+\_\+str\+\_\+\+\_\+} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tokenizes all english words that start with Q\end{DoxyVerb}
+ 
+
+Definition at line \textbf{ 5} of file \textbf{ tokenizer.\+py}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\label{classtokenizer_1_1_q_tokenizer_a19214c752c986e339bc4d3afb6053c36}} 
+\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+\doxysubsubsection{\_\_init\_\_()}
+{\footnotesize\ttfamily  None tokenizer.\+QTokenizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{str}]{text }\end{DoxyParamCaption})}
+
+
+
+It abstracts the details of splitting the given text into tokens and let the client worry only about the results as she or he can get them though the statements property or words property. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & text \+: it is the gevin text on which the the class operates and yield the result to the client. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \textbf{ statement.\+Statement\+\_\+\+Tokenizer} \doxyref{}{p.}{classstatement_1_1_statement___tokenizer_a6448646d7a8eac6ecdcf864ffedbc45e}.
+
+
+
+Definition at line \textbf{ 8} of file \textbf{ tokenizer.\+py}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{classtokenizer_1_1_q_tokenizer_a518470fc793a7a42be36d3b79b2b6648}} 
+\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+\doxysubsubsection{\_\_str\_\_()}
+{\footnotesize\ttfamily  str tokenizer.\+QTokenizer.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \textbf{ statement.\+Statement\+\_\+\+Tokenizer} \doxyref{}{p.}{classstatement_1_1_statement___tokenizer}.
+
+
+
+Definition at line \textbf{ 60} of file \textbf{ tokenizer.\+py}.
+
+\mbox{\label{classtokenizer_1_1_q_tokenizer_a7860d3a60126d9d5a0ee8eb4ed101560}} 
+\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}!get\_listed\_tokens@{get\_listed\_tokens}}
+\index{get\_listed\_tokens@{get\_listed\_tokens}!tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+\doxysubsubsection{get\_listed\_tokens()}
+{\footnotesize\ttfamily   dict tokenizer.\+QTokenizer.\+get\+\_\+listed\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}It just returns a dictionary of tokens with the keys representing the nine 
+fundamental types of the english words and the values being a list of such words found in 
+the _tokens property.\end{DoxyVerb}
+ 
+
+Definition at line \textbf{ 42} of file \textbf{ tokenizer.\+py}.
+
+\mbox{\label{classtokenizer_1_1_q_tokenizer_a3c9b8d29b760e4740b039eb9f67964cf}} 
+\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}!get\_tokens\_with\_number@{get\_tokens\_with\_number}}
+\index{get\_tokens\_with\_number@{get\_tokens\_with\_number}!tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+\doxysubsubsection{get\_tokens\_with\_number()}
+{\footnotesize\ttfamily dict tokenizer.\+QTokenizer.\+get\+\_\+tokens\+\_\+with\+\_\+number (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}It just turns a dictionary of tokens with the keys representing the nine 
+fundamental types of the english words and the values being a total number of such words found in the 
+_tokens property.\end{DoxyVerb}
+ 
+
+Definition at line \textbf{ 49} of file \textbf{ tokenizer.\+py}.
+
+\mbox{\label{classtokenizer_1_1_q_tokenizer_ab4fea84f633f709c7449c45ad157b347}} 
+\index{tokenizer.QTokenizer@{tokenizer.QTokenizer}!get\_total\_word@{get\_total\_word}}
+\index{get\_total\_word@{get\_total\_word}!tokenizer.QTokenizer@{tokenizer.QTokenizer}}
+\doxysubsubsection{get\_total\_word()}
+{\footnotesize\ttfamily  int tokenizer.\+QTokenizer.\+get\+\_\+total\+\_\+word (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Definition at line \textbf{ 57} of file \textbf{ tokenizer.\+py}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+tokenizer.\+py\end{DoxyCompactItemize}
