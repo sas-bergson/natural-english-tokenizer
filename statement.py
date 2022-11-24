@@ -18,6 +18,7 @@ class statement_tokenizer:
         """
         This method is responsible for the splitting of the individual strings into the required tokens which
         takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
+
         self._tokens = self._regex.split(text)
         return self._tokens
 
@@ -42,3 +43,14 @@ class statement_tokenizer:
         """
         formatter = re.compile(self._sentence_pattern, re.M)
         return formatter.findall(text)
+
+    def fmtcharRecog(self, text):
+        new_text = ""
+        for i in range(len(text)):
+            if re.match(r'\.|,|\'|\)|\}|\]|\:|\;', text[i]):
+                new_text = new_text+" "+text[i]
+            elif re.match(r'\(|\{|\[|\s', text[i]):
+                new_text = new_text+text[i]+" "
+            else:
+                new_text = new_text+text[i]
+        return new_text
