@@ -9,21 +9,16 @@ class statement_tokenizer:
     def __init__(self):
         """
         This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method."""
-        self._pattern = r'[A-Z]+[a-z]*\s\.'
+        self._pattern = r"[A-Z]+[a-z]*\s\."
         self._sentence_pattern = r'([A-Z][^\.!?]*[\.!?])'
-        self._regex = re.compile(self._pattern)
+        self._regex = re.compile(self._sentence_pattern)
         self._tokens = []
 
     def get_tokens(self, text) -> list:
         """
         This method is responsible for the splitting of the individual strings into the required tokens which
         takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
-        # self._tokens = re.compile(self._sentence_pattern)
-        # if re.compile(self._sentence_pattern).match(text):
-        #     print(text.split)
-        # e'
-
-        print(self.performSentenceSplit(text))
+        self._tokens = self.performSentenceSplit(text)
         return self._tokens
 
     def __str__(self) -> str:
@@ -70,3 +65,5 @@ if __name__ == "__main__":
 
     checker = data.get_tokens(
         """ Living without computers today is close to an impossibility. As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity.""")
+
+    print(checker)
