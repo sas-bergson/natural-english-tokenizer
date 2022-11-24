@@ -9,7 +9,7 @@ class statement_tokenizer:
     def __init__(self):
         """
         This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method."""
-        self._pattern = 'r"[A-Z]+[a-z]*\s\."'
+        self._pattern = r'[A-Z]+[a-z]*\s\.'
         self._sentence_pattern = r'([A-Z][^\.!?]*[\.!?])'
         self._regex = re.compile(self._pattern)
         self._tokens = []
@@ -18,8 +18,12 @@ class statement_tokenizer:
         """
         This method is responsible for the splitting of the individual strings into the required tokens which
         takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
+        # self._tokens = re.compile(self._sentence_pattern)
+        # if re.compile(self._sentence_pattern).match(text):
+        #     print(text.split)
+        # e'
 
-        self._tokens = self._regex.split(text)
+        print(self.performSentenceSplit(text))
         return self._tokens
 
     def __str__(self) -> str:
@@ -45,6 +49,11 @@ class statement_tokenizer:
         return formatter.findall(text)
 
     def fmtcharRecog(self, text):
+        """
+        this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting 
+        this will be especially important what there will to be identification of known patters.
+        The function contains a special regular expresssion that checks all characters individually
+        """
         new_text = ""
         for i in range(len(text)):
             if re.match(r'\.|,|\'|\)|\}|\]|\:|\;', text[i]):
@@ -54,3 +63,10 @@ class statement_tokenizer:
             else:
                 new_text = new_text+text[i]
         return new_text
+
+
+if __name__ == "__main__":
+    data = statement_tokenizer()
+
+    checker = data.get_tokens(
+        """ Living without computers today is close to an impossibility. As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity.""")
