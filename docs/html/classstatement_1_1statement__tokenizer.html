@@ -78,10 +78,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae64f0875afe3067b97ba370b354b9213"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatement_1_1statement__tokenizer.html#ae64f0875afe3067b97ba370b354b9213">__init__</a> (self)</td></tr>
 <tr class="separator:ae64f0875afe3067b97ba370b354b9213"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea815b0c6c23fc48a11ee0404b782c7a"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatement_1_1statement__tokenizer.html#aea815b0c6c23fc48a11ee0404b782c7a">__repr__</a> (self)</td></tr>
+<tr class="separator:aea815b0c6c23fc48a11ee0404b782c7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae07f7930f92d3591c93e2381cd5be285"><td class="memItemLeft" align="right" valign="top">str&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatement_1_1statement__tokenizer.html#ae07f7930f92d3591c93e2381cd5be285">__str__</a> (self)</td></tr>
 <tr class="separator:ae07f7930f92d3591c93e2381cd5be285"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac857ab8a63128b061b40164fb76c8bd2"><td class="memItemLeft" align="right" valign="top">list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatement_1_1statement__tokenizer.html#ac857ab8a63128b061b40164fb76c8bd2">get_tokens</a> (self, text)</td></tr>
 <tr class="separator:ac857ab8a63128b061b40164fb76c8bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f931b43f098fdeebc831235a0d1cfca"><td class="memItemLeft" align="right" valign="top">def&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classstatement_1_1statement__tokenizer.html#a4f931b43f098fdeebc831235a0d1cfca">performSentenceSplit</a> (self, text)</td></tr>
+<tr class="separator:a4f931b43f098fdeebc831235a0d1cfca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -108,13 +112,42 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   10</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="lineno">   11</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> the constructor. where all the regex are defined <span class="keywordflow">and</span> the word that the user <span class="keywordflow">or</span> the calling file will use to call the method.<span class="stringliteral">&quot;&quot;&quot;</span></div>
 <div class="line"><span class="lineno">   12</span><span class="stringliteral">        self._pattern = &#39;r&quot;[A-Z]+[a-z]*\s\.&quot;&#39;</span></div>
-<div class="line"><span class="lineno">   13</span>        self._regex = re.compile(self._pattern)</div>
-<div class="line"><span class="lineno">   14</span>        self._tokens = []</div>
-<div class="line"><span class="lineno">   15</span> </div>
+<div class="line"><span class="lineno">   13</span>        self._sentence_pattern = <span class="stringliteral">r&#39;([A-Z][^\.!?]*[\.!?])&#39;</span></div>
+<div class="line"><span class="lineno">   14</span>        self._regex = re.compile(self._pattern)</div>
+<div class="line"><span class="lineno">   15</span>        self._tokens = []</div>
+<div class="line"><span class="lineno">   16</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aea815b0c6c23fc48a11ee0404b782c7a" name="aea815b0c6c23fc48a11ee0404b782c7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea815b0c6c23fc48a11ee0404b782c7a">&#9670;&nbsp;</a></span>__repr__()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"> str __repr__ </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method.</pre> 
+<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00031">31</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>    <span class="keyword">def </span>__repr__(self) -&gt; str:</div>
+<div class="line"><span class="lineno">   32</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   33</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the printing of the tokens that are returned by the get_tokens method.</div>
+<div class="line"><span class="lineno">   34</span>        it takes no arguments <span class="keywordflow">and</span> returns a string of the tokens. it basically overites the default __repr__ method.<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   35</span><span class="stringliteral">        </span><span class="keywordflow">for</span> s <span class="keywordflow">in</span> self._tokens:</div>
+<div class="line"><span class="lineno">   36</span>            print(f<span class="stringliteral">&quot;statement -&gt; {s}&quot;</span>)</div>
+<div class="line"><span class="lineno">   37</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="ae07f7930f92d3591c93e2381cd5be285" name="ae07f7930f92d3591c93e2381cd5be285"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae07f7930f92d3591c93e2381cd5be285">&#9670;&nbsp;</a></span>__str__()</h2>
 
@@ -132,13 +165,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <pre class="fragment">This method is responsible for the printing of the tokens that are returned by the get_tokens method.
 it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.</pre> 
-<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00023">23</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>    <span class="keyword">def </span>__str__(self) -&gt; str:</div>
-<div class="line"><span class="lineno">   24</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   25</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the printing of the tokens that are returned by the get_tokens method.</div>
-<div class="line"><span class="lineno">   26</span>        it takes no arguments <span class="keywordflow">and</span> returns a string of the tokens. it basically overites the default __str__ method.<span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   27</span><span class="stringliteral">        </span><span class="keywordflow">for</span> s <span class="keywordflow">in</span> self._tokens:</div>
-<div class="line"><span class="lineno">   28</span>            print(f<span class="stringliteral">&quot;statement -&gt; {s}&quot;</span>)</div>
+<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00024">24</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>    <span class="keyword">def </span>__str__(self) -&gt; str:</div>
+<div class="line"><span class="lineno">   25</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   26</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the printing of the tokens that are returned by the get_tokens method.</div>
+<div class="line"><span class="lineno">   27</span>        it takes no arguments <span class="keywordflow">and</span> returns a string of the tokens. it basically overites the default __str__ method.<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   28</span><span class="stringliteral">        </span><span class="keywordflow">for</span> s <span class="keywordflow">in</span> self._tokens:</div>
+<div class="line"><span class="lineno">   29</span>            print(f<span class="stringliteral">&quot;statement -&gt; {s}&quot;</span>)</div>
+<div class="line"><span class="lineno">   30</span> </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -169,14 +203,54 @@ it takes no arguments and returns a string of the tokens. it basically overites 
 </div><div class="memdoc">
 <pre class="fragment">This method is responsible for the splitting of the individual strings into the required tokens which
 takes  text (string) the text that is to be split into tokens. and returns a list of tokens.</pre> 
-<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00016">16</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    <span class="keyword">def </span>get_tokens(self, text) -&gt; list:</div>
-<div class="line"><span class="lineno">   17</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   18</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the splitting of the individual strings into the required tokens which</div>
-<div class="line"><span class="lineno">   19</span>        takes  text (string) the text that <span class="keywordflow">is</span> to be split into tokens. <span class="keywordflow">and</span> returns a list of tokens.<span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   20</span><span class="stringliteral">        self._tokens = self._regex.split(text)</span></div>
-<div class="line"><span class="lineno">   21</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self._tokens</div>
-<div class="line"><span class="lineno">   22</span> </div>
+<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00017">17</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>    <span class="keyword">def </span>get_tokens(self, text) -&gt; list:</div>
+<div class="line"><span class="lineno">   18</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   19</span><span class="stringliteral">        This method </span><span class="keywordflow">is</span> responsible <span class="keywordflow">for</span> the splitting of the individual strings into the required tokens which</div>
+<div class="line"><span class="lineno">   20</span>        takes  text (string) the text that <span class="keywordflow">is</span> to be split into tokens. <span class="keywordflow">and</span> returns a list of tokens.<span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   21</span><span class="stringliteral">        self._tokens = self._regex.split(text)</span></div>
+<div class="line"><span class="lineno">   22</span><span class="stringliteral">        </span><span class="keywordflow">return</span> self._tokens</div>
+<div class="line"><span class="lineno">   23</span> </div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4f931b43f098fdeebc831235a0d1cfca" name="a4f931b43f098fdeebc831235a0d1cfca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f931b43f098fdeebc831235a0d1cfca">&#9670;&nbsp;</a></span>performSentenceSplit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">def performSentenceSplit </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>text</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<pre class="fragment">This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens 
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as 
+blocks. this will also give the possibility to thet count of the number of sentences in 
+</pre> 
+<p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00038">38</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>    <span class="keyword">def </span>performSentenceSplit(self, text):</div>
+<div class="line"><span class="lineno">   39</span>        <span class="stringliteral">&quot;&quot;&quot;This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens </span></div>
+<div class="line"><span class="lineno">   40</span><span class="stringliteral">        based on specific word. This </span><span class="keywordflow">is</span> a part which makes the whole system modular making it possible <span class="keywordflow">for</span> the sentence to be handled <span class="keyword">as</span> </div>
+<div class="line"><span class="lineno">   41</span>        blocks. this will also give the possibility to thet count of the number of sentences <span class="keywordflow">in</span> </div>
+<div class="line"><span class="lineno">   42</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   43</span><span class="stringliteral">        formatter = re.compile(self._sentence_pattern, re.M)</span></div>
+<div class="line"><span class="lineno">   44</span><span class="stringliteral">        </span><span class="keywordflow">return</span> formatter.findall(text)</div>
 </div><!-- fragment -->
 </div>
 </div>
