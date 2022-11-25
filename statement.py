@@ -57,7 +57,7 @@ class statement_tokenizer:
                 new_text = new_text+text[i]+" "
             else:
                 new_text = new_text+text[i]
-        return new_text
+        return new_text+2
 
 
 if __name__ == "__main__":
