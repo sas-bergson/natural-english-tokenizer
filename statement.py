@@ -52,12 +52,18 @@ class statement_tokenizer:
         formatter = re.compile(self._word_pattern, re.M)
         return formatter.findall(text)
 
+    def getAllTokens(self, text):
+        """
+        This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
+        """
+        text = self.retainAllTokens(text)
+        return self.performWordSplit(text)
 
     def retainAllTokens(self, text):
         """
         this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting 
         this will be especially important what there will to be identification of known patters.
-        The function contains a special regular expresssion that checks all characters individually
+        The function contains a special regular expresssion that checks all characaters individually
         """
         new_text = ""
         for i in range(len(text)):
@@ -72,8 +78,9 @@ class statement_tokenizer:
 
 if __name__ == "__main__":
     data = statement_tokenizer()
-
-    checker = data.get_tokens(
-        """ Living without computers today is close to an impossibility. As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity.""")
+    text = """ Living without computers today is close to an impossibility.
+      As our reliance on computers and computer-controlled technologies grows 
+      the computer has evolved from a luxury item to a necessity."""
+    checker = data.get_tokens(text)
     for i in checker:
         print(data.performWordSplit(i))
