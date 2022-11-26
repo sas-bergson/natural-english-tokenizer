@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5ftokens_0',['get_tokens',['../classstatement_1_1statement__tokenizer.html#ac857ab8a63128b061b40164fb76c8bd2',1,'statement::statement_tokenizer']]]
+  ['checker_0',['checker',['../namespacestatement.html#ad4f09c6c6f92935f2d917a5b0ba77cb0',1,'statement']]]
 ];

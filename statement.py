@@ -56,8 +56,8 @@ class statement_tokenizer:
         """
         This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
         """
-        text = self.retainAllTokens(text)
-        return self.performWordSplit(text)
+        textData = self.retainAllTokens(text)
+        return self.performWordSplit(textData)
 
     def retainAllTokens(self, text):
         """
