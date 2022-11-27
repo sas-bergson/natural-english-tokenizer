@@ -1,5 +1,3 @@
-
-import os
 import re
 
 """! @brief Example Python program with Doxygen style comments."""
@@ -57,7 +55,7 @@ class statement_tokenizer:
         This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
         """
         textData = self.retainAllTokens(text)
-        return self.performWordSplit(textData)
+        return textData.split()
 
     def retainAllTokens(self, text):
         """
@@ -67,7 +65,7 @@ class statement_tokenizer:
         """
         new_text = ""
         for i in range(len(text)):
-            if re.match(r'\.|,|\'|\)|\}|\]|\:|\;', text[i]):
+            if re.match(r'\.|,|\?|\'|\)|\}|\]|\:|\;', text[i]):
                 new_text = new_text+" "+text[i]
             elif re.match(r'\(|\{|\[|\s', text[i]):
                 new_text = new_text+text[i]+" "
@@ -78,9 +76,10 @@ class statement_tokenizer:
 
 if __name__ == "__main__":
     data = statement_tokenizer()
-    text = """ Living without computers today is close to an impossibility.
-      As our reliance on computers and computer-controlled technologies grows 
-      the computer has evolved from a luxury item to a necessity."""
-    checker = data.get_tokens(text)
-    for i in checker:
-        print(data.performWordSplit(i))
+    text = """ Living without computers today is close to an impossibility?
+      As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity."""
+    # checker = data.get_tokens(text)
+
+    # for i in checker:
+    #     print(data.performWordSplit(i))
+    print(data.getAllTokens(text.strip()))
