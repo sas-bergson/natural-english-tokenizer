@@ -1,6 +1,7 @@
 import os
 import re
 
+
 class statement_tokenizer:
     
     def __init__(self):
@@ -9,9 +10,24 @@ class statement_tokenizer:
         self._tokens=[]
         
     def get_tokens(self, text) -> list:
-        self._tokens= self._regex.split(text)
+        self._tokens = text.split()
         return self._tokens
-    
-    def __str__(self) -> str:
+
+
+
+def __str__(self) -> str:
         for s in self._tokens:
           print(f"statement -> {s}")
+        
+        
+        
+        test = statement_tokenizer()
+        
+        
+def pro():
+    test.get_tokens("Today is monday. This is compiler construction class")
+    test.__str__()
+    # print(test._tokens)
+
+
+pro()
