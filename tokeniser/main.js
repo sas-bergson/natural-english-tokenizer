@@ -1,4 +1,15 @@
-word = "The quick brown fox jumps over the lazy dog";
+text = "the quick brown fox jumped over the lazy dog. The Main miners of the world. An anthilled"
+//divide into sentences
+var check_sentence = (text)=>{
+    split_sentence = text.split('.')
+    console.log('sentences:');
+    for(i = 0; i < split_sentence.length; i++){
+        console.log('  -> '+split_sentence[i]);
+    }
+return split_sentence
+}
+
+//split into words 
 var check_word = (text)=>{
     split_word = text.split(" ");
     genre = [split_word.length]
@@ -7,14 +18,17 @@ var check_word = (text)=>{
             genre[n] = 'article'
         }
         else{
-            genre[n] = 'noun'
+            genre[n] = 'not defined'
         }
     } 
     console.log(text)
-    for(i = 0; i<splitword.length; i++ ){
-        console.log(splitword[i]+' -> '+genre[i]);
+    for(i = 0; i<split_word.length; i++ ){
+        console.log(split_word[i]+`(${split_word[i].length})`+' -> '+genre[i]+'\n');
     }
-    console.log(genre)
     
 }
-check_word(word)
+test = check_sentence(text)
+console.log(test.length);
+for(i = 0; i<split_sentence.length; i++){
+    check_word(test[i])
+}
