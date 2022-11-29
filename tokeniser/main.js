@@ -11,7 +11,9 @@ var check_word = (text)=>{
         }
     } 
     console.log(text)
-    console.log(split_word)
+    for(i = 0; i<splitword.length; i++ ){
+        console.log(splitword[i]+' -> '+genre[i]);
+    }
     console.log(genre)
     
 }
