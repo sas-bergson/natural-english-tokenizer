@@ -74,12 +74,12 @@ class statement_tokenizer:
         return new_text
 
 
-if __name__ == "__main__":
-    data = statement_tokenizer()
-    text = """ Living without computers today is close to an impossibility?
-      As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity."""
-    # checker = data.get_tokens(text)
+# if __name__ == "__main__":
+#     data = statement_tokenizer()
+#     text = """ Living without computers today is close to an impossibility?
+#       As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity."""
+#     # checker = data.get_tokens(text)
 
-    # for i in checker:
-    #     print(data.performWordSplit(i))
-    print(data.getAllTokens(text.strip()))
+#     # for i in checker:
+#     #     print(data.performWordSplit(i))
+#     print(data.getAllTokens(text.strip()))

@@ -9,7 +9,7 @@
 # @section notes_main Notes
 # - The course project is highly experimental and will involve 3 students in this group
 #
-# Copyright (c) 2022 Compiler COnstruct.  All rights reserved.
+# Copyright (c) 2022 Compiler Construct.  All rights reserved.
 ##
 # @file statement.py.py
 #
@@ -22,3 +22,20 @@
 # - Modified by Seukam Kamadeu Samira on 21/11/2022
 # Copyright (c) 2022 Compiler construct.  All rights reserved.
 # Imports
+
+# from statement import statement_tokenizer
+
+
+# def main():
+#     """! @brief Example Python program with Doxygen style comments."""
+#     print("Hello World")
+#     text = "Hello World. This is a test. This is another test. This is the last test."
+#     tokenizer = statement_tokenizer()
+#     print(tokenizer.get_tokens(text))
+#     print(tokenizer.getAllTokens(text))
+#     print(tokenizer.retainAllTokens(text))
+#     print(tokenizer.performWordSplit(text))
+#     print(tokenizer.peformSentenceSplit(text))
+
+# if __name__ == "__main__":
+#     main()
