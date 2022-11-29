@@ -94,6 +94,9 @@ class StatementTokenizer:
 
         self._types.append(word_type)
 
+    def split_sentences(self):
+        return self.sentence.split(".")
+
     def remove_punc(self):
         """ 
             Removes punctuation at the end of the sentence 
