@@ -95,7 +95,13 @@ class StatementTokenizer:
         self._types.append(word_type)
 
     def split_sentences(self):
-        return self.sentence.split(".")
+        splitting = self.sentence.split(".")
+        results = []
+        index = 0
+        for x in splitting:
+            results.append(x.strip())
+            index +=1
+            
 
     def remove_punc(self):
         """ 
