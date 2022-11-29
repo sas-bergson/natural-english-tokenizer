@@ -33,12 +33,20 @@ def main():
     text = f.read()
     f.close()
     tokenizer = statement_tokenizer()
-    # print(tokenizer.get_tokens(text))
-    print(tokenizer.getAllTokens(text))
-    print(tokenizer.retainAllTokens(text))
-    print(tokenizer.performWordSplit(text))
+    print("The function of to get all the tokens is: ",
+          tokenizer.getAllTokens(text))
+    print("This is the method is responsible for the token retension:",
+          tokenizer.retainAllTokens(text))
+    print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND ")
     print(tokenizer.peformSentenceSplit(text))
+    print("THIS IS RESPONSIBLE FOR MATHING ALL WORDS STARTING AN A OR a")
     print(tokenizer.matchAllWordsStartingWithA(text))
+    print("THIS IS A THAT PARTIAL MATCHES THE TEXT TYPES:")
+    words = tokenizer.performWordSplit(text)
+
+    for word in words:
+        print(word+tokenizer.fsa(word))
+
 
 if __name__ == "__main__":
     main()
