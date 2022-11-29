@@ -9,5 +9,4 @@ def main():
     test.__str__()
     test.tokenize_tokens()
     
-    
 main() 
