@@ -21,7 +21,7 @@ class statement_tokenizer:
 
 
 # splitting into phrases
-    def sentence_parser(self, text : str):
+    def sentence_scanner(self, text : str):
         temp_phrase = ""
         list_of_phrases = []
         no_of_sentences = 0
@@ -42,13 +42,13 @@ class statement_tokenizer:
             phrase_count += 1
 
 # splitting into words
-    def word_parser(self, array_of_phrases: []):
+    def word_scanner(self, array_of_phrases: []):
         tokens = []
         word_count = 0
         for phrase in array_of_phrases:
             temp_words = phrase.split()
             for word in temp_words:
-                tokens.append(word)
+                tokens.append(word.lower())
                 temp_words = []
         print("word count: ", tokens.__len__())
         return tokens
@@ -62,14 +62,14 @@ class statement_tokenizer:
 text = "It was their first date and she had been looking forward to it the entire week. She had her eyes on him for months, and it had taken a convoluted scheme with several friends to make it happen, but he'd finally taken the hint and asked her out. After all the time and effort she'd invested into it, she never thought that it would be anything but wonderful. It goes without saying that things didn't work out quite as she expected. Matt told her to reach for the stars, but Veronica thought it was the most ridiculous advice she'd ever received. Sure, it had been well-meaning when he said it, but she didn't understand why anyone would want to suggest something that would literally kill you if you actually managed to achieve it. Dragons don't exist they said. They are the stuff of legend and people's imagination. Greg would have agreed with this assessment without a second thought 24 hours ago. But now that there was a dragon staring directly into his eyes, he questioned everything that he had been told."
 
 # printing array of phrases
-obj = statement_tokenizer().sentence_parser(text)
+obj = statement_tokenizer().sentence_scanner(text)
 #print(obj)
 
 # more comprehensive presentation of array of phrases
 sentence_presentation = statement_tokenizer().sentence_presentation(obj)
 
 # printing tokens
-tokens = statement_tokenizer().word_parser(obj)
+tokens = statement_tokenizer().word_scanner(obj)
 print(tokens)
 
 
