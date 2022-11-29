@@ -73,7 +73,22 @@ This is a simple example of how to use the Tokenizer class to tokenize a text.</
 <p ><img src="https://media.geeksforgeeks.org/wp-content/uploads/20190301115936/lexical.png" alt="Tokenization" class="inline"/></p>
 <h3><a class="anchor" id="autotoc_md2"></a>
 Team Members</h3>
-<p >&gt;+ <a href="https://www.github.com/MbohBless">Mboh Bless Pearl N</a> &gt;+ <a href="https://github.com/Kamadeusamira">Seukam Kamadeu Samira</a> &gt;+ <a href="https://github.com/FONTEM123">Fontem Favour</a> </p>
+<p >&gt;+ <a href="https://www.github.com/MbohBless">Mboh Bless Pearl N</a> &gt;+ <a href="https://github.com/Kamadeusamira">Seukam Kamadeu Samira</a> &gt;+ <a href="https://github.com/FONTEM123">Fontem Favour</a></p>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Classes involved</h1>
+<p ><b>statement_tokenizer</b></p><ul>
+<li>there is an initialization of the class with the regular expressions that would be used to tokenize the text</li>
+</ul>
+<div class="fragment"><div class="line">def __init__(self):</div>
+<div class="line"> </div>
+<div class="line">    self._pattern = r&quot;[A-Z]+[a-z]*\s\.&quot;</div>
+<div class="line">    self._sentence_pattern = r&#39;([A-Z][^\.!?]*[\.!?])&#39;</div>
+<div class="line">    self._word_pattern = r&#39;\w+&#39;</div>
+<div class="line">    self._regex = re.compile(self._sentence_pattern)</div>
+<div class="line">    self._tokens = []</div>
+</div><!-- fragment --><p> <b>tokenize</b></p><ul>
+<li>this method is used to tokenize the text into sentences and words </li>
+</ul>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->

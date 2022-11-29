@@ -33,11 +33,12 @@ def main():
     text = f.read()
     f.close()
     tokenizer = statement_tokenizer()
-    print(tokenizer.get_tokens(text))
+    # print(tokenizer.get_tokens(text))
     print(tokenizer.getAllTokens(text))
     print(tokenizer.retainAllTokens(text))
     print(tokenizer.performWordSplit(text))
     print(tokenizer.peformSentenceSplit(text))
+    print(tokenizer.matchAllWordsStartingWithA(text))
 
 if __name__ == "__main__":
     main()

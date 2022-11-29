@@ -1,4 +1,4 @@
-# Natural language Tokenization 
+# Natural language Tokenization
 #
 # This is a simple example of how to use the Tokenizer class to tokenize a text.
  The goal of this at the end of the course is to have to understand the code and be able to use it in your own projects.
