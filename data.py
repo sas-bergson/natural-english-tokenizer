@@ -8,8 +8,8 @@ class Dict_Data:
 
     def __init__(self, alphabet_letter="Q", dir="data") -> None:
         """!It fetches Data from a json dictionary saved in python and parses it for tokonization purpose
-            @param str Q alphabet_letter pecifies on which letter of the alphabet the the class should work from
-            @param str data reprents the directory in which the json files containing the documents are located
+            @param str alphabet_letter: pecifies on which letter of the alphabet the the class should work from
+            @param str dir: reprents the directory in which the json files containing the documents are located
         """
         self.__data = {
             "noun":set(), 

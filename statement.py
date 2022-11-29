@@ -1,7 +1,7 @@
 import re
 
 class Statement_Tokenizer:
-    """!This is the base class of tokenization system. """
+    """!This is the base class of tokenization system."""
     
     def __init__(self, text:str) -> None:
         """!

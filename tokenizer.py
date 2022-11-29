@@ -1,70 +1,39 @@
-from statement import Statement_Tokenizer
-from data import Dict_Data
+import re
+
+class Statement:
+
+    def __init__(self, text:str)-> None:
+        self.text = text
+        self._statements = list(filter(lambda stmt: len(stmt)>0,
+                                       self._parse_regex('[\w*\.{3}\s]*[^\.|\?|,|;]*[\.|\?|,|;]?')))
+        self._tokens = self._parse_regex("[\w+\-*]+|\s+|[^\s\w]+")
 
 
-class QTokenizer(Statement_Tokenizer):
-    """Tokenizes all english words that start with Q"""
-    
-    def __init__(self, text:str) -> None:
-        super().__init__(text)
-        ref = Dict_Data("Q")
-        self.__ref = ref.data
-        self.__tokens = {
-            "noun":[], 
-            "pronoun":[], 
-            "verb":[],
-            "article":[],
-            "adjective":[],
-            "adverb":[],
-            "preposition":[],
-            "conjunction":[],
-            "interjection":[],
-            "no_match":[]
-        }
-        self.__parse_words()
+    def _parse_regex(self, regex):
+        regex = re.compile(regex)
+        return regex.findall(self.text)
 
-    
-    def __parse_words(self):
-        """This method will be called at the appropria moment at run time"""
-        words = list(filter(lambda w: w.startswith("Q"), self.words))
-        for word in words:
-            for key, value in self.__ref.items():
-                ## Need to emplement an algorithm that will best determine the type of the
-                ## within the context of the sentence
-                if word in value:
-                    self.__tokens[key].append(word)
-                    break
-            else:
-                self.__tokens["no_match"].append(word)
+    def get_statements(self)->str:
+        return "\n".join(
+                [
+                    f"statement {n} -> {statement} (length = {len(statement)})" \
+                    for n, statement in enumerate(self._statements, 1)
+                ]
+            )
 
-    
-
-    def get_listed_tokens(self) ->  dict:
-        """It just returns a dictionary of tokens with the keys representing the nine 
-        fundamental types of the english words and the values being a list of such words found in 
-        the _tokens property."""
-
-        return  self.__tokens
-
-    def get_tokens_with_number(self)->dict:
-        """It just turns a dictionary of tokens with the keys representing the nine 
-        fundamental types of the english words and the values being a total number of such words found in the 
-        _tokens property."""
-
-        return {key : len(value)  for key, value in self.__tokens.items()
-        }
-
-    def get_total_word(self) -> int:
-        return sum(self.get_tokens_with_number().values())
-
-    def __str__(self) -> str:
-        return super().__str__()
+    def get_tokens(self)->str:
+        return "\n".join(
+                    [
+                        f"token {n} -> {token} (length = {len(token)})" 
+                        for n, token in enumerate(self._tokens, 1)
+                    ]
+            )
 
 if __name__ == "__main__":
-    q_t = QTokenizer("""Cameroon is qualified for the Qatar 2022 world cup of nations. Did you know Qaddafi went 
-    to heaven? Indeed that is not questionable! Quantum coding is quickly gaining popularity. Queenly follow the 
-    QTokenizer module. Keep quiete. Software engineer don't quarrel like philosophers but they too have quote.""")
-    print(q_t)
-    print(q_t.get_listed_tokens())
-    print(q_t.get_tokens_with_number())
-    print("Total words: ", q_t.get_total_word())
+    stmt = Statement('This... is a rendez-vous (test) designed to verify the behaviour\
+        of the tokenizer. If it succeeds, we will move to the design of a file scanner.')
+    print(stmt.get_statements())
+    print()
+    print(stmt.get_tokens())        
+        
+    
