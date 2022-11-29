@@ -12,6 +12,17 @@ import re
 import sys
 
 
+class statement_tokenizer:
+    def __init__(self):
+        """
+        This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method."""
+        self._pattern = r"[A-Z]+[a-z]*\s\."
+        self._sentence_pattern = r'([A-Z][^\.!?]*[\.!?])'
+        self._word_pattern = r'\w+'
+        self._regex = re.compile(self._sentence_pattern)
+        self._tokens = []
+
+
 class Token(object):
     """ A simple Token structure.
         Contains the token type, value and position.
@@ -119,6 +130,7 @@ class Lexer(object):
 if __name__ == '__main__':
     rules = [
         ('\d+',             'NUMBER'),
+        ('[a-zA-Z_]\w+',    'WORD'),
         ('\+',              'PLUS'),
         ('\-',              'MINUS'),
         ('\*',              'MULTIPLY'),
@@ -126,13 +138,13 @@ if __name__ == '__main__':
         ('\(',              'LP'),
         ('\)',              'RP'),
         ('=',               'EQUALS'),
-        ('Hello', 'NOUN'),
-        ('World', 'NOUN'),
-        ('The', 'Determiner'),
-        ('Table', 'Noun'),
-        ('Take', 'Verb'),
-        ('Talent', 'Noun'),
-        ('Tall', 'Adjective')
+        #('Hello', 'NOUN'),
+        #('World', 'NOUN'),
+        #('The', 'Determiner'),
+        #('Table', 'Noun'),
+        #('Take', 'Verb'),
+        #('Talent', 'Noun'),
+        #('Tall', 'Adjective')
 
     ]
 
