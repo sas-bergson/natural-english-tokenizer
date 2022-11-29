@@ -72,6 +72,11 @@ class statement_tokenizer:
             else:
                 new_text = new_text+text[i]
         return new_text
+#    generate a dunction to match all words starting with an A or a
+
+    def matchAllWordsStartingWithA(self, text):
+        """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
+        return re.findall(r'\b[Aa]\w+', text)
 
 
 # if __name__ == "__main__":

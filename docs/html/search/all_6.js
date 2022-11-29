@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['retainalltokens_1',['retainAllTokens',['../classstatement_1_1statement__tokenizer.html#a4e5ac6643bd394792d52f57899951261',1,'statement::statement_tokenizer']]]
+  ['statement_0',['statement',['../namespacestatement.html',1,'']]],
+  ['statement_2epy_1',['statement.py',['../statement_8py.html',1,'']]],
+  ['statement_5ftokenizer_2',['statement_tokenizer',['../classstatement_1_1statement__tokenizer.html',1,'statement']]]
 ];
