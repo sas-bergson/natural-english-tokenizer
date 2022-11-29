@@ -26,18 +26,18 @@
 # from statement import statement_tokenizer
 
 
-# def main():
-#     """! @brief Example Python program with Doxygen style comments."""
-#     print("Hello World")
-#     f = open('./assets/tokenized.txt', 'r')
-#     text = f.read()
-#     f.close()
-#     tokenizer = statement_tokenizer()
-#     print(tokenizer.get_tokens(text))
-#     print(tokenizer.getAllTokens(text))
-#     print(tokenizer.retainAllTokens(text))
-#     print(tokenizer.performWordSplit(text))
-#     print(tokenizer.peformSentenceSplit(text))
+def main():
+    """! @brief Example Python program with Doxygen style comments."""
+    print("Hello World")
+    f = open('./assets/tokenized.txt', 'r')
+    text = f.read()
+    f.close()
+    tokenizer = statement_tokenizer()
+    print(tokenizer.get_tokens(text))
+    print(tokenizer.getAllTokens(text))
+    print(tokenizer.retainAllTokens(text))
+    print(tokenizer.performWordSplit(text))
+    print(tokenizer.peformSentenceSplit(text))
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
