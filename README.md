@@ -9,3 +9,20 @@
 >+ [Mboh Bless Pearl N](https://www.github.com/MbohBless)
 >+ [Seukam Kamadeu Samira](https://github.com/Kamadeusamira)
 >+ [Fontem Favour](https://github.com/FONTEM123)
+
+# Classes involved 
+**statement_tokenizer**
+  * there is an initialization of the class with the regular expressions that would be used to tokenize the text
+
+```
+    def __init__(self):
+     
+        self._pattern = r"[A-Z]+[a-z]*\s\."
+        self._sentence_pattern = r'([A-Z][^\.!?]*[\.!?])'
+        self._word_pattern = r'\w+'
+        self._regex = re.compile(self._sentence_pattern)
+        self._tokens = []
+```
+**tokenize**
+  * this method is used to tokenize the text into sentences and words
+
