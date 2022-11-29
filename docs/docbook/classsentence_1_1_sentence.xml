@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classsentence_1_1_sentence" xml:lang="en-US">
+<title>sentence.Sentence Class Reference</title>
+<indexterm><primary>sentence.Sentence</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654">sentence_check</link> (text)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889">get_token</link> (text)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9">f</link> = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747">sample</link> = f.read()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889"/><section>
+    <title>get_token()</title>
+<indexterm><primary>get_token</primary><secondary>sentence.Sentence</secondary></indexterm>
+<indexterm><primary>sentence.Sentence</primary><secondary>get_token</secondary></indexterm>
+<para><computeroutput> list  sentence.Sentence.get_token ( text)</computeroutput></para>
+<para><literallayout><computeroutput>This functions splits the sentence into words</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654"/><section>
+    <title>sentence_check()</title>
+<indexterm><primary>sentence_check</primary><secondary>sentence.Sentence</secondary></indexterm>
+<indexterm><primary>sentence.Sentence</primary><secondary>sentence_check</secondary></indexterm>
+<para><computeroutput>def sentence.Sentence.sentence_check ( text)</computeroutput></para>
+<para><literallayout><computeroutput>This function checks if the sentence is proper</computeroutput></literallayout> </para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>sentence.Sentence</secondary></indexterm>
+<indexterm><primary>sentence.Sentence</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>sentence.Sentence.f = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<anchor xml:id="_classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747"/><section>
+    <title>sample</title>
+<indexterm><primary>sample</primary><secondary>sentence.Sentence</secondary></indexterm>
+<indexterm><primary>sentence.Sentence</primary><secondary>sample</secondary></indexterm>
+<para><computeroutput>sentence.Sentence.sample = f.read()<computeroutput>[static]</computeroutput></computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_sentence_8py">sentence.py</link></section>
+</section>

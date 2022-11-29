@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="statement_8py" kind="file" language="Python">
+    <compoundname>statement.py</compoundname>
+    <innerclass refid="classstatement_1_1statement__tokenizer" prot="public">statement::statement_tokenizer</innerclass>
+    <innernamespace refid="namespacestatement">statement</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespacestatement" refkind="compound"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>os</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>re</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="classstatement_1_1statement__tokenizer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classstatement_1_1statement__tokenizer" kindref="compound">statement_tokenizer</ref>:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b" kindref="member">__init__</ref>(self):</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" kindref="member">_pattern</ref>=</highlight><highlight class="stringliteral">&apos;r&quot;[A-Z]+[a-z]*\s\.&quot;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1a60f9e3d9dd21647a3ecdb891b0820e5d" kindref="member">_word_pattern</ref>=<sp/></highlight><highlight class="stringliteral">&apos;r&quot;/w&quot;&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" kindref="member">_regex</ref><sp/>=<sp/>re.compile(self.<ref refid="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" kindref="member">_pattern</ref>)</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kindref="member">_tokens</ref>=[]</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965" kindref="member">get_tokens</ref>(self,<sp/>text)<sp/>-&gt;<sp/>list:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kindref="member">_tokens</ref>=<sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" kindref="member">_regex</ref>.split(text)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kindref="member">_tokens</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal"><ref refid="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" kindref="member">__str__</ref>(self)<sp/>-&gt;<sp/>str:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>s<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kindref="member">_tokens</ref>:</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;statement<sp/>-&gt;<sp/>{s}&quot;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="statement.py"/>
+  </compounddef>
+</doxygen>

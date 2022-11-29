@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacesentence" xml:lang="en-US">
+<title>sentence Namespace Reference</title>
+<indexterm><primary>sentence</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classsentence_1_1_sentence">Sentence</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

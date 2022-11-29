@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classsentence_1_1_sentence" kind="class" language="Python" prot="public">
+    <compoundname>sentence::Sentence</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>sentence.Sentence.f</qualifiedname>
+        <initializer>=  open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sentence.py" line="5" column="1" bodyfile="sentence.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747" prot="public" static="yes" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>sentence.Sentence.sample</qualifiedname>
+        <initializer>=  f.read()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sentence.py" line="6" column="1" bodyfile="sentence.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.sentence_check</definition>
+        <argsstring>(text)</argsstring>
+        <name>sentence_check</name>
+        <qualifiedname>sentence.Sentence.sentence_check</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function checks if the sentence is proper</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sentence.py" line="9" column="1" bodyfile="sentence.py" bodystart="9" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list  sentence.Sentence.get_token</definition>
+        <argsstring>(text)</argsstring>
+        <name>get_token</name>
+        <qualifiedname>sentence.Sentence.get_token</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This functions splits the sentence into words</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="sentence.py" line="20" column="1" bodyfile="sentence.py" bodystart="20" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="sentence.py" line="3" column="1" bodyfile="sentence.py" bodystart="3" bodyend="29"/>
+    <listofallmembers>
+      <member refid="classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>f</name></member>
+      <member refid="classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>get_token</name></member>
+      <member refid="classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>sample</name></member>
+      <member refid="classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>sentence_check</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

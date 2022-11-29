@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="md__r_e_a_d_m_e" kind="page">
+    <compoundname>md_README</compoundname>
+    <title>natural-english-tokenizer</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>In computer science, lexical analysis, lexing or tokenization is the process of converting a sequence of characters into a sequence of lexical tokens.</para>
+<sect1 id="md__r_e_a_d_m_e_1autotoc_md1">
+<title>Team Members</title>
+<para>sandrine Awah Nwabufo.T.Emmanuel Junior </para>
+</sect1>
+    </detaileddescription>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>

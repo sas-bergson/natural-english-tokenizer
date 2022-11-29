@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classstatement_1_1statement__tokenizer" xml:lang="en-US">
+<title>statement.statement_tokenizer Class Reference</title>
+<indexterm><primary>statement.statement_tokenizer</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965">get_tokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186">__str__</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.__init__ ( self)</computeroutput></para></section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186"/><section>
+    <title>__str__()</title>
+<indexterm><primary>__str__</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>__str__</secondary></indexterm>
+<para><computeroutput> str statement.statement_tokenizer.__str__ ( self)</computeroutput></para></section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965"/><section>
+    <title>get_tokens()</title>
+<indexterm><primary>get_tokens</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>get_tokens</secondary></indexterm>
+<para><computeroutput> list statement.statement_tokenizer.get_tokens ( self,  text)</computeroutput></para></section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_statement_8py">statement.py</link></section>
+</section>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>natural-english-tokenizer</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>computer<sp/>science,<sp/>lexical<sp/>analysis,<sp/>lexing<sp/>or<sp/>tokenization<sp/>is<sp/>the<sp/>process<sp/>of<sp/>converting<sp/>a<sp/>sequence<sp/>of<sp/>characters<sp/>into<sp/>a<sp/>sequence<sp/>of<sp/>lexical<sp/>tokens.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Team<sp/>Members</highlight></codeline>
+<codeline><highlight class="normal">sandrine<sp/>Awah<sp/></highlight></codeline>
+<codeline><highlight class="normal">Nwabufo.T.Emmanuel<sp/>Junior<sp/></highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="README.md"/>
+  </compounddef>
+</doxygen>
