@@ -18,7 +18,7 @@
 # @section description_doxygen_example Description
 # @section author_doxygen_example Author(s)
 # - Created by Mboh Bless Pearl on 21/11/2022.
-# - Modified by Fontem Favout on 21/11/2022.
+# - Modified by Fontem Favour on 21/11/2022.
 # - Modified by Seukam Kamadeu Samira on 21/11/2022
 # Copyright (c) 2022 Compiler construct.  All rights reserved.
 # Imports
