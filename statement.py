@@ -77,14 +77,16 @@ class statement_tokenizer:
     def matchAllWordsStartingWithA(self, text):
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
         return re.findall(r'\b[Aa]\w+', text)
+    
+    # generate a function to identify all parts of speech in a text
+    # def identifyAllPartsOfSpeech(self, text):
 
 
-# if __name__ == "__main__":
-#     data = statement_tokenizer()
-#     text = """ Living without computers today is close to an impossibility?
-#       As our reliance on computers and computer-controlled technologies grows the computer has evolved from a luxury item to a necessity."""
-#     # checker = data.get_tokens(text)
 
-#     # for i in checker:
-#     #     print(data.performWordSplit(i))
-#     print(data.getAllTokens(text.strip()))
+if __name__ == "__main__":
+    data = statement_tokenizer()
+    text = """Today, technology is a subject of debate because it is considered to be a double-edged sword. While it has helped humanity in extending its potential with outstanding inventions, it is nonetheless threatening humankind through some other destructive ones. In addition to polluting the earth in unprecedented ways, wars have become more and more devastating due to technological inventions. Ethical dimensions of recent technological developments, such as DNA engineering, have become a focal point of questioning and discussion. Philosophical debates have arisen over the use of technology, with disagreements over whether technology improves the human condition or worsens it.
+To make matters worse, a consensus definition of technology has become more difficult to find due to recent evolution in science and its applications. It is especially confusing to decide whether technology refers to the machines (or more precisely the hardware), the rules that govern or make them work, the system that operates them or the different applications of science that are related to them. What is sure is that technology has shaped societies and adapted itself to people's changing needs.
+"""
+    formatted = data.retainAllTokens(text.strip())
+    print(" ".join(data.matchAllWordsStartingWithA(formatted)))

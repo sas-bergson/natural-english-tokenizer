@@ -29,7 +29,9 @@
 # def main():
 #     """! @brief Example Python program with Doxygen style comments."""
 #     print("Hello World")
-#     text = "Hello World. This is a test. This is another test. This is the last test."
+#     f = open('./assets/tokenized.txt', 'r')
+#     text = f.read()
+#     f.close()
 #     tokenizer = statement_tokenizer()
 #     print(tokenizer.get_tokens(text))
 #     print(tokenizer.getAllTokens(text))
