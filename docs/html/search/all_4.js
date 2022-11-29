@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['main_0',['main',['../namespacemain.html',1,'']]],
-  ['main_2epy_1',['main.py',['../main_8py.html',1,'']]]
+  ['natural_20language_20tokenization_0',['Natural language Tokenization',['../md__r_e_a_d_m_e.html',1,'']]]
 ];

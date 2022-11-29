@@ -7,8 +7,8 @@
 
 ### Team Members
 >+ [Mboh Bless Pearl N](https://www.github.com/MbohBless)
->+ [Seukam Kamadeu Samira]()
->+ Fontem Favour
+>+ [Seukam Kamadeu Samira](https://github.com/Kamadeusamira)
+>+ [Fontem Favour](https://github.com/FONTEM123)
 
 # Classes involved 
 **statement_tokenizer**
@@ -25,3 +25,4 @@
 ```
 **tokenize**
   * this method is used to tokenize the text into sentences and words
+
