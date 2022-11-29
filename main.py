@@ -35,7 +35,7 @@ def main():
     tokenizer = statement_tokenizer()
     print("The function of to get all the tokens is: ",
           tokenizer.getAllTokens(text))
-    print("This is the method is responsible for the token retension:",
+    print("THIS IS RESPONSIBLE FOR TOKEN RETENSION AND CHARACTER IDENTIFICATION",
           tokenizer.retainAllTokens(text))
     print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND ")
     print(tokenizer.peformSentenceSplit(text))
@@ -45,7 +45,7 @@ def main():
     words = tokenizer.performWordSplit(text)
 
     for word in words:
-        print(word+tokenizer.fsa(word))
+        print(word+" "+tokenizer.fsa(word))
 
 
 if __name__ == "__main__":
