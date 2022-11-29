@@ -3,9 +3,8 @@
 #
 # A generic regex-based Lexer/tokenizer tool.
 # See the if __main__ section in the bottom for an example.
-#
+#GitHub: Prime689
 # Mister Prime (misterprime74@gmail.com)
-# GitHub: Prime689
 # This code is in the public domain
 # Last modified: November 2022
 #-------------------------------------------------------------------------------
@@ -133,7 +132,7 @@ if __name__ == '__main__':
         ('Table', 'Noun'),
         ('Take', 'Verb'),
         ('Talent', 'Noun'),
-        ('Tall', 'Adjective'),
+        ('Tall', 'Adjective')
 
     ]
 

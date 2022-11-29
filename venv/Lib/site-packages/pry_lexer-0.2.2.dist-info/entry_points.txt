@@ -1,0 +1,2 @@
+[pygments.lexers]
+prylexer = pry_lexer:PryLexer
