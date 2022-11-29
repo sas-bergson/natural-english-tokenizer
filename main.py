@@ -23,13 +23,13 @@
 # Copyright (c) 2022 Compiler construct.  All rights reserved.
 # Imports
 
-# from statement import statement_tokenizer
+from statement import statement_tokenizer
 
 
 def main():
     """! @brief Example Python program with Doxygen style comments."""
     print("Hello World")
-    f = open('./assets/tokenized.txt', 'r')
+    f = open('./assets/text.txt', 'r')
     text = f.read()
     f.close()
     tokenizer = statement_tokenizer()
