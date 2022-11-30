@@ -21,19 +21,19 @@ class StatementTokenizer:
         self._white_space_regex = re.compile(r"\s")
         # Array of tokens
         self._tokens = []
-        # Load dictionary words from 'dictionary.txt' file which contains the 100 first words in natural english
-        # language
-        file = open('dictionary.txt', 'r')
-        lines = file.readlines()
-        count = 0
+       
+        # Load dictionary which contains the 100 first words beginning with letter N 
+        file = open('dictionary.json')
+        json_data = json.load(file)
+        print(type(json_data))
         self.dictionary = []
-        for line in lines:
-            count += 1
-            values = line.strip().split(',')
+        for value in json_data:
             self.dictionary.append({
-                'type': values[1],
-                'value': values[0]
+                'type': value['type'],
+                'value': value['value']
             })
+        # print(self.dictionary)
+        file.close()
 
     def find_word(self, value: str) -> object:
         """! Find a word object from dictionary of words.
