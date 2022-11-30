@@ -17,6 +17,7 @@ class StatementTokenizer:
         self._phrase_start = re.compile(r"^[A-Z]")
         self._phrase_end = re.compile(r"\.$")
         self._space = re.compile(r"\s")
+        self.sentences = self.split_sentences()
 
     
     def split_sentences(self):
@@ -66,8 +67,8 @@ class StatementTokenizer:
 
         self._types.append(word_type)            
 
-    def remove_punc(self):
-        words = self.sentence.strip().split()
+    def remove_punc(self, sentence):
+        words = sentence.strip().split()
         for punc in self._phrase_punctuation:
             if punc in words[-1]:
                 if words[-1].endswith(self._phrase_punctuation[2]):
