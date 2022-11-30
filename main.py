@@ -15,5 +15,5 @@ import statement as st
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     st = st.StatementTokenizer()
-    # st.tokenizer('Students are not interested in building compilers. I will force them.')
-    st.tokenizer('Nadir is too null. I will neutralize his distractions.')
+    st.tokenizer('This is a test designed to verify the behaviour\
+        of the tokenizer. If it succeeds, we will move to the design of a file scanner.')
