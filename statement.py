@@ -1,33 +1,46 @@
-import os
-import re
+mport re
 
 
-class statement_tokenizer:
-    
-    def __init__(self):
-        self._pattern='r"[A-Z]+[a-z]*\s\."'
-        self._regex = re.compile(self._pattern)
-        self._tokens=[]
-        
-    def get_tokens(self, text) -> list:
-        self._tokens = text.split()
-        return self._tokens
+class Statement_Tokenizer:
+
+    def __init__(self, text: str) -> None:
+
+        self.__statement_pattern = '[\.!?]'
+        self.__word_regex = re.compile('[^a-zA-Z]')
+        self.__words = []
+        text = re.sub(r"\s+", " ", text)
+        self._get_tokens(text)
+
+    def _get_tokens(self, text: str) -> None:
+
+        if not text.strip():
+            return
+        self.__statements = re.split(self.__statement_pattern, text)
+        if not self.__statements[-1]:
+            self.__statements.pop()
+        for statement in self.__statements:
+            self.__words.extend(
+                [self.__word_regex.sub("", word.upper()) for word in statement.split(" ") if word.strip()]
+            )
+
+    @property
+    def statements(self):
+
+        return self.__statements
+
+    @property
+    def words(self):
+
+        return self.__words
+
+    def __str__(self) -> str:
+        repr = [f"statement {n} -> {s}" for n, s in enumerate(self.__statements, 1)]
+        return "\n".join(repr)
 
 
-
-def __str__(self) -> str:
-        for s in self._tokens:
-          print(f"statement -> {s}")
-        
-        
-        
-        test = statement_tokenizer()
-        
-        
-def pro():
-    test.get_tokens("Today is monday. This is compiler construction class")
-    test.__str__()
-    # print(test._tokens)
-
-
-pro()
+if __name__ == "__main__":
+    """! @test"""
+    s_t = Statement_Tokenizer("Hello my name is Roxanne")
+    print(s_t.statements)
+    print(s_t.words)
+    print(s_t)
