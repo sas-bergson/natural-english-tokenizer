@@ -26,13 +26,20 @@ class Sentence:
     
     def words_withV(text):
         '''Matching words that begin with V and printing them'''
-        v_pattern = re.compile('[a-z]')
-        if re.match(v_pattern, text):
-            print(text)
-            return text
+        v_pattern = re.compile(r'\b[v]\w+', re.I)
+        x = re.findall(v_pattern, text)
+        print(x)
+    def matchtextlength(text):
+        '''This function returns the length of all the words in this sentence'''
+        l_pattern = re.compile(r'([a-zA-Z0-9]+)')
+        # sentence_split = re.split('\s', text)
+        # print(sentence_split)
+        length = len(re.findall(l_pattern, text))
+        print(length)
+        return length
         
-        
-    #sentence_check(sample)
-    #get_token(sample)
+    sentence_check(sample)
+    get_token(sample)
     words_withV(sample)
+    matchtextlength(sample)
     
