@@ -29,6 +29,13 @@ class StatementTokenizer:
             results.append(x.strip())
             index +=1
 
+        sentence_index = 0
+        for sentence in results:
+            if not sentence: 
+                results.pop(sentence_index)
+            sentence_index +=1
+        return results
+
     def validate_phrase(self):
         """ Checks if the sentence starts with a capital letter and ends with a punctuation """
         for sentence in self.sentences:
