@@ -49,6 +49,10 @@ class StatementTokenizer:
 
     def tokenize(self, word):
         word_type = "unknown"
+        if word in self._phrase_punctuation:
+            word_type = "punctuation"
+            self._types.append(word_type)
+            return True
         with open("./wordlist2.txt", "r") as wordlist: 
             for line in wordlist: 
                 if len(line) > 4: 
