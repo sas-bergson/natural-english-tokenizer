@@ -18,6 +18,17 @@ class StatementTokenizer:
         self._phrase_end = re.compile(r"\.$")
         self._space = re.compile(r"\s")
 
+    
+    def split_sentences(self):
+        """ Split sentences and return a list of all sentences
+        verifies that every element of the returned list is not empty"""
+        splitting = self.sentence.split(".")
+        results = []
+        index = 0
+        for x in splitting:
+            results.append(x.strip())
+            index +=1
+
     def validate_phrase(self):
         """ Checks if the sentence starts with a capital letter and ends with a punctuation """
         for sentence in self.sentences:
@@ -42,16 +53,7 @@ class StatementTokenizer:
                         if line_word.lower() == word.lower(): 
                             word_type = line_type
 
-        self._types.append(word_type)
-
-    def split_sentences(self):
-        splitting = self.sentence.split(".")
-        results = []
-        index = 0
-        for x in splitting:
-            results.append(x.strip())
-            index +=1
-            
+        self._types.append(word_type)            
 
     def remove_punc(self):
         words = self.sentence.strip().split()
