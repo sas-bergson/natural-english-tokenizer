@@ -9,53 +9,7 @@ from errors import *
 
 
 class StatementTokenizer:
-    """
-        Arguments
-        ----------
-            text(str): The sentence to work with
-
-        ... 
-
-        methods
-        -------
-        validate_phase()
-            Checks if the sentence starts with a capital letter and ends with a punctuation
-
-        tokenize()
-            Checks if word of in sentence is in wordlist.
-
-        remove_punc()
-            Removes punctuation at the end of the sentence
-
-        run()
-            Removes punctuation at the end of the sentence
-        
-
-    """
     def __init__(self, text):
-        """
-            Arguments
-            ----------
-                text(str): The sentence to work with
-
-            ... 
-            
-            methods
-            -------
-            validate_phase()
-                Checks if the sentence starts with a capital letter and ends with a punctuation
-
-            tokenize()
-                Checks if word of in sentence is in wordlist.
-
-            remove_punc()
-                Removes punctuation at the end of the sentence
-
-            run()
-                Removes punctuation at the end of the sentence
-        
-
-        """
         self.sentence = text
         self._types = []
         self._phrase_punctuation = ('.', '?', '...', '!')
@@ -75,11 +29,6 @@ class StatementTokenizer:
             raise PhraseStartError("Invalid sentence. A sentence must start with a capital letter")
 
     def tokenize(self, word):
-        """ 
-            Checks if word of in sentence is in wordlist. 
-            Args: 
-                word(str): word in a sentence
-        """
         word_type = "unknown"
         with open("./wordlist2.txt", "r") as wordlist: 
             for line in wordlist: 
@@ -104,18 +53,6 @@ class StatementTokenizer:
             
 
     def remove_punc(self):
-        """ 
-            Removes punctuation at the end of the sentence 
-        
-            Attributes
-            ----------
-
-            Returns
-            --------
-            returns a list
-        
-        
-        """
         words = self.sentence.strip().split()
         for punc in self._phrase_punctuation:
             if punc in words[-1]:
