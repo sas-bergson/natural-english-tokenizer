@@ -80,9 +80,10 @@ class StatementTokenizer:
     def run(self):
         """ The main function to launch """
         if self.validate_phrase():
-            words = self.remove_punc()
-            for word in words:
-                self.tokenize(word)
+            for sentence in self.sentences:
+                words = self.remove_punc(sentence)
+                for word in words:
+                    self.tokenize(word)
 
         print("Results: ")
         print("=========================================================================")
