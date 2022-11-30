@@ -20,13 +20,14 @@ class StatementTokenizer:
 
     def validate_phrase(self):
         """ Checks if the sentence starts with a capital letter and ends with a punctuation """
-        if re.match(self._phrase_start, self.sentence):
-            if self.sentence.endswith(self._phrase_punctuation):
-                return True
+        for sentence in self.sentences:
+            if re.match(self._phrase_start, sentence):
+                if sentence.endswith(self._phrase_punctuation):
+                    return True
+                else:
+                    raise PhraseEndError(f"{sentence}\nInvalid sentence. A sentence must end with a punctuation mark")
             else:
-                raise PhraseEndError("Invalid sentence. A sentence must end with a punctuation mark")
-        else:
-            raise PhraseStartError("Invalid sentence. A sentence must start with a capital letter")
+                raise PhraseStartError(f"{sentence}\nInvalid sentence. A sentence must start with a capital letter")
 
     def tokenize(self, word):
         word_type = "unknown"
