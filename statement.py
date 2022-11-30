@@ -126,7 +126,7 @@ class StatementTokenizer:
 
     @staticmethod
     def tokenize_statement(expression: str, current: int) -> list:
-        """! Extract a sentence.
+        """! Extract a statement.
         @param expression   The input expression to tokenize.
         @param current   The current position in the loop of expression.
         @return  The array containing token.
@@ -139,7 +139,7 @@ class StatementTokenizer:
         char = expression[current + consumed_chars]
         while char != ',' and char != '.':
             if char is None:
-                raise Exception("Unterminated sentence")
+                raise Exception("Unterminated statement")
 
             value += char
             consumed_chars += 1
@@ -158,18 +158,18 @@ class StatementTokenizer:
         # return [0, None]
 
     def get_statements(self, statement: str) -> list[str]:
-        """! Extract list of sentences which composed the statement.
+        """! Extract list of statements which composed the statement.
         @param statement   The input expression to tokenize.
-        @return  The array of sentences.
+        @return  The array of statements.
         """
-        sentences = []
+        statements = []
         current = 0
         # Load mini tokenizers
         tokenizers = [self.skip_white_space, StatementTokenizer.tokenize_statement]
 
         while current < len(statement):
             tokenized = False
-            # Loop in all mini tokenizers in order to get sentences
+            # Loop in all mini tokenizers in order to get statements
             for function in tokenizers:
                 if tokenized:
                     break
@@ -178,8 +178,8 @@ class StatementTokenizer:
                     tokenized = True
                     current += result[0]
                 if result[1]:
-                    sentences.append(result[1]['value'])
-        return sentences
+                    statements.append(result[1]['value'])
+        return statements
 
     def tokenizer(self, text: str):
         """! Tokenizes statement.
@@ -187,7 +187,7 @@ class StatementTokenizer:
         """
 
         statements = self.get_statements(text)
-        # Loop over the array of sentences and tokenize each of them
+        # Loop over the array of statements and tokenize each of them
         for statement in statements:
             current = 0
             # Load mini tokenizers
@@ -207,10 +207,10 @@ class StatementTokenizer:
                     if result[1]:
                         self._tokens.append(result[1])
 
-                # If not reach at the end of the sentence and unknown char
+                # If not reach at the end of the statement and unknown char
                 if not tokenized:
                     raise Exception("I don't know what this character is: ", char)
-                # If reach at the end of the sentence
+                # If reach at the end of the statement
                 elif char == ',' or char == '.':
                     print('statement : "', statement, '" ', "(length = ", len(statement), ")", 'successfully tokenized')
         for token in self._tokens:
