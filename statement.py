@@ -53,9 +53,41 @@ class statement_tokenizer:
         print("word count: ", self._tokens.__len__())
         return self._tokens
 
+# removes stop words, negated words and conjectures from tokens
+    def tokens_cleanup(self, tokens: []):
+        clean_tokens = []
 
+        for word in tokens:
+            temp_char_pos = 0
+            temp_char = word[temp_char_pos]
+            prev_char_pos = temp_char_pos - 1
+            prev_char = word[prev_char_pos]
+            next_char_pos = temp_char_pos + 1
+            next_char = word[next_char_pos]
+            word_size = len(word)
 
+            while temp_char_pos < word_size:
+                if prev_char_pos == -1:
+                    prev_char = ""
+                if next_char_pos == word_size:
+                    next_char = ""
 
+        # # checking for negated words
+        #         if temp_char == "'" and (prev_char == "n" and next_char == "t"):
+        #             temp_word = word[:3]
+        #             clean_tokens.append(temp_word.strip())
+        #             temp_word = ""
+        #
+        # # checking for stopwords
+        #         if word in self._stopwords:
+        #             temp_word = "stopword"
+        #             clean_tokens.append(temp_word)
+        #             clean_tokens.pop()
+        #
+                temp_char_pos += 1
+                clean_tokens.append(word)
+
+            return clean_tokens
 
 
 

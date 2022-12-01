@@ -1,15 +1,4 @@
 from statement import statement_tokenizer
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-#!/usr/bin/python
-from scanner.tokenizer import Tokenizer
->>>>>>> parent of ec55b28 (making project oop)
-=======
-
->>>>>>> parent of dbf3b26 (testing git rebase)
->>>>>>> 1ff315c (rand)
 
 if __name__ == "__main__":
 
@@ -41,5 +30,5 @@ if __name__ == "__main__":
 
 # printing cleaned up tokens
     print("\n 4. Cleaned up tokens...")
-#     clean_tokens = obj.tokens_cleanup(tokens)
-#     print(clean_tokens)
+    clean_tokens = obj.tokens_cleanup(tokens)
+    print(clean_tokens)
