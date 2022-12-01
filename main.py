@@ -32,3 +32,6 @@ if __name__ == "__main__":
     print("\n 4. Cleaned up tokens...")
     clean_tokens = obj.tokens_cleanup(tokens)
     print(clean_tokens)
+
+
+    url = obj.api_organiser(obj._endpoint["Entries"], obj._lang_code["English"], clean_tokens[0])

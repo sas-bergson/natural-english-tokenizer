@@ -3,14 +3,40 @@ import re
 
 
 class statement_tokenizer:
-
     def __init__(self):
         self._pattern = 'r"[A-Z]+[a-z]*\s\."'
         self._regex = re.compile(self._pattern)
         self._stop_mark = ".?!"
         self._tokens = []
         self._stopwords = ""
-        self.api_url = f""
+        self._endpoint = {
+                          "Entries": "Entries",
+                          "Lemmas": "Lemmas",
+                          "Search": "Search",
+                          "Translations": "Translations",
+                          "Thesaurus": "Thesaurus",
+                          "Utility": "Utility",
+                          "Sentences": "Sentences",
+                          "Words": "Words",
+                          "Inflections": "Inflections"
+                         }
+        self._lang_code = {
+                            "English": "EN",
+                            "Arabic": "AR",
+                            "Chinese": "ZH",
+                            "French": "FR",
+                            "German": "DE",
+                            "Hausa": "HA",
+                            "Igbo": "IG",
+                            "Portuguese": "PT",
+                            "Russian": "RU",
+                            "Spanish": "ES",
+                            "Yoruba": "YO",
+                          }
+        self._word_id = "Hello"
+# refer https://developer.oxforddictionaries.com/documentation/making-requests-to-the-api
+# for more info on the endpoint, lang_code and word_id
+        self.api_url = f"https://od-api.oxforddictionaries.com/api/v2/{self._endpoint}/{self._lang_code}/{self._word_id}"
 
     def get_tokens(self, text) -> list:
         self._tokens = self._regex.split(text)
@@ -21,18 +47,19 @@ class statement_tokenizer:
             print(f"statement -> {s}")
 
 # splitting into phrases
-    def sentence_scanner(self, text : str):
+    def sentence_scanner(self, text: str):
         temp_phrase = ""
         list_of_phrases = []
         no_of_sentences = 0
+
         for char in text:
             temp_phrase += char
             if char in self._stop_mark:
                 no_of_sentences += 1
                 list_of_phrases.append(temp_phrase.strip())
                 temp_phrase = ""
-        print("no of sentences: ", no_of_sentences)
 
+        print("no of sentences: ", no_of_sentences)
         return list_of_phrases
 
 # output from sentence_parser in more presentable way
@@ -42,52 +69,54 @@ class statement_tokenizer:
             print(f"phrase_{phrase_count + 1}: {phrase}")
             phrase_count += 1
 
-# splitting into words
+# splitting into words and making lowercase
     def word_scanner(self, array_of_phrases: []):
-        word_count = 0
         for phrase in array_of_phrases:
             temp_words = phrase.split()
             for word in temp_words:
                 self._tokens.append(word.lower())
-                temp_words = []
+
         print("word count: ", self._tokens.__len__())
         return self._tokens
 
-# removes stop words, negated words and conjectures from tokens
+# lemmatizing tokens
     def tokens_cleanup(self, tokens: []):
         clean_tokens = []
-
         for word in tokens:
-            temp_char_pos = 0
-            temp_char = word[temp_char_pos]
-            prev_char_pos = temp_char_pos - 1
-            prev_char = word[prev_char_pos]
-            next_char_pos = temp_char_pos + 1
-            next_char = word[next_char_pos]
-            word_size = len(word)
+            for char in word:
+        # checking for ' in words
+                if char == "'":
+                    temp_char_pos = word.find(char)
+                    next_char_pos = temp_char_pos + 1
+                    next_char = word[next_char_pos]
+                    prev_char_pos = temp_char_pos - 1
+                    prev_char=word[prev_char_pos]
+                # checking for negated short form words e.g. isn't
+                    if prev_char == "n" and next_char == "t":
+                        word = word[0: prev_char_pos]
+                        clean_tokens.append(word)
+                # checking for past or future short form words e.g. he's, they'd
+                    if next_char == "d" or next_char == "s":
+                        word = word[0: temp_char_pos]
+                        clean_tokens.append(word)
 
-            while temp_char_pos < word_size:
-                if prev_char_pos == -1:
-                    prev_char = ""
-                if next_char_pos == word_size:
-                    next_char = ""
+                    word = ""
+            clean_tokens.append(word)
 
-        # # checking for negated words
-        #         if temp_char == "'" and (prev_char == "n" and next_char == "t"):
-        #             temp_word = word[:3]
-        #             clean_tokens.append(temp_word.strip())
-        #             temp_word = ""
-        #
-        # # checking for stopwords
-        #         if word in self._stopwords:
-        #             temp_word = "stopword"
-        #             clean_tokens.append(temp_word)
-        #             clean_tokens.pop()
-        #
-                temp_char_pos += 1
-                clean_tokens.append(word)
+    # cleaning up new tokens list
+        for word in clean_tokens:
+            if word == "":
+                word_pos = clean_tokens.index(word)
+                clean_tokens.pop(word_pos)
 
-            return clean_tokens
+        print("refined word count: ", len(clean_tokens))
+        return clean_tokens
+
+# returns api with desired arguments
+    def api_organiser(self, endpoint, lang_code, word_id):
+        self.api_url = f"https://od-api.oxforddictionaries.com/api/v2/{endpoint}/{lang_code}/{word_id}"
+        print(self.api_url)
+        return self.api_url
 
 
 
