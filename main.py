@@ -43,9 +43,9 @@ class StatementTokenizer:
             if sentence.endswith(self._phrase_punctuation):
                 return True
             else:
-                raise PhraseEndError(f"{sentence}\nInvalid sentence. A sentence must end with a punctuation mark")
+                raise PhraseEndError(f"Invalid sentence. A sentence must end with a punctuation mark\n{sentence}")
         else:
-            raise PhraseStartError(f"{sentence}\nInvalid sentence. A sentence must start with a capital letter")
+            raise PhraseStartError(f"Invalid sentence. A sentence must start with a capital letter\n{sentence}")
 
     def tokenize(self, word):
         word_type = "unknown"
@@ -78,11 +78,12 @@ class StatementTokenizer:
     
     def run(self):
         """ The main function to launch """
-        if self.validate_phrase():
-            for sentence in self.sentences:
-                words = self.remove_punc(sentence)
-                for word in words:
-                    self.tokenize(word)
+
+        # if self.validate_phrase():
+        #     for sentence in self.sentences:
+        #         words = self.remove_punc(sentence)
+        #         for word in words:
+        #             self.tokenize(word)
 
         print("Results: ")
         print("=========================================================================")
