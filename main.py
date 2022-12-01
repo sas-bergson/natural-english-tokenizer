@@ -18,7 +18,7 @@
 # @section description_doxygen_example Description
 # @section author_doxygen_example Author(s)
 # - Created by Kila Frederick Kisife on 12/1/2022.
-# - Modified by  on 12/1/2022.
+# - Modified by Dikuba Kindjel Alicia Ashley on 12/1/2022.
 # Copyright (c) 2022 Compiler construct.  All rights reserved.
 # Imports
 
@@ -27,7 +27,7 @@ from statement import statement_tokenizer
 
 def main():
     """! @brief Example Python program with Doxygen style comments."""
-    print("Hello World")
+
 
     text = "Here comes the men in black. We are working together."
 
