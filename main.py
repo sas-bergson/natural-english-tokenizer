@@ -13,7 +13,7 @@ class StatementTokenizer:
         self.sentence = text
         # self._types = []
         self.results = {}
-        self._counter = 0
+        self.counter = 0
         self._phrase_punctuation = ('.', '?', '...', '!')
         # self._phrase = re.compile(r"^[A-Z]+[a-z]*\s?\.$")
         self._phrase_start = re.compile(r"^[A-Z]")
@@ -70,7 +70,7 @@ class StatementTokenizer:
                             word_type = line_type
 
         # self._types.append(word_type)
-        self._counter +=1
+        self.counter +=1
         self.results_to_dic(word, word_type)            
 
     def remove_punc(self, sentence):
@@ -111,7 +111,10 @@ class StatementTokenizer:
         #         for word in words:
         #             self.tokenize(word)
 
-        print("Results: ")
+        print("Results: ") 
+        print(f"Number of words of the selected letter found: {self.counter_words(self.results)}") 
+        print(f"Number of times words of the selected letter found: {self.counter}") 
+
         print("=========================================================================")
         print(f'"{self.sentence}"')
         print(self.results)
