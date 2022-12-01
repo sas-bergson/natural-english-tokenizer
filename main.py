@@ -1,7 +1,5 @@
 from statement import statement_tokenizer
 
-# lmdfvnmlfknmlfknlfknlmfknkflvn
-
 if __name__ == "__main__":
 
     text = "It was their first date and she had been looking forward to it the entire week. She had her eyes on him for months, and it had taken " \
