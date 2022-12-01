@@ -26,7 +26,8 @@ class StatementTokenizer:
         results = []
         index = 0
         for x in splitting:
-            x += sep
+            if x: 
+                x += sep
             results.append(x.strip())
             index +=1
 
@@ -79,6 +80,16 @@ class StatementTokenizer:
     
     def run(self):
         """ The main function to launch """
+        for sentence in self.sentences:
+            words = self.remove_punc(sentence) # remove punctuation at the end
+            for word in words: # get every word in the sentence
+                self.tokenize(word)
+
+        
+        
+
+
+
 
         # if self.validate_phrase():
         #     for sentence in self.sentences:
@@ -94,7 +105,7 @@ class StatementTokenizer:
 
 
 if __name__ == '__main__':
-    sentence = "Xian phrase xenia now xes needing many word."
+    sentence = "Xian phrase xenia now xes needing many word. This is the xenia second phrase!"
     st = StatementTokenizer(sentence)
     st.run()
 
