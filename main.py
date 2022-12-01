@@ -12,6 +12,7 @@ class StatementTokenizer:
     def __init__(self, text):
         self.sentence = text
         self._types = []
+        self._types2 = {}
         self._phrase_punctuation = ('.', '?', '...', '!')
         # self._phrase = re.compile(r"^[A-Z]+[a-z]*\s?\.$")
         self._phrase_start = re.compile(r"^[A-Z]")
@@ -54,6 +55,7 @@ class StatementTokenizer:
         if word in self._phrase_punctuation:
             word_type = "punctuation"
             self._types.append(word_type)
+            self._types2.update({word: word_type})
             return True
         with open("./wordlist2.txt", "r") as wordlist: 
             for line in wordlist: 
@@ -66,7 +68,8 @@ class StatementTokenizer:
                         if line_word.lower() == word.lower(): 
                             word_type = line_type
 
-        self._types.append(word_type)            
+        self._types.append(word_type)
+        self._types2.update({word: word_type})            
 
     def remove_punc(self, sentence):
         words = sentence.strip().split()
@@ -102,7 +105,6 @@ class StatementTokenizer:
         print(f'"{self.sentence}"')
         print(self._types)
         print("=========================================================================")
-
 
 if __name__ == '__main__':
     sentence = "Xian phrase xenia now xes needing many word. This is the xenia second phrase!"
