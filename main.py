@@ -68,9 +68,9 @@ class StatementTokenizer:
                     finally:
                         if line_word.lower() == word.lower(): 
                             word_type = line_type
+                            self.counter +=1
 
         # self._types.append(word_type)
-        self.counter +=1
         self.results_to_dic(word, word_type)            
 
     def remove_punc(self, sentence):
@@ -88,7 +88,11 @@ class StatementTokenizer:
 
     @staticmethod
     def counter_words(results):
-        return len(results)
+        _counter = 0
+        for k, v in results.items():
+            if not (v == "unknown" or v == "punctuation"):
+                _counter += 1
+        return _counter
     
     def run(self):
         """ The main function to launch """
