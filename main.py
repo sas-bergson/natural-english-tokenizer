@@ -1,4 +1,15 @@
 from statement import statement_tokenizer
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+#!/usr/bin/python
+from scanner.tokenizer import Tokenizer
+>>>>>>> parent of ec55b28 (making project oop)
+=======
+
+>>>>>>> parent of dbf3b26 (testing git rebase)
+>>>>>>> 1ff315c (rand)
 
 if __name__ == "__main__":
 
