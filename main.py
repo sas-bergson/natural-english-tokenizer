@@ -11,7 +11,7 @@ from errors import *
 class StatementTokenizer:
     def __init__(self, text):
         self.sentence = text
-        self._types = []
+        # self._types = []
         self._types2 = {}
         self._phrase_punctuation = ('.', '?', '...', '!')
         # self._phrase = re.compile(r"^[A-Z]+[a-z]*\s?\.$")
@@ -54,7 +54,7 @@ class StatementTokenizer:
         word_type = "unknown"
         if word in self._phrase_punctuation:
             word_type = "punctuation"
-            self._types.append(word_type)
+            # self._types.append(word_type)
             self.results_to_dic(word, word_type)
             return True
         with open("./wordlist2.txt", "r") as wordlist: 
@@ -68,7 +68,7 @@ class StatementTokenizer:
                         if line_word.lower() == word.lower(): 
                             word_type = line_type
 
-        self._types.append(word_type)
+        # self._types.append(word_type)
         self.results_to_dic(word, word_type)            
 
     def remove_punc(self, sentence):
