@@ -31,6 +31,6 @@ if __name__ == "__main__":
     print(tokens)
 
 # printing cleaned up tokens
-#     print("\n 4. Cleaned up tokens...")
+    print("\n 4. Cleaned up tokens...")
 #     clean_tokens = obj.tokens_cleanup(tokens)
 #     print(clean_tokens)

@@ -42,6 +42,16 @@ class statement_tokenizer:
             print(f"phrase_{phrase_count + 1}: {phrase}")
             phrase_count += 1
 
+# splitting into words
+    def word_scanner(self, array_of_phrases: []):
+        word_count = 0
+        for phrase in array_of_phrases:
+            temp_words = phrase.split()
+            for word in temp_words:
+                self._tokens.append(word.lower())
+                temp_words = []
+        print("word count: ", self._tokens.__len__())
+        return self._tokens
 
 
 
