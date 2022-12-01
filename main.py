@@ -12,7 +12,8 @@ class StatementTokenizer:
     def __init__(self, text):
         self.sentence = text
         # self._types = []
-        self._types_dict = {}
+        self.results = {}
+        self._counter = 0
         self._phrase_punctuation = ('.', '?', '...', '!')
         # self._phrase = re.compile(r"^[A-Z]+[a-z]*\s?\.$")
         self._phrase_start = re.compile(r"^[A-Z]")
@@ -69,6 +70,7 @@ class StatementTokenizer:
                             word_type = line_type
 
         # self._types.append(word_type)
+        self._counter +=1
         self.results_to_dic(word, word_type)            
 
     def remove_punc(self, sentence):
@@ -82,7 +84,15 @@ class StatementTokenizer:
         return words
     
     def results_to_dic(self, word, word_type):
-        self._types_dict.update({word.lower(): word_type})
+        self.results.update({word.lower(): word_type})
+
+    @staticmethod
+    def counter_words(results):
+        return len(results)
+
+
+
+    
     
     def run(self):
         """ The main function to launch """
@@ -90,6 +100,8 @@ class StatementTokenizer:
             words = self.remove_punc(sentence) # remove punctuation at the end
             for word in words: # get every word in the sentence
                 self.tokenize(word)
+
+        
 
         
         
@@ -106,7 +118,7 @@ class StatementTokenizer:
         print("Results: ")
         print("=========================================================================")
         print(f'"{self.sentence}"')
-        print(self._types_dict)
+        print(self.results)
         print("=========================================================================")
 
 if __name__ == '__main__':
