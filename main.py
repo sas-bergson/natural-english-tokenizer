@@ -19,7 +19,6 @@ class StatementTokenizer:
         self._space = re.compile(r"\s")
         self.sentences = self.split_sentences()
 
-    
     def split_sentences(self):
         """ Split sentences and return a list of all sentences
         verifies that every element of the returned list is not empty"""
@@ -37,16 +36,16 @@ class StatementTokenizer:
             sentence_index +=1
         return results
 
-    def validate_phrase(self):
+    def validate_phrase(self, sentence):
         """ Checks if the sentence starts with a capital letter and ends with a punctuation """
-        for sentence in self.sentences:
-            if re.match(self._phrase_start, sentence):
-                if sentence.endswith(self._phrase_punctuation):
-                    return True
-                else:
-                    raise PhraseEndError(f"{sentence}\nInvalid sentence. A sentence must end with a punctuation mark")
+        # for sentence in self.sentences:
+        if re.match(self._phrase_start, sentence):
+            if sentence.endswith(self._phrase_punctuation):
+                return True
             else:
-                raise PhraseStartError(f"{sentence}\nInvalid sentence. A sentence must start with a capital letter")
+                raise PhraseEndError(f"{sentence}\nInvalid sentence. A sentence must end with a punctuation mark")
+        else:
+            raise PhraseStartError(f"{sentence}\nInvalid sentence. A sentence must start with a capital letter")
 
     def tokenize(self, word):
         word_type = "unknown"
