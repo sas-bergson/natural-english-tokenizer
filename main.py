@@ -55,7 +55,7 @@ class StatementTokenizer:
         if word in self._phrase_punctuation:
             word_type = "punctuation"
             self._types.append(word_type)
-            self._types2.update({word: word_type})
+            self.results_to_dic(word, word_type)
             return True
         with open("./wordlist2.txt", "r") as wordlist: 
             for line in wordlist: 
@@ -69,7 +69,7 @@ class StatementTokenizer:
                             word_type = line_type
 
         self._types.append(word_type)
-        self._types2.update({word: word_type})            
+        self.results_to_dic(word, word_type)            
 
     def remove_punc(self, sentence):
         words = sentence.strip().split()
@@ -80,6 +80,9 @@ class StatementTokenizer:
                 else:
                     words[-1] = words[-1][:-1]
         return words
+    
+    def results_to_dic(self, word, word_type):
+        self._types2.update({word.lower(): word_type})
     
     def run(self):
         """ The main function to launch """
