@@ -19,13 +19,14 @@ class StatementTokenizer:
         self._space = re.compile(r"\s")
         self.sentences = self.split_sentences()
 
-    def split_sentences(self):
+    def split_sentences(self, sep="."):
         """ Split sentences and return a list of all sentences
         verifies that every element of the returned list is not empty"""
-        splitting = self.sentence.split(".")
+        splitting = self.sentence.split(sep)
         results = []
         index = 0
         for x in splitting:
+            x += sep
             results.append(x.strip())
             index +=1
 
