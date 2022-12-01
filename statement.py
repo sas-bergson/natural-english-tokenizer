@@ -117,6 +117,6 @@ class statement_tokenizer:
         self.api_url = f"https://od-api.oxforddictionaries.com/api/v2/{endpoint}/{lang_code}/{word_id}"
         print(self.api_url)
         return self.api_url
-
+# what you have to do now is make the api work and check the meanings
 
 
