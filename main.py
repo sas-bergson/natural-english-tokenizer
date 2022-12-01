@@ -12,7 +12,7 @@ class StatementTokenizer:
     def __init__(self, text):
         self.sentence = text
         # self._types = []
-        self._types2 = {}
+        self._types_dict = {}
         self._phrase_punctuation = ('.', '?', '...', '!')
         # self._phrase = re.compile(r"^[A-Z]+[a-z]*\s?\.$")
         self._phrase_start = re.compile(r"^[A-Z]")
@@ -82,7 +82,7 @@ class StatementTokenizer:
         return words
     
     def results_to_dic(self, word, word_type):
-        self._types2.update({word.lower(): word_type})
+        self._types_dict.update({word.lower(): word_type})
     
     def run(self):
         """ The main function to launch """
@@ -106,7 +106,7 @@ class StatementTokenizer:
         print("Results: ")
         print("=========================================================================")
         print(f'"{self.sentence}"')
-        print(self._types)
+        print(self._types_dict)
         print("=========================================================================")
 
 if __name__ == '__main__':
