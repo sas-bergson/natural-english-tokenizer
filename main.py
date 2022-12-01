@@ -33,7 +33,7 @@ class StatementTokenizer:
         sentence_index = 0
         for sentence in results:
             if not sentence: 
-                results.pop(sentence_index)
+                results.remove(sentence)
             sentence_index +=1
         return results
 
