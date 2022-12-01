@@ -101,14 +101,6 @@ class StatementTokenizer:
             for word in words: # get every word in the sentence
                 self.tokenize(word)
 
-        
-
-        
-        
-
-
-
-
         # if self.validate_phrase():
         #     for sentence in self.sentences:
         #         words = self.remove_punc(sentence)
