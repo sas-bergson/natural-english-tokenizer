@@ -89,10 +89,6 @@ class StatementTokenizer:
     @staticmethod
     def counter_words(results):
         return len(results)
-
-
-
-    
     
     def run(self):
         """ The main function to launch """
