@@ -29,17 +29,24 @@ class Sentence:
         v_pattern = re.compile(r'\b[v]\w+', re.I)
         x = re.findall(v_pattern, text)
         print(x)
+        
     def matchtextlength(text):
         '''This function returns the length of all the words in this sentence'''
-        l_pattern = re.compile(r'([a-zA-Z0-9]+)')
+        l_pattern = re.compile(r'([a-zA-Z0-9])')
+        word_pattern = re.compile(r'[a-zA-Z0-9]+')
         # sentence_split = re.split('\s', text)
         # print(sentence_split)
+        words = re.findall(word_pattern, text)
         length = len(re.findall(l_pattern, text))
-        print(length)
+        # jointS = emptySj
+        print("".join([" ".join(words),"   (length = ", str(length), ")"]))
+        #print(length)
         return length
-        
-    sentence_check(sample)
-    get_token(sample)
-    words_withV(sample)
-    matchtextlength(sample)
+    
+    
+    matchtextlength(sample) 
+    get_token(sample)   
+    # sentence_check(sample)
+    # words_withV(sample)
+    
     

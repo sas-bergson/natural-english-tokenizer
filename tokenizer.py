@@ -1,2 +1,2 @@
 import regex as re
-import sentence
+import statement
