@@ -7,4 +7,3 @@ if __name__ == "__main__":
         of the tokenizer. If it succeeds, we will move to the design of a file scanner.'
     t.get_statements(text)
     t.get_tokens(text)
-    print(t) 
