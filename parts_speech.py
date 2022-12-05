@@ -19,6 +19,7 @@ verbs = [
 # list of adjectives starting with the letter "b"
 adjectives = [
     "bad","backup","bacteria","baffling","balanced","ballsy","balmy","balsamic","banging","baronial","bashful","beady","beaming","bearing","beatific",
+    "beautified","beautifu","beefy","beguiling","beginning","bejeweled","believable","belligerent","bell-like","beloved","benedictory","benefic","beneficent",
     
 ]
 # list of adverbs starting with the letter "b"
