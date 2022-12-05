@@ -29,6 +29,7 @@ adjectives = [
 # list of adverbs starting with the letter "b"
 adverbs = [
     "badly","back","backstage","backward","badly","barely","basically","beautifully","beforehand","begrudgingly","behaviorally","balatedly","beliievably",
+    "below","beneficlly","bi-monthly","biblically","biennially","bilaterally","bimonthly","biologically","bit","bitterly","biweekly","bizarrely","blandly",
     
 ]
 # list of pronouns starting with the letter "b"
