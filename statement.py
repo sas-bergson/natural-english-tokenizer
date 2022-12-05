@@ -12,6 +12,3 @@ class statement_tokenizer:
         self._tokens= self._regex.split(text)
         return self._tokens
     
-    def __str__(self) -> str:
-        for s in self._tokens:
-          print(f"statement -> {s}")
