@@ -18,7 +18,8 @@ verbs = [
     "betake","betitle","bethrall","betoss","betrap","better","bevel","beware","bewitch","bewrap","bicycle","bike","bill","bind","birth"]
 # list of adjectives starting with the letter "b"
 adjectives = [
-    "bad",
+    "bad","backup","bacteria","baffling","balanced","ballsy","balmy","balsamic","banging","baronial","bashful","beady","beaming","bearing","beatific",
+    
 ]
 # list of adverbs starting with the letter "b"
 adverbs = [
