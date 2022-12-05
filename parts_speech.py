@@ -10,7 +10,8 @@ noun = [
     
 # list of verbs starting with the letter "b"
 verbs = [
-    "bake"],
+    "bake","bark","back","backfire","balance","band","bank","baptize","bar","bargain","bark","barrack","barter","base","bash","bask",
+    "baste","bat"]
 # list of adjectives starting with the letter "b"
 adjectives = [
     "bad",
