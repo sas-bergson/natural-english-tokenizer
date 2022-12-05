@@ -8,7 +8,7 @@ class statement_tokenizer:
         self._regex = re.compile(self._pattern)
         self._tokens=[]
         
-    def get_tokens(self, text) -> list:
+   
     
       
     
