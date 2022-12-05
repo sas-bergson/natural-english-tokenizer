@@ -31,10 +31,10 @@ adverbs = [
     "badly","back","backstage","backward","badly","barely","basically","beautifully","beforehand","begrudgingly","behaviorally","balatedly","beliievably",
     "below","beneficlly","bi-monthly","biblically","biennially","bilaterally","bimonthly","biologically","bit","bitterly","biweekly","bizarrely","blandly",
     "blanky","blatanly","blazingly","blessedly","blindingly","blindly","blissfully","blisteringly","blithely","bluntly","boldly","boringly","botanically",
-    
+    "bravely","brazenly","breathlessly","breathtakingly","briefly","brightly","brilliantly","briskly","broadly","brutally","busily","braggingly","bragly","brashly",
 ]
 # list of pronouns starting with the letter "b"
 pronouns = [
-    "both",
+    "both",""
 
 ]
