@@ -23,6 +23,7 @@ adjectives = [
     "beneficiary","benevolent","benign","benignant","bent","best","better","bewitching","becameral","big","biggest","big-hearted","big-time","bijou",
     "blameless","blazing","blessed","blest","blissful","blistering","blithe","blooming","blue-ribbon","blushing","bodacious","boisterous","bold","bomb",
     "bombastic","bonkers","bonny","bonzer","bookish","boon","bootylicious","bosom","botanical","bouncy","bound","boundless","bounteous","bountiful","bovine",
+    "bracing","brackish","brainy","brash","brave","brawny","brazen","breathtaking","breezy","brief","bright","brill","brilliant","brimming","brisk",
     
 ]
 # list of adverbs starting with the letter "b"
