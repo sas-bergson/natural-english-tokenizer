@@ -24,11 +24,12 @@ adjectives = [
     "blameless","blazing","blessed","blest","blissful","blistering","blithe","blooming","blue-ribbon","blushing","bodacious","boisterous","bold","bomb",
     "bombastic","bonkers","bonny","bonzer","bookish","boon","bootylicious","bosom","botanical","bouncy","bound","boundless","bounteous","bountiful","bovine",
     "bracing","brackish","brainy","brash","brave","brawny","brazen","breathtaking","breezy","brief","bright","brill","brilliant","brimming","brisk",
-    
 ]
+#list of adjectives starting with letter "b"
 # list of adverbs starting with the letter "b"
 adverbs = [
-    "badly",
+    "badly","back","backstage","backward","badly","barely","basically","beautifully","beforehand","begrudgingly","behaviorally","balatedly","beliievably",
+    
 ]
 # list of pronouns starting with the letter "b"
 pronouns = [
