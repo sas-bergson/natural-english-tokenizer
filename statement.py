@@ -10,5 +10,5 @@ class statement_tokenizer:
         
     def get_tokens(self, text) -> list:
         self._tokens= self._regex.split(text)
-        return self._tokens
+      
     
