@@ -13,7 +13,7 @@ verbs = [
     "bake","bark","back","backfire","balance","band","bank","baptize","bar","bargain","bark","barrack","barter","base","bash","bask",
     "baste","bat","barrow","bash","bathe","battle","bawl","be","beach","bear","beat","beath","beatify","beblood","bebleed","beblot","beclap",
     "becurl","bedas","bedribble","bedrop","bedrug","beduck","been","bedflatter","bedflower","befrill","beg","begin","begird","beg",
-    ]
+    "behead","behoof","being","bejumble","belate","belk","belong","belt","bemeet","bemoil","bemuse","bename","bend","benefits","bench",]
 # list of adjectives starting with the letter "b"
 adjectives = [
     "bad",
