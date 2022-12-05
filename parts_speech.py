@@ -4,6 +4,8 @@ noun = [
     "boarder","broker","bestseller","beverage","bean","bail","beast","batch","behind","bracket","brace","builder","beefalo",
     "beef","battery","barn","bone","back","butter","bread","beeper","bowels","bacon","blaze","blowup","blackener","blackhead",
     "brisket","barberry","blueberries","bus stop","brow","bale","birthplace","berlin","bubbles","buffer","bucket","bleachers",
+    "bike","book","bar","breeze","best","backing","block","blackpool","border","bracelet","bobbery","bunkup","band","bucking",
+    
    ]
     
 # list of verbs starting with the letter "b"
