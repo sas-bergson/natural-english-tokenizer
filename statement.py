@@ -86,7 +86,10 @@ class statement_tokenizer:
 
     def identifyPartsOfSpeech(self, text):
         """This function is responsible for the identification of the parts of speech of the words in the text block. 
-        it takes the list of words as an argument and returns a list of parts of speech."""
+        it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file 
+        which contains the list of parts of speech and the words that belong to each part of speech. The group works on code that deals with the letter B
+        In cases where the 
+        """
         data = self.matchAllWordsStartingWithB(text)
         partsOfSpeech = []
         for word in data:

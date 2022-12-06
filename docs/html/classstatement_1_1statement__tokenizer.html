@@ -289,31 +289,37 @@ takes  text (string) the text that is to be split into tokens. and returns a lis
       </table>
 </div><div class="memdoc">
 <pre class="fragment">This function is responsible for the identification of the parts of speech of the words in the text block. 
-it takes the list of words as an argument and returns a list of parts of speech.</pre> 
+it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file 
+which contains the list of parts of speech and the words that belong to each part of speech. The group works on code that deals with the letter B
+In cases where the 
+</pre> 
 <p class="definition">Definition at line <a class="el" href="statement_8py_source.html#l00087">87</a> of file <a class="el" href="statement_8py_source.html">statement.py</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   87</span>    <span class="keyword">def </span>identifyPartsOfSpeech(self, text):</div>
 <div class="line"><span class="lineno">   88</span>        <span class="stringliteral">&quot;&quot;&quot;This function is responsible for the identification of the parts of speech of the words in the text block. </span></div>
-<div class="line"><span class="lineno">   89</span><span class="stringliteral">        it takes the list of words </span><span class="keyword">as</span> an argument <span class="keywordflow">and</span> returns a list of parts of speech.<span class="stringliteral">&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   90</span><span class="stringliteral">        data = self.matchAllWordsStartingWithB(text)</span></div>
-<div class="line"><span class="lineno">   91</span><span class="stringliteral">        partsOfSpeech = []</span></div>
-<div class="line"><span class="lineno">   92</span><span class="stringliteral">        </span><span class="keywordflow">for</span> word <span class="keywordflow">in</span> data:</div>
-<div class="line"><span class="lineno">   93</span>            <span class="keywordflow">if</span> word <span class="keywordflow">in</span> nouns:</div>
-<div class="line"><span class="lineno">   94</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Noun&quot;</span>)</div>
-<div class="line"><span class="lineno">   95</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> pronouns:</div>
-<div class="line"><span class="lineno">   96</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Pronoun&quot;</span>)</div>
-<div class="line"><span class="lineno">   97</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> adjectives:</div>
-<div class="line"><span class="lineno">   98</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Adjective&quot;</span>)</div>
-<div class="line"><span class="lineno">   99</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> verbs:</div>
-<div class="line"><span class="lineno">  100</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Verb&quot;</span>)</div>
-<div class="line"><span class="lineno">  101</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> adverbs:</div>
-<div class="line"><span class="lineno">  102</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Adverb&quot;</span>)</div>
-<div class="line"><span class="lineno">  103</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> conjunctions:</div>
-<div class="line"><span class="lineno">  104</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Conjunction&quot;</span>)</div>
-<div class="line"><span class="lineno">  105</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> interjections:</div>
-<div class="line"><span class="lineno">  106</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Interjection&quot;</span>)</div>
-<div class="line"><span class="lineno">  107</span>            <span class="keywordflow">else</span>:</div>
-<div class="line"><span class="lineno">  108</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Unknown&quot;</span>)</div>
-<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">return</span> partsOfSpeech</div>
+<div class="line"><span class="lineno">   89</span><span class="stringliteral">        it takes the list of words </span><span class="keyword">as</span> an argument <span class="keywordflow">and</span> returns a list of parts of speech. This will make use of the [parts_speech] file </div>
+<div class="line"><span class="lineno">   90</span>        which contains the list of parts of speech <span class="keywordflow">and</span> the words that belong to each part of speech. The group works on code that deals <span class="keyword">with</span> the letter B</div>
+<div class="line"><span class="lineno">   91</span>        In cases where the </div>
+<div class="line"><span class="lineno">   92</span>        <span class="stringliteral">&quot;&quot;&quot;</span></div>
+<div class="line"><span class="lineno">   93</span><span class="stringliteral">        data = self.matchAllWordsStartingWithB(text)</span></div>
+<div class="line"><span class="lineno">   94</span><span class="stringliteral">        partsOfSpeech = []</span></div>
+<div class="line"><span class="lineno">   95</span><span class="stringliteral">        </span><span class="keywordflow">for</span> word <span class="keywordflow">in</span> data:</div>
+<div class="line"><span class="lineno">   96</span>            <span class="keywordflow">if</span> word <span class="keywordflow">in</span> nouns:</div>
+<div class="line"><span class="lineno">   97</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Noun&quot;</span>)</div>
+<div class="line"><span class="lineno">   98</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> pronouns:</div>
+<div class="line"><span class="lineno">   99</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Pronoun&quot;</span>)</div>
+<div class="line"><span class="lineno">  100</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> adjectives:</div>
+<div class="line"><span class="lineno">  101</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Adjective&quot;</span>)</div>
+<div class="line"><span class="lineno">  102</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> verbs:</div>
+<div class="line"><span class="lineno">  103</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Verb&quot;</span>)</div>
+<div class="line"><span class="lineno">  104</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> adverbs:</div>
+<div class="line"><span class="lineno">  105</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Adverb&quot;</span>)</div>
+<div class="line"><span class="lineno">  106</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> conjunctions:</div>
+<div class="line"><span class="lineno">  107</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Conjunction&quot;</span>)</div>
+<div class="line"><span class="lineno">  108</span>            <span class="keywordflow">elif</span> word <span class="keywordflow">in</span> interjections:</div>
+<div class="line"><span class="lineno">  109</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Interjection&quot;</span>)</div>
+<div class="line"><span class="lineno">  110</span>            <span class="keywordflow">else</span>:</div>
+<div class="line"><span class="lineno">  111</span>                partsOfSpeech.append(word+<span class="stringliteral">&quot; Unknown&quot;</span>)</div>
+<div class="line"><span class="lineno">  112</span>        <span class="keywordflow">return</span> partsOfSpeech</div>
 </div><!-- fragment -->
 </div>
 </div>
