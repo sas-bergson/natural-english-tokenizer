@@ -1,3 +1,9 @@
+import string, sys
+import re
+
+sys.path.insert(1, '../core')
+from core.segments import Documen
+
 
 class DummySentencizer():
     
