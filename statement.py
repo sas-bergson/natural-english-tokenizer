@@ -1,3 +1,4 @@
+import json
 import re
 
 
@@ -9,8 +10,8 @@ class StatementTokenizer:
     def __init__(self):
         """!The StatementTokenizer class initializer."""
 
-        # Regular expression for match full stop in a sentence
-        self._noun_regex = re.compile(r"[a-zA-Z][0-9]*")
+        # Regular expression for match string in a sentence
+        self._string_regex = re.compile(r"[a-zA-Z][0-9]*")
         # Regular expression for match comma in a sentence
         self._comma_regex = re.compile(r",")
         # Regular expression for match interrogation point in a sentence
@@ -83,7 +84,7 @@ class StatementTokenizer:
         @return  The array containing token.
         """
 
-        return self.tokenize_pattern(None, self._noun_regex, expression, current)
+        return self.tokenize_pattern(None, self._string_regex, expression, current)
 
     def tokenize_comma(self, expression: str, current: int) -> list:
         """! Extract a comma.
