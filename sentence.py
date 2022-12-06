@@ -46,7 +46,7 @@ class Sentence:
     
     matchtextlength(sample) 
     get_token(sample)   
-    # sentence_check(sample)
-    # words_withV(sample)
+    sentence_check(sample)
+    words_withV(sample)
     
     
