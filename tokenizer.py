@@ -61,7 +61,7 @@ class KTokenizer(Statement_Tokenizer):
         return super().__str__()
 
 if __name__ == "__main__":
-    q_t = KTokenizer("""The Kidnapper kidnapped the child. He asked the child to kneel down. He kindly...the child """)
+    q_t = KTokenizer("""Gedeon got kidnapped by a kidnapper the day he knew he was going to have millions from his knowledge and was told to kneel """)
     print(q_t)
     print(q_t.get_listed_tokens())
     print(q_t.get_tokens_with_number())
