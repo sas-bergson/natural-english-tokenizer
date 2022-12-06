@@ -27,8 +27,8 @@ def word_split(text):
         print('Words:'+'('+str(len(words))+')')
         for word in words:
             #Removing Commas from words
-            if (word.count(',')>=1):
-                word.remove(',')
+            #if (word.count(',')>=1):
+             #   word.remove(',')
             print('-> ' + word)
         sentences_list.append(words)
     return sentences_list
