@@ -5,7 +5,8 @@ def sentence_split(text):
     count = 0
        
     sentences.remove('') #This line removes the empty values from the list.
-    print('sentences('+str(len(sentences))+') : ')
+    print(text)
+    print('\nsentences('+str(len(sentences))+') : ')
     for sentence in sentences:
         if (sentence != ''):
             print(' -> '+sentence)
@@ -35,7 +36,8 @@ def word_split(text):
              #   word.remove(',')
             print('-> ' + word)
         sentences_list.append(words)
-        print('\nTotal Senctences: '+ str(len(sentences_list)))
+        print('\nSummary:')
+        print('Total Senctences: '+ str(len(sentences_list)))
         print('Total number of Words: '+str(total_words))
     return sentences_list
 
