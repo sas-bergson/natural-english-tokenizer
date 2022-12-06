@@ -144,26 +144,45 @@ if __name__ == '__main__':
         ('Hello', 'NOUN'),
         ('World', 'NOUN'),
         ('The', 'Determiner'),
+        ('This', 'Determiner'),
         #('Table', 'Noun'),
         ('Take', 'Verb'),
         #('Talent', 'Noun'),
         ('Tall', 'Adjective'),
         #('I', 'Personal Pronoun'),
-        ('Is', 'Verb'),
+        ('is', 'Verb'),
+        ('a', 'Article'),
+        ('test', 'Noun Singular'),
+        ('designed','Verb'),
+        ('to', 'Preposition'),
+        ('of', 'Preposition'),
+        ('it', 'Pronoun'),
+        ('a', 'Adjective'),
+        ('If', 'Preposition'),
+        ('verify', 'Preposition'),
+        ('behaviour', 'Adjective'),
+        ('tokenizer', 'Noun'),
+        ('will', 'Verb'),
+        ('move', 'Verb'),
+        ('design', 'Noun'),
+        ('file', 'Noun'),
+        ('scanner','Noun'),
         ('He', 'Personal Pronoun'),
+        ('we', 'Personal Pronoun'),
         ('She', 'Personal Pronoun'),
-        ('Your', 'Possessive Adjective'),
+        ('your', 'Possessive Adjective'),
         ('What', 'WH Pronoun'),
-        ('Favorite', 'Adjective'),
-        ('Programming', 'Noun Singular'),
-        ('Language', 'Noun Singular'),
+        ('favorite', 'Adjective'),
+        ('succeeds', 'Verb'),
+        ('programming', 'Noun Singular'),
+        ('language', 'Noun Singular'),
 
         
 
     ]
 
     lx = Lexer(rules, skip_whitespace=True)
-    lx.input('What Is Your Favorite Programming Language')
+    lx.input('What is your verify favorite programming language')
 
     try:
         for tok in lx.tokens():
