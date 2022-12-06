@@ -40,7 +40,7 @@ class Statement_Tokenizer:
 
 if __name__ == "__main__":
     """! @test"""
-    s_t = Statement_Tokenizer("Hello my name is Roxanne")
+    s_t = Statement_Tokenizer("Hi my name is Moubarack")
     print(s_t.statements)
     print(s_t.words)
     print(s_t)
