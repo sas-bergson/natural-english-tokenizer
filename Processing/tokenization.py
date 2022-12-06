@@ -37,3 +37,21 @@ class DummyTokenizer():
         self._punctuations = punctuations
         self._index = 0
         self._tokenize()
+        
+    def _tokenize(self):
+        work_sentence = self.raw
+        for punctuation in self._punctuations:
+            work_sentence = work_sentence.replace(punctuation, " "+punctuation+" ")
+        for delimiter in self._token_boundaries:
+            work_sentence = work_sentence.replace(delimiter, self._delimiter_token)
+        self.tokens = [x.strip() for x in work_sentence.split(self._delimiter_token) if x != '']
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self._index < len(self.tokens):
+            result = self.tokens[self._index]
+            self._index+=1
+            return result
+        raise StopIteration
