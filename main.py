@@ -144,19 +144,26 @@ if __name__ == '__main__':
         ('Hello', 'NOUN'),
         ('World', 'NOUN'),
         ('The', 'Determiner'),
-        ('Table', 'Noun'),
+        #('Table', 'Noun'),
         ('Take', 'Verb'),
-        ('Talent', 'Noun'),
+        #('Talent', 'Noun'),
         ('Tall', 'Adjective'),
-        ('I', 'Personal Pronoun'),
+        #('I', 'Personal Pronoun'),
+        ('Is', 'Verb'),
         ('He', 'Personal Pronoun'),
         ('She', 'Personal Pronoun'),
+        ('Your', 'Possessive Adjective'),
+        ('What', 'WH Pronoun'),
+        ('Favorite', 'Adjective'),
+        ('Programming', 'Noun Singular'),
+        ('Language', 'Noun Singular'),
+
         
 
     ]
 
     lx = Lexer(rules, skip_whitespace=True)
-    lx.input('Hello World')
+    lx.input('What Is Your Favorite Programming Language')
 
     try:
         for tok in lx.tokens():
