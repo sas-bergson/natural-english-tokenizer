@@ -9,7 +9,7 @@ class Document():
        
 
         self.raw = document_text
-        #self.sentences = sentencize(self.raw)
+        self.sentences = sentencize(self.raw)
         self._index = 0
 
     def __getitem__(self, key):
@@ -40,7 +40,7 @@ class Sentence():
         self._document_string = raw_document_reference
         self.next_sentence = None
         self.previous_sentence = None
-        #self.tokens = tokenize(self._document_string[self.start_pos:self.end_pos])
+        self.tokens = tokenize(self._document_string[self.start_pos:self.end_pos])
         self._index = 0
 
     def get(self):
