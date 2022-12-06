@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacetokenizer" xml:lang="en-US">
+<title>tokenizer Namespace Reference</title>
+<indexterm><primary>tokenizer</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacetokenizer_1a12f704c8fbf1077490261e7642a8a7bd">f</link> = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetokenizer_1afea243b973a199545ebb7bb8dbdaddfc">sample</link> = f.read()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetokenizer_1aa4ecf495b72984ab099c6908a45072db">tokenizer</link> = <link linkend="_classsentence_1_1_sentence">Sentence</link>()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacetokenizer_1a12f704c8fbf1077490261e7642a8a7bd"/><section>
+    <title>f</title>
+<indexterm><primary>f</primary><secondary>tokenizer</secondary></indexterm>
+<indexterm><primary>tokenizer</primary><secondary>f</secondary></indexterm>
+<para><computeroutput>tokenizer.f = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</computeroutput></para></section>
+<anchor xml:id="_namespacetokenizer_1afea243b973a199545ebb7bb8dbdaddfc"/><section>
+    <title>sample</title>
+<indexterm><primary>sample</primary><secondary>tokenizer</secondary></indexterm>
+<indexterm><primary>tokenizer</primary><secondary>sample</secondary></indexterm>
+<para><computeroutput>tokenizer.sample = f.read()</computeroutput></para></section>
+<anchor xml:id="_namespacetokenizer_1aa4ecf495b72984ab099c6908a45072db"/><section>
+    <title>tokenizer</title>
+<indexterm><primary>tokenizer</primary><secondary>tokenizer</secondary></indexterm>
+<indexterm><primary>tokenizer</primary><secondary>tokenizer</secondary></indexterm>
+<para><computeroutput>tokenizer.tokenizer = <link linkend="_classsentence_1_1_sentence">Sentence</link>()</computeroutput></para></section>
+</section>
+</section>

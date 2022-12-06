@@ -1,4 +1,4 @@
-.TH "sentence.Sentence" 3 "Tue Nov 29 2022" "GROUP_22_V" \" -*- nroff -*-
+.TH "sentence.Sentence" 3 "Tue Dec 6 2022" "GROUP_22_V" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -10,25 +10,60 @@ sentence.Sentence
 
 .in +1c
 .ti -1c
-.RI "def \fBsentence_check\fP (text)"
+.RI "def \fB__init__\fP (self)"
 .br
 .ti -1c
-.RI "list \fBget_token\fP (text)"
+.RI "def \fBsentence_check\fP (self, text)"
+.br
+.ti -1c
+.RI "list \fBget_token\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBwords_withV\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBmatchtextlength\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBfindalladverbs\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBfindallverbs\fP (self, text)"
 .br
 .in -1c
-.SS "Static Public Attributes"
+.SS "Public Attributes"
 
 .in +1c
 .ti -1c
-.RI "\fBf\fP = open('\&./assets/sample\&.txt', 'r')"
+.RI "\fBl_pattern\fP"
 .br
 .ti -1c
-.RI "\fBsample\fP = f\&.read()"
+.RI "\fBword_pattern\fP"
 .br
 .in -1c
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def sentence\&.Sentence\&.__init__ ( self)"
+
 .SH "Member Function Documentation"
 .PP 
-.SS " list  sentence\&.Sentence\&.get_token ( text)"
+.SS "def sentence\&.Sentence\&.findalladverbs ( self,  text)"
+
+.PP
+.nf
+This functions displays all the adverbs in a text and their position
+.fi
+.PP
+ 
+.SS "def sentence\&.Sentence\&.findallverbs ( self,  text)"
+
+.PP
+.nf
+This functions displays all the adverbs in a text and their position
+.fi
+.PP
+ 
+.SS " list  sentence\&.Sentence\&.get_token ( self,  text)"
 
 .PP
 .nf
@@ -36,19 +71,35 @@ This functions splits the sentence into words
 .fi
 .PP
  
-.SS "def sentence\&.Sentence\&.sentence_check ( text)"
+.SS "def sentence\&.Sentence\&.matchtextlength ( self,  text)"
 
 .PP
 .nf
-This function checks if the sentence is proper
+This function returns the length of all the words in this sentence
+.fi
+.PP
+ 
+.SS "def sentence\&.Sentence\&.sentence_check ( self,  text)"
+
+.PP
+.nf
+This function checks if the text is a proper sentence
+.fi
+.PP
+ 
+.SS "def sentence\&.Sentence\&.words_withV ( self,  text)"
+
+.PP
+.nf
+Matching words that begin with V and printing them
 .fi
 .PP
  
 .SH "Member Data Documentation"
 .PP 
-.SS "sentence\&.Sentence\&.f = open('\&./assets/sample\&.txt', 'r')\fC [static]\fP"
+.SS "sentence\&.Sentence\&.l_pattern"
 
-.SS "sentence\&.Sentence\&.sample = f\&.read()\fC [static]\fP"
+.SS "sentence\&.Sentence\&.word_pattern"
 
 
 .SH "Author"

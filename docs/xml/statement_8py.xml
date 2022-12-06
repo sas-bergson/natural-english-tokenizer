@@ -28,6 +28,6 @@
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>s<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>self.<ref refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kindref="member">_tokens</ref>:</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(f</highlight><highlight class="stringliteral">&quot;statement<sp/>-&gt;<sp/>{s}&quot;</highlight><highlight class="normal">)</highlight></codeline>
     </programlisting>
-    <location file="statement.py"/>
+    <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py"/>
   </compounddef>
 </doxygen>

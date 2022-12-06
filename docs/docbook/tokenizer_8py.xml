@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_tokenizer_8py" xml:lang="en-US">
+<title>C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py File Reference</title>
+<indexterm><primary>C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacetokenizer">tokenizer</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_namespacetokenizer_1a12f704c8fbf1077490261e7642a8a7bd">tokenizer.f</link> = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetokenizer_1afea243b973a199545ebb7bb8dbdaddfc">tokenizer.sample</link> = f.read()</para>
+</listitem>
+            <listitem><para><link linkend="_namespacetokenizer_1aa4ecf495b72984ab099c6908a45072db">tokenizer.tokenizer</link> = Sentence()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

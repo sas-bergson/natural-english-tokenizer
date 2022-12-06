@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="7" column="1" bodyfile="statement.py" bodystart="7" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="7" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="7" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1a60f9e3d9dd21647a3ecdb891b0820e5d" prot="private" static="no" mutable="no">
         <type></type>
@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="8" column="1" bodyfile="statement.py" bodystart="8" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="8" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="8" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" prot="private" static="no" mutable="no">
         <type></type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="9" column="1" bodyfile="statement.py" bodystart="9" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="9" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="9" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" prot="private" static="no" mutable="no">
         <type></type>
@@ -57,7 +57,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="10" column="1" bodyfile="statement.py" bodystart="10" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="10" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="10" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -77,7 +77,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="6" column="1" bodyfile="statement.py" bodystart="6" bodyend="11"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="6" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="6" bodyend="11"/>
       </memberdef>
       <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="12" column="1" bodyfile="statement.py" bodystart="12" bodyend="15"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="12" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="12" bodyend="15"/>
       </memberdef>
       <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>str</type>
@@ -117,14 +117,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="statement.py" line="16" column="1" bodyfile="statement.py" bodystart="16" bodyend="19"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="16" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="16" bodyend="19"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="statement.py" line="4" column="1" bodyfile="statement.py" bodystart="4" bodyend="19"/>
+    <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" line="4" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/statement.py" bodystart="4" bodyend="19"/>
     <listofallmembers>
       <member refid="classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>__init__</name></member>
       <member refid="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>__str__</name></member>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad" xml:lang="en-US">
+
+<para>In computer science, lexical analysis, lexing or tokenization is the process of converting a sequence of characters into a sequence of lexical tokens.</para>
+<section xml:id="_md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad_1autotoc_md1">
+<title>Team Members</title>
+
+<para>sandrine Awah Nwabufo.T.Emmanuel Junior</para>
+</section>
+<section xml:id="_md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad_1autotoc_md2">
+<title>Class sentence</title>
+
+<para>it contains several method</para>
+
+<para>f = open(&apos;./assets/sample.txt&apos;, &apos;r&apos;) sample = f.read() f.close()</para>
+</section>
+<section xml:id="_md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad_1autotoc_md3">
+<title>def sentence_check(text):</title>
+</section>
+<section xml:id="_md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad_1autotoc_md4">
+<title>This method simple print out a correct sentence following the pattern</title>
+
+<para>pattern = re.compile(&apos;[A-Z][^.!?]*[!?.]&apos;) if re.match(pattern, text): text print(text) return text else: print(&quot;Invalid&quot;) </para>
+</section>
+</section>

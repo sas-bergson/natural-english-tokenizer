@@ -1,10 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
   <compound refid="classsentence_1_1_sentence" kind="class"><name>sentence::Sentence</name>
-    <member refid="classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9" kind="variable"><name>f</name></member>
-    <member refid="classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747" kind="variable"><name>sample</name></member>
-    <member refid="classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654" kind="function"><name>sentence_check</name></member>
-    <member refid="classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889" kind="function"><name>get_token</name></member>
+    <member refid="classsentence_1_1_sentence_1aa3879633884e65c77bf5c85ac94c6e13" kind="variable"><name>_sentence_pattern</name></member>
+    <member refid="classsentence_1_1_sentence_1a4f6e4c71a2da19dd5d5141284383dca7" kind="variable"><name>_v_pattern</name></member>
+    <member refid="classsentence_1_1_sentence_1a001c9a6a7afa104519155c7b76154d23" kind="variable"><name>_pattern</name></member>
+    <member refid="classsentence_1_1_sentence_1ac6f23035cff38675461458fa12da3fe7" kind="variable"><name>_adverbs</name></member>
+    <member refid="classsentence_1_1_sentence_1aea2190aa81d2d793effb9d1c92cd8fa0" kind="variable"><name>_verbs</name></member>
+    <member refid="classsentence_1_1_sentence_1a02b1c8dcbb6c2b96782ed56cbf42fdfa" kind="variable"><name>l_pattern</name></member>
+    <member refid="classsentence_1_1_sentence_1a82a5281a63c90beff9dc7ab748f89bc4" kind="variable"><name>word_pattern</name></member>
+    <member refid="classsentence_1_1_sentence_1a4244759b6c52b91ea8977ea0d16698bc" kind="function"><name>__init__</name></member>
+    <member refid="classsentence_1_1_sentence_1a98955d3f03a528b65e3a6376fad88bec" kind="function"><name>sentence_check</name></member>
+    <member refid="classsentence_1_1_sentence_1add9a9dd5a993c678c003451caf81b043" kind="function"><name>get_token</name></member>
+    <member refid="classsentence_1_1_sentence_1a61a8453621a96a3f4c53a3aea2f7c113" kind="function"><name>words_withV</name></member>
+    <member refid="classsentence_1_1_sentence_1a6b62b568aec8db38ba10225c84e1df66" kind="function"><name>matchtextlength</name></member>
+    <member refid="classsentence_1_1_sentence_1a3cb05c8d5d1988d95139596ac5c6c8b8" kind="function"><name>findalladverbs</name></member>
+    <member refid="classsentence_1_1_sentence_1a3c04a2edb1f85009b9bbf1d57d41366e" kind="function"><name>findallverbs</name></member>
   </compound>
   <compound refid="classstatement_1_1statement__tokenizer" kind="class"><name>statement::statement_tokenizer</name>
     <member refid="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" kind="variable"><name>_pattern</name></member>
@@ -19,12 +29,19 @@
   </compound>
   <compound refid="namespacestatement" kind="namespace"><name>statement</name>
   </compound>
+  <compound refid="namespacetokenizer" kind="namespace"><name>tokenizer</name>
+    <member refid="namespacetokenizer_1a12f704c8fbf1077490261e7642a8a7bd" kind="variable"><name>f</name></member>
+    <member refid="namespacetokenizer_1afea243b973a199545ebb7bb8dbdaddfc" kind="variable"><name>sample</name></member>
+    <member refid="namespacetokenizer_1aa4ecf495b72984ab099c6908a45072db" kind="variable"><name>tokenizer</name></member>
+  </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="sentence_8py" kind="file"><name>sentence.py</name>
   </compound>
   <compound refid="statement_8py" kind="file"><name>statement.py</name>
   </compound>
-  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  <compound refid="tokenizer_8py" kind="file"><name>tokenizer.py</name>
+  </compound>
+  <compound refid="md__c___users_nwabu__desktop__emmanuel__f_a_l_l_2022__compiler__construction__group_22__v_natura6f536c03742b813dccd784d23aae51ad" kind="page"><name>md_C__Users_nwabu_Desktop_Emmanuel_FALL_2022_Compiler_Construction_Group_22_V_natural_english_tokenizer_README</name>
   </compound>
 </doxygenindex>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['get_5ftoken_0',['get_token',['../classsentence_1_1_sentence.html#ad2cb7be202a136489267bb2822040889',1,'sentence::Sentence']]],
-  ['get_5ftokens_1',['get_tokens',['../classstatement_1_1statement__tokenizer.html#af31fdead83a1bf102c9c769855cc5965',1,'statement::statement_tokenizer']]]
+  ['findalladverbs_0',['findalladverbs',['../classsentence_1_1_sentence.html#a3cb05c8d5d1988d95139596ac5c6c8b8',1,'sentence::Sentence']]],
+  ['findallverbs_1',['findallverbs',['../classsentence_1_1_sentence.html#a3c04a2edb1f85009b9bbf1d57d41366e',1,'sentence::Sentence']]]
 ];

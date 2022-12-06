@@ -1,11 +1,11 @@
 var indexSectionsWithContent =
 {
-  0: "_fgnrs",
+  0: "_fglmnrstw",
   1: "s",
-  2: "s",
-  3: "rs",
-  4: "_gs",
-  5: "fs",
+  2: "st",
+  3: "rst",
+  4: "_fgmsw",
+  5: "flstw",
   6: "n"
 };
 

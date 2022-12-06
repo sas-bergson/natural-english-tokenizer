@@ -2,45 +2,137 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="classsentence_1_1_sentence" kind="class" language="Python" prot="public">
     <compoundname>sentence::Sentence</compoundname>
-      <sectiondef kind="public-static-attrib">
-      <memberdef kind="variable" id="classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9" prot="public" static="yes" mutable="no">
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1aa3879633884e65c77bf5c85ac94c6e13" prot="private" static="no" mutable="no">
         <type></type>
-        <definition>sentence.Sentence::f</definition>
+        <definition>sentence.Sentence::_sentence_pattern</definition>
         <argsstring></argsstring>
-        <name>f</name>
-        <qualifiedname>sentence.Sentence.f</qualifiedname>
-        <initializer>=  open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</initializer>
+        <name>_sentence_pattern</name>
+        <qualifiedname>sentence.Sentence._sentence_pattern</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="sentence.py" line="5" column="1" bodyfile="sentence.py" bodystart="5" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="7" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="7" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747" prot="public" static="yes" mutable="no">
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a4f6e4c71a2da19dd5d5141284383dca7" prot="private" static="no" mutable="no">
         <type></type>
-        <definition>sentence.Sentence::sample</definition>
+        <definition>sentence.Sentence::_v_pattern</definition>
         <argsstring></argsstring>
-        <name>sample</name>
-        <qualifiedname>sentence.Sentence.sample</qualifiedname>
-        <initializer>=  f.read()</initializer>
+        <name>_v_pattern</name>
+        <qualifiedname>sentence.Sentence._v_pattern</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="sentence.py" line="6" column="1" bodyfile="sentence.py" bodystart="6" bodyend="-1"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="8" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a001c9a6a7afa104519155c7b76154d23" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::_pattern</definition>
+        <argsstring></argsstring>
+        <name>_pattern</name>
+        <qualifiedname>sentence.Sentence._pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="9" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1ac6f23035cff38675461458fa12da3fe7" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::_adverbs</definition>
+        <argsstring></argsstring>
+        <name>_adverbs</name>
+        <qualifiedname>sentence.Sentence._adverbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="12" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1aea2190aa81d2d793effb9d1c92cd8fa0" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::_verbs</definition>
+        <argsstring></argsstring>
+        <name>_verbs</name>
+        <qualifiedname>sentence.Sentence._verbs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="13" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a02b1c8dcbb6c2b96782ed56cbf42fdfa" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::l_pattern</definition>
+        <argsstring></argsstring>
+        <name>l_pattern</name>
+        <qualifiedname>sentence.Sentence.l_pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="10" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsentence_1_1_sentence_1a82a5281a63c90beff9dc7ab748f89bc4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>sentence.Sentence::word_pattern</definition>
+        <argsstring></argsstring>
+        <name>word_pattern</name>
+        <qualifiedname>sentence.Sentence.word_pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="11" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="11" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a4244759b6c52b91ea8977ea0d16698bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>sentence.Sentence.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="6" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="6" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a98955d3f03a528b65e3a6376fad88bec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>def</type>
         <definition>def sentence.Sentence.sentence_check</definition>
-        <argsstring>(text)</argsstring>
+        <argsstring>(self, text)</argsstring>
         <name>sentence_check</name>
         <qualifiedname>sentence.Sentence.sentence_check</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
         <param>
           <type>text</type>
           <defname>text</defname>
@@ -48,18 +140,22 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><verbatim>This function checks if the sentence is proper</verbatim> </para>
+<para><verbatim>This function checks if the text is a proper sentence</verbatim> </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="sentence.py" line="9" column="1" bodyfile="sentence.py" bodystart="9" bodyend="19"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="15" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="15" bodyend="20"/>
       </memberdef>
-      <memberdef kind="function" id="classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classsentence_1_1_sentence_1add9a9dd5a993c678c003451caf81b043" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>list</type>
         <definition> list  sentence.Sentence.get_token</definition>
-        <argsstring>(text)</argsstring>
+        <argsstring>(self, text)</argsstring>
         <name>get_token</name>
         <qualifiedname>sentence.Sentence.get_token</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
         <param>
           <type>text</type>
           <defname>text</defname>
@@ -71,19 +167,121 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="sentence.py" line="20" column="1" bodyfile="sentence.py" bodystart="20" bodyend="25"/>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="21" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="21" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a61a8453621a96a3f4c53a3aea2f7c113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.words_withV</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>words_withV</name>
+        <qualifiedname>sentence.Sentence.words_withV</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Matching words that begin with V and printing them</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="30" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="30" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a6b62b568aec8db38ba10225c84e1df66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.matchtextlength</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>matchtextlength</name>
+        <qualifiedname>sentence.Sentence.matchtextlength</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function returns the length of all the words in this sentence</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="36" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a3cb05c8d5d1988d95139596ac5c6c8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.findalladverbs</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>findalladverbs</name>
+        <qualifiedname>sentence.Sentence.findalladverbs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This functions displays all the adverbs in a text and their position</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="45" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classsentence_1_1_sentence_1a3c04a2edb1f85009b9bbf1d57d41366e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def sentence.Sentence.findallverbs</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>findallverbs</name>
+        <qualifiedname>sentence.Sentence.findallverbs</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This functions displays all the adverbs in a text and their position</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="51" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="51" bodyend="58"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="sentence.py" line="3" column="1" bodyfile="sentence.py" bodystart="3" bodyend="29"/>
+    <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" line="4" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/sentence.py" bodystart="4" bodyend="58"/>
     <listofallmembers>
-      <member refid="classsentence_1_1_sentence_1a47427a42aea836b14a70aa4e5810daa9" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>f</name></member>
-      <member refid="classsentence_1_1_sentence_1ad2cb7be202a136489267bb2822040889" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>get_token</name></member>
-      <member refid="classsentence_1_1_sentence_1a24febfef247becd7908bfdb5d3e1f747" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>sample</name></member>
-      <member refid="classsentence_1_1_sentence_1aaa1d9e086c730c21540d5fc8c2ff7654" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>sentence_check</name></member>
+      <member refid="classsentence_1_1_sentence_1a4244759b6c52b91ea8977ea0d16698bc" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>__init__</name></member>
+      <member refid="classsentence_1_1_sentence_1ac6f23035cff38675461458fa12da3fe7" prot="private" virt="non-virtual"><scope>sentence::Sentence</scope><name>_adverbs</name></member>
+      <member refid="classsentence_1_1_sentence_1a001c9a6a7afa104519155c7b76154d23" prot="private" virt="non-virtual"><scope>sentence::Sentence</scope><name>_pattern</name></member>
+      <member refid="classsentence_1_1_sentence_1aa3879633884e65c77bf5c85ac94c6e13" prot="private" virt="non-virtual"><scope>sentence::Sentence</scope><name>_sentence_pattern</name></member>
+      <member refid="classsentence_1_1_sentence_1a4f6e4c71a2da19dd5d5141284383dca7" prot="private" virt="non-virtual"><scope>sentence::Sentence</scope><name>_v_pattern</name></member>
+      <member refid="classsentence_1_1_sentence_1aea2190aa81d2d793effb9d1c92cd8fa0" prot="private" virt="non-virtual"><scope>sentence::Sentence</scope><name>_verbs</name></member>
+      <member refid="classsentence_1_1_sentence_1a3cb05c8d5d1988d95139596ac5c6c8b8" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>findalladverbs</name></member>
+      <member refid="classsentence_1_1_sentence_1a3c04a2edb1f85009b9bbf1d57d41366e" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>findallverbs</name></member>
+      <member refid="classsentence_1_1_sentence_1add9a9dd5a993c678c003451caf81b043" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>get_token</name></member>
+      <member refid="classsentence_1_1_sentence_1a02b1c8dcbb6c2b96782ed56cbf42fdfa" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>l_pattern</name></member>
+      <member refid="classsentence_1_1_sentence_1a6b62b568aec8db38ba10225c84e1df66" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>matchtextlength</name></member>
+      <member refid="classsentence_1_1_sentence_1a98955d3f03a528b65e3a6376fad88bec" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>sentence_check</name></member>
+      <member refid="classsentence_1_1_sentence_1a82a5281a63c90beff9dc7ab748f89bc4" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>word_pattern</name></member>
+      <member refid="classsentence_1_1_sentence_1a61a8453621a96a3f4c53a3aea2f7c113" prot="public" virt="non-virtual"><scope>sentence::Sentence</scope><name>words_withV</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

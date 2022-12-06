@@ -14,7 +14,24 @@
 <codeline><highlight class="normal">sandrine<sp/>Awah<sp/></highlight></codeline>
 <codeline><highlight class="normal">Nwabufo.T.Emmanuel<sp/>Junior<sp/></highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">#<sp/>Class<sp/>sentence</highlight></codeline>
+<codeline><highlight class="normal"><sp/>it<sp/>contains<sp/>several<sp/>method</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>f<sp/>=<sp/>open(&apos;./assets/sample.txt&apos;,<sp/>&apos;r&apos;)<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sample<sp/>=<sp/>f.read()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>f.close()<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>#<sp/>def<sp/>sentence_check(text):<sp/></highlight></codeline>
+<codeline><highlight class="normal"><sp/>#<sp/>This<sp/>method<sp/>simple<sp/>print<sp/>out<sp/>a<sp/>correct<sp/>sentence<sp/>following<sp/>the<sp/>pattern</highlight></codeline>
+<codeline><highlight class="normal"><sp/>pattern<sp/>=<sp/>re.compile(&apos;[A-Z][^\.!?]*[!?\.]&apos;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>if<sp/>re.match(pattern,<sp/>text):</highlight></codeline>
+<codeline><highlight class="normal"><sp/>text</highlight></codeline>
+<codeline><highlight class="normal"><sp/>print(text)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>return<sp/>text</highlight></codeline>
+<codeline><highlight class="normal"><sp/>else:</highlight></codeline>
+<codeline><highlight class="normal"><sp/>print(&quot;Invalid&quot;)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
     </programlisting>
-    <location file="README.md"/>
+    <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/README.md"/>
   </compounddef>
 </doxygen>

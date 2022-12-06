@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacetokenizer" kind="namespace" language="Python">
+    <compoundname>tokenizer</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacetokenizer_1a12f704c8fbf1077490261e7642a8a7bd" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenizer.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>tokenizer.f</qualifiedname>
+        <initializer>=  open(&apos;./assets/sample.txt&apos;, &apos;r&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" line="5" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetokenizer_1afea243b973a199545ebb7bb8dbdaddfc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenizer.sample</definition>
+        <argsstring></argsstring>
+        <name>sample</name>
+        <qualifiedname>tokenizer.sample</qualifiedname>
+        <initializer>=  f.read()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" line="6" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacetokenizer_1aa4ecf495b72984ab099c6908a45072db" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenizer.tokenizer</definition>
+        <argsstring></argsstring>
+        <name>tokenizer</name>
+        <qualifiedname>tokenizer.tokenizer</qualifiedname>
+        <initializer>=  <ref refid="classsentence_1_1_sentence" kindref="compound">Sentence</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" line="9" column="1" bodyfile="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/nwabu/Desktop/Emmanuel/FALL 2022/Compiler Construction/Group_22_V/natural-english-tokenizer/tokenizer.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

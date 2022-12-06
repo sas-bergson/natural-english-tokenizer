@@ -3,51 +3,98 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-def \mbox{\hyperlink{classsentence_1_1_sentence_aaa1d9e086c730c21540d5fc8c2ff7654}{sentence\+\_\+check}} (text)
+def \mbox{\hyperlink{classsentence_1_1_sentence_a4244759b6c52b91ea8977ea0d16698bc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
 \item 
-list \mbox{\hyperlink{classsentence_1_1_sentence_ad2cb7be202a136489267bb2822040889}{get\+\_\+token}} (text)
+def \mbox{\hyperlink{classsentence_1_1_sentence_a98955d3f03a528b65e3a6376fad88bec}{sentence\+\_\+check}} (self, text)
+\item 
+list \mbox{\hyperlink{classsentence_1_1_sentence_add9a9dd5a993c678c003451caf81b043}{get\+\_\+token}} (self, text)
+\item 
+def \mbox{\hyperlink{classsentence_1_1_sentence_a61a8453621a96a3f4c53a3aea2f7c113}{words\+\_\+withV}} (self, text)
+\item 
+def \mbox{\hyperlink{classsentence_1_1_sentence_a6b62b568aec8db38ba10225c84e1df66}{matchtextlength}} (self, text)
+\item 
+def \mbox{\hyperlink{classsentence_1_1_sentence_a3cb05c8d5d1988d95139596ac5c6c8b8}{findalladverbs}} (self, text)
+\item 
+def \mbox{\hyperlink{classsentence_1_1_sentence_a3c04a2edb1f85009b9bbf1d57d41366e}{findallverbs}} (self, text)
 \end{DoxyCompactItemize}
-\doxysubsection*{Static Public Attributes}
+\doxysubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classsentence_1_1_sentence_a47427a42aea836b14a70aa4e5810daa9}{f}} = open(\textquotesingle{}./assets/sample.\+txt\textquotesingle{}, \textquotesingle{}r\textquotesingle{})
+\mbox{\hyperlink{classsentence_1_1_sentence_a02b1c8dcbb6c2b96782ed56cbf42fdfa}{l\+\_\+pattern}}
 \item 
-\mbox{\hyperlink{classsentence_1_1_sentence_a24febfef247becd7908bfdb5d3e1f747}{sample}} = f.\+read()
+\mbox{\hyperlink{classsentence_1_1_sentence_a82a5281a63c90beff9dc7ab748f89bc4}{word\+\_\+pattern}}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsentence_1_1_sentence_a4244759b6c52b91ea8977ea0d16698bc}\label{classsentence_1_1_sentence_a4244759b6c52b91ea8977ea0d16698bc}} 
+\index{sentence.Sentence@{sentence.Sentence}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classsentence_1_1_sentence_ad2cb7be202a136489267bb2822040889}\label{classsentence_1_1_sentence_ad2cb7be202a136489267bb2822040889}} 
+\mbox{\Hypertarget{classsentence_1_1_sentence_a3cb05c8d5d1988d95139596ac5c6c8b8}\label{classsentence_1_1_sentence_a3cb05c8d5d1988d95139596ac5c6c8b8}} 
+\index{sentence.Sentence@{sentence.Sentence}!findalladverbs@{findalladverbs}}
+\index{findalladverbs@{findalladverbs}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{findalladverbs()}{findalladverbs()}}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+findalladverbs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This functions displays all the adverbs in a text and their position\end{DoxyVerb}
+ \mbox{\Hypertarget{classsentence_1_1_sentence_a3c04a2edb1f85009b9bbf1d57d41366e}\label{classsentence_1_1_sentence_a3c04a2edb1f85009b9bbf1d57d41366e}} 
+\index{sentence.Sentence@{sentence.Sentence}!findallverbs@{findallverbs}}
+\index{findallverbs@{findallverbs}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{findallverbs()}{findallverbs()}}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+findallverbs (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This functions displays all the adverbs in a text and their position\end{DoxyVerb}
+ \mbox{\Hypertarget{classsentence_1_1_sentence_add9a9dd5a993c678c003451caf81b043}\label{classsentence_1_1_sentence_add9a9dd5a993c678c003451caf81b043}} 
 \index{sentence.Sentence@{sentence.Sentence}!get\_token@{get\_token}}
 \index{get\_token@{get\_token}!sentence.Sentence@{sentence.Sentence}}
 \doxysubsubsection{\texorpdfstring{get\_token()}{get\_token()}}
-{\footnotesize\ttfamily  list  sentence.\+Sentence.\+get\+\_\+token (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily  list  sentence.\+Sentence.\+get\+\_\+token (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
 
 \begin{DoxyVerb}This functions splits the sentence into words\end{DoxyVerb}
- \mbox{\Hypertarget{classsentence_1_1_sentence_aaa1d9e086c730c21540d5fc8c2ff7654}\label{classsentence_1_1_sentence_aaa1d9e086c730c21540d5fc8c2ff7654}} 
+ \mbox{\Hypertarget{classsentence_1_1_sentence_a6b62b568aec8db38ba10225c84e1df66}\label{classsentence_1_1_sentence_a6b62b568aec8db38ba10225c84e1df66}} 
+\index{sentence.Sentence@{sentence.Sentence}!matchtextlength@{matchtextlength}}
+\index{matchtextlength@{matchtextlength}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{matchtextlength()}{matchtextlength()}}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+matchtextlength (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function returns the length of all the words in this sentence\end{DoxyVerb}
+ \mbox{\Hypertarget{classsentence_1_1_sentence_a98955d3f03a528b65e3a6376fad88bec}\label{classsentence_1_1_sentence_a98955d3f03a528b65e3a6376fad88bec}} 
 \index{sentence.Sentence@{sentence.Sentence}!sentence\_check@{sentence\_check}}
 \index{sentence\_check@{sentence\_check}!sentence.Sentence@{sentence.Sentence}}
 \doxysubsubsection{\texorpdfstring{sentence\_check()}{sentence\_check()}}
-{\footnotesize\ttfamily def sentence.\+Sentence.\+sentence\+\_\+check (\begin{DoxyParamCaption}\item[{}]{text }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+sentence\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
 
-\begin{DoxyVerb}This function checks if the sentence is proper\end{DoxyVerb}
+\begin{DoxyVerb}This function checks if the text is a proper sentence\end{DoxyVerb}
+ \mbox{\Hypertarget{classsentence_1_1_sentence_a61a8453621a96a3f4c53a3aea2f7c113}\label{classsentence_1_1_sentence_a61a8453621a96a3f4c53a3aea2f7c113}} 
+\index{sentence.Sentence@{sentence.Sentence}!words\_withV@{words\_withV}}
+\index{words\_withV@{words\_withV}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{words\_withV()}{words\_withV()}}
+{\footnotesize\ttfamily def sentence.\+Sentence.\+words\+\_\+withV (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Matching words that begin with V and printing them\end{DoxyVerb}
  
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classsentence_1_1_sentence_a47427a42aea836b14a70aa4e5810daa9}\label{classsentence_1_1_sentence_a47427a42aea836b14a70aa4e5810daa9}} 
-\index{sentence.Sentence@{sentence.Sentence}!f@{f}}
-\index{f@{f}!sentence.Sentence@{sentence.Sentence}}
-\doxysubsubsection{\texorpdfstring{f}{f}}
-{\footnotesize\ttfamily sentence.\+Sentence.\+f = open(\textquotesingle{}./assets/sample.\+txt\textquotesingle{}, \textquotesingle{}r\textquotesingle{})\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{classsentence_1_1_sentence_a02b1c8dcbb6c2b96782ed56cbf42fdfa}\label{classsentence_1_1_sentence_a02b1c8dcbb6c2b96782ed56cbf42fdfa}} 
+\index{sentence.Sentence@{sentence.Sentence}!l\_pattern@{l\_pattern}}
+\index{l\_pattern@{l\_pattern}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{l\_pattern}{l\_pattern}}
+{\footnotesize\ttfamily sentence.\+Sentence.\+l\+\_\+pattern}
 
-\mbox{\Hypertarget{classsentence_1_1_sentence_a24febfef247becd7908bfdb5d3e1f747}\label{classsentence_1_1_sentence_a24febfef247becd7908bfdb5d3e1f747}} 
-\index{sentence.Sentence@{sentence.Sentence}!sample@{sample}}
-\index{sample@{sample}!sentence.Sentence@{sentence.Sentence}}
-\doxysubsubsection{\texorpdfstring{sample}{sample}}
-{\footnotesize\ttfamily sentence.\+Sentence.\+sample = f.\+read()\hspace{0.3cm}{\ttfamily [static]}}
+\mbox{\Hypertarget{classsentence_1_1_sentence_a82a5281a63c90beff9dc7ab748f89bc4}\label{classsentence_1_1_sentence_a82a5281a63c90beff9dc7ab748f89bc4}} 
+\index{sentence.Sentence@{sentence.Sentence}!word\_pattern@{word\_pattern}}
+\index{word\_pattern@{word\_pattern}!sentence.Sentence@{sentence.Sentence}}
+\doxysubsubsection{\texorpdfstring{word\_pattern}{word\_pattern}}
+{\footnotesize\ttfamily sentence.\+Sentence.\+word\+\_\+pattern}
 
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{sentence_8py}{sentence.\+py}}\end{DoxyCompactItemize}
+C\+:/\+Users/nwabu/\+Desktop/\+Emmanuel/\+FALL 2022/\+Compiler Construction/\+Group\+\_\+22\+\_\+\+V/natural-\/english-\/tokenizer/\mbox{\hyperlink{sentence_8py}{sentence.\+py}}\end{DoxyCompactItemize}

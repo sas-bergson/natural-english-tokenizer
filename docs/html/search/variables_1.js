@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sample_0',['sample',['../classsentence_1_1_sentence.html#a24febfef247becd7908bfdb5d3e1f747',1,'sentence::Sentence']]]
+  ['l_5fpattern_0',['l_pattern',['../classsentence_1_1_sentence.html#a02b1c8dcbb6c2b96782ed56cbf42fdfa',1,'sentence::Sentence']]]
 ];

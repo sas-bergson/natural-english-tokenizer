@@ -7,6 +7,7 @@
     <title>Namespace Documentation</title>
 <xi:include href="namespacesentence.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 <xi:include href="namespacestatement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacetokenizer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <chapter>
     <title>Class Documentation</title>
@@ -18,6 +19,7 @@
     <xi:include href="_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="sentence_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="statement_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="tokenizer_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <index/>
 </book>
