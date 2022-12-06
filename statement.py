@@ -14,4 +14,4 @@ class statement_tokenizer:
     
     def __str__(self) -> str:
         for s in self._tokens:
-          print(f"statement -> {s}")
+         
