@@ -1,4 +1,5 @@
 import re
+from parts_speech import *
 
 """! @brief Example Python program with Doxygen style comments."""
 
@@ -74,16 +75,12 @@ class statement_tokenizer:
         return new_text
 #    generate a dunction to match all words starting with an A or a
 
-    def matchAllWordsStartingWithA(self, text):
+    def matchAllWordsStartingWithB(self, text):
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
-        return re.findall(r'\b[Aa]\w+', text)
+        data = re.findall(r'\b[Bb]\w+', text)
+        print(data)
+        return data
 
-    def fsa(self, word):
-        if re.search(r'.*ance$', word) or re.search(r'.*ence$', word) or re.search(r'.*ar$', word) or re.search(r'.*er$', word) or re.search(r'.*ir$', word) or re.search(r'.*or$', word) or re.search(r'.*ur$', word) or re.search(r'.*ism$', word) or re.search(r'.*ment$', word) or re.search(r'.*age$', word) or re.search(r'.*hood$', word) or re.search(r'.*ness$', word) or re.search(r'.*irt$', word) or re.search(r'.*er$', word) or re.search(r'.*bots', word):
-            return "noun"
-        elif re.search(r'.*able$', word) or re.search(r'.*ible$', word) or re.search(r'.*ant$', word) or re.search(r'.*ent$', word) or re.search(r'.*ists$', word) or re.search(r'.*ist$', word) or re.search(r'.*ous$', word) or re.search(r'.*ful$', word) or re.search(r'.*ish', word) or re.search(r'.*ive$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ify$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ed$', word) or re.search(r'.*ate$', word) or re.search(r'.*y$', word) or re.search(r'.*ons$', word) or re.search(r'.*ing', word) or re.search(r'.*de', word) or re.search(r'.*ound', word):
-            return "verb"
-        elif re.search(r'.*ly$', word) or re.search(r'.*ry$', word) or word == "right" or re.search(r'.*here$', word) or word == "wrong" or re.search(r'.*here$', word) or word == 'soon' or re.search(r'.*soon$', word) or re.search(r'.*times$', word) or re.search(r'.*in$', word):
-            return "adverb"
-        else:
-            return "valid but unknown"
+    def identifyPartsOfSpeech(self, text):
+        """This function is responsible for the identification of the parts of speech of the words in the text block. 
+        it takes the list of words as an argument and returns a list of parts of speech."""
