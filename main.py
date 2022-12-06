@@ -10,6 +10,8 @@
 #-------------------------------------------------------------------------------
 import re
 import sys
+import Token
+import LexerError
 
 
 class statement_tokenizer:
