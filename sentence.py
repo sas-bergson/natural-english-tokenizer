@@ -3,64 +3,54 @@ import regex as re
 
 class Sentence:
     
-    f = open('./assets/sample.txt', 'r')
-    sample = f.read()
-    f.close()
+    def __init__(self):
+        self._sentence_pattern = r'[A-Z][^\.!?]*[!?\.]'
+        self._v_pattern = re.compile(r'\b[v]\w+', re.I)
+        self._pattern = r'[!,\.?]\B'
+        self.l_pattern = re.compile(r'([a-zA-Z0-9])')
+        self.word_pattern = re.compile(r'[a-zA-Z0-9]+')
+        self._adverbs = r"\w+ly\b"
+        self._verbs = r"\w+ing\b"
     
-    def sentence_check(text):
+    def sentence_check(self, text):
         '''This function checks if the text is a proper sentence'''
         
-        pattern = re.compile('[A-Z][^\.!?]*[!?\.]',re.M)  
-        if re.match(pattern, text):
-            checked_text = text
-            print(checked_text)
-            return checked_text
-        else:
-            print("Invalid")
+        checked = re.findall(self._sentence_pattern, text)
+        print(checked)
         
-    def get_token(text) -> list :
+    def get_token(self, text) -> list :
         '''This functions splits the sentence into words'''
-        tokens = re.split(r'[!,\.?]\B', text)
+        
+        tokens = re.split(self._pattern, text)
         for word in tokens:
             print(word)
         print(tokens)
         return tokens
     
-    def words_withV(text):
+    def words_withV(self, text):
         '''Matching words that begin with V and printing them'''
-        v_pattern = re.compile(r'\b[v]\w+', re.I)
-        x = re.findall(v_pattern, text)
+        
+        x = re.findall(self._v_pattern, text)
         print(x)
         
-    def matchtextlength(text):
+    def matchtextlength(self, text):
         '''This function returns the length of all the words in this sentence'''
-        l_pattern = re.compile(r'([a-zA-Z0-9])')
-        word_pattern = re.compile(r'[a-zA-Z0-9]+')
-        # sentence_split = re.split('\s', text)
-        # print(sentence_split)
-        words = re.findall(word_pattern, text)
-        length = len(re.findall(l_pattern, text))
-        # jointS = emptySj
+        
+        words = re.findall(self.word_pattern, text)
+        length = len(re.findall(self.l_pattern, text))
+        
         print("".join([" ".join(words),"   (length = ", str(length), ")"]))
-        #print(length)
+
         return length
-    def findalladverbs(text):
+    def findalladverbs(self, text):
         '''This functions displays all the adverbs in a text and their position'''
-        for m in re.finditer(r"\w+ly\b", text):
+        
+        for m in re.finditer(self._adverbs, text):
             print('Adverb: '+'%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
-    def findallverbs(text):
+    def findallverbs(self, text):
         '''This functions displays all the adverbs in a text and their position'''
-        for m in re.finditer(r"\w+ing\b", text):
+        
+        for m in re.finditer(self._verbs, text):
             print( 'verb:'+'%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
    
-    
-    #matchtextlength(sample) 
-    #get_token(sample)   
-    #sentence_check(sample)
-    #words_withV(sample)
-    findalladverbs(sample)
-    findallverbs(sample)
-    
-    
-    
     
