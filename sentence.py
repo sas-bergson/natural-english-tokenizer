@@ -47,7 +47,11 @@ class Sentence:
     def findalladverbs(text):
         '''This functions displays all the adverbs in a text and their position'''
         for m in re.finditer(r"\w+ly\b", text):
-            print('%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
+            print('Adverb: '+'%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
+    def findallverbs(text):
+        '''This functions displays all the adverbs in a text and their position'''
+        for m in re.finditer(r"\w+ing\b", text):
+            print( 'verb:'+'%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
     
     
     #matchtextlength(sample) 
@@ -55,6 +59,7 @@ class Sentence:
     #sentence_check(sample)
     #words_withV(sample)
     findalladverbs(sample)
+    findallverbs(sample)
     
     
     
