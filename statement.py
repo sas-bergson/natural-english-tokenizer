@@ -87,21 +87,19 @@ class statement_tokenizer:
         partsOfSpeech = []
         for word in text:
             if word in nouns:
-                partsOfSpeech.append("Noun")
+                partsOfSpeech.append(word+" Noun")
             elif word in pronouns:
-                partsOfSpeech.append("Pronoun")
+                partsOfSpeech.append(word+" Pronoun")
             elif word in adjectives:
-                partsOfSpeech.append("Adjective")
+                partsOfSpeech.append(word+" Adjective")
             elif word in verbs:
-                partsOfSpeech.append("Verb")
+                partsOfSpeech.append(word+" Verb")
             elif word in adverbs:
-                partsOfSpeech.append("Adverb")
-            # elif word in prepositions:
-            #     partsOfSpeech.append("Preposition")
+                partsOfSpeech.append(word+" Adverb")
             elif word in conjunctions:
-                partsOfSpeech.append("Conjunction")
+                partsOfSpeech.append(word+" Conjunction")
             elif word in interjections:
-                partsOfSpeech.append("Interjection")
+                partsOfSpeech.append(word+" Interjection")
             else:
-                partsOfSpeech.append("Unknown")
+                partsOfSpeech.append(word+" Unknown")
         return partsOfSpeech
