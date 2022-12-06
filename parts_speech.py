@@ -32,4 +32,8 @@ adverbs = [
     "below", "beneficlly", "bi-monthly", "biblically", "biennially", "bilaterally", "bimonthly", "biologically", "bit", "bitterly", "biweekly", "bizarrely", "blandly",
     "blanky", "blatanly", "blazingly", "blessedly", "blindingly", "blindly", "blissfully", "blisteringly", "blithely", "bluntly", "boldly", "boringly", "botanically",
     "bravely", "brazenly", "breathlessly", "breathtakingly", "briefly", "brightly", "brilliantly", "briskly", "broadly", "brutally", "busily", "braggingly", "bragly", "brashly",
-]
+],
+
+# conjunctions starting with the letter "b"
+conjunctions = [
+    "because", "before", "behind", "below", "beneath", "beside", "between", "beyond", "but", "by", "by means of", "by virtue of", "by way of", "by virtue of", "by way of"]
