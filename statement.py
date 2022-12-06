@@ -13,5 +13,5 @@ class statement_tokenizer:
         return self._tokens
     
     def __str__(self) -> str:
-        for s in self._tokens:
+        
          
