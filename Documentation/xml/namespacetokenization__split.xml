@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacetokenization__split" kind="namespace" language="Python">
+    <compoundname>tokenization_split</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="tokenization__split_8py_1aa0e4cd95fd0b2b250682013b9b4beace" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenization_split.f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>tokenization_split.f</qualifiedname>
+        <initializer>=  open(r&apos;./assets/tokenized.txt&apos;, &apos;r&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tokenization_split.py" line="5" column="1" bodyfile="tokenization_split.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenization__split_8py_1aded9df9a405f3e7f464d71c27dfb3ca2" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenization_split.tokenized</definition>
+        <argsstring></argsstring>
+        <name>tokenized</name>
+        <qualifiedname>tokenization_split.tokenized</qualifiedname>
+        <initializer>=  f.read()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tokenization_split.py" line="6" column="1" bodyfile="tokenization_split.py" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenization__split_8py_1ae567b4e88e97a5bfe96ea7e6f060b5ca" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string tokenization_split.sentenceProcessing</definition>
+        <argsstring></argsstring>
+        <name>sentenceProcessing</name>
+        <qualifiedname>tokenization_split.sentenceProcessing</qualifiedname>
+        <initializer>= &quot;&quot;.join(<ref refid="class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2" kindref="member">DemoTokenizer.DemoTokenizer.performSentenceSplit</ref>(tokenized))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tokenization_split.py" line="9" column="1" bodyfile="tokenization_split.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="tokenization__split_8py_1a5a1d9e2480e8bf63d0bce29d0a0ffffc" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>tokenization_split.data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>tokenization_split.data</qualifiedname>
+        <initializer>=    DemoTokenizer.DemoTokenizer.performWordSplit(sentenceProcessing)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="tokenization_split.py" line="10" column="1" bodyfile="tokenization_split.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="tokenization_split.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

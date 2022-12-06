@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="tokenization__split_8py" kind="file" language="Python">
+    <compoundname>tokenization_split.py</compoundname>
+    <innernamespace refid="namespacetokenization__split">tokenization_split</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">import</highlight><highlight class="normal"><sp/>regex<sp/></highlight><highlight class="keyword">as</highlight><highlight class="normal"><sp/>re</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>DemoTokenizer<sp/></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>__name__<sp/>==</highlight><highlight class="stringliteral">&quot;__main__&quot;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>f<sp/>=<sp/>open(</highlight><highlight class="stringliteral">r&apos;./assets/tokenized.txt&apos;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&apos;r&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>tokenized<sp/>=<sp/>f.read()</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>f.close()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>re.search(</highlight><highlight class="stringliteral">r&apos;[A-Z].*&apos;</highlight><highlight class="normal">,tokenized):</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sentenceProcessing<sp/>=</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">.join(<ref refid="class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2" kindref="member">DemoTokenizer.DemoTokenizer.performSentenceSplit</ref>(tokenized))<sp/><sp/></highlight><highlight class="comment">#<sp/>type:<sp/>ignore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>=<sp/><sp/><sp/><ref refid="class_demo_tokenizer_1_1_demo_tokenizer_1a856582d62e67dba40d73d51ff1e12f17" kindref="member">DemoTokenizer.DemoTokenizer.performWordSplit</ref>(sentenceProcessing)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(data)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">#<sp/><sp/><sp/>print(<sp/>DemoTokenizer.<sp/>DemoTokenizer.tag(data))<sp/><sp/>#<sp/>type:<sp/>ignore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(</highlight><highlight class="stringliteral">&quot;Invalid&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="tokenization_split.py"/>
+  </compounddef>
+</doxygen>

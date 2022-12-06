@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_demo_tokenizer_1_1_demo_tokenizer" xml:lang="en-US">
+<title>DemoTokenizer.DemoTokenizer Class Reference</title>
+<indexterm><primary>DemoTokenizer.DemoTokenizer</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_class_demo_tokenizer_1_1_demo_tokenizer_1a466754cc98ec8032207a1249c9eb3b1c">fmtcharRecog</link> (text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2">performSentenceSplit</link> (text)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_demo_tokenizer_1_1_demo_tokenizer_1a856582d62e67dba40d73d51ff1e12f17"/>def <emphasis role="strong">performWordSplit</emphasis> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_class_demo_tokenizer_1_1_demo_tokenizer_1aa3264a104732bd9dee0419ef93145d3c">tag</link> (lstData)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_demo_tokenizer_1_1_demo_tokenizer_1a466754cc98ec8032207a1249c9eb3b1c"/><section>
+    <title>fmtcharRecog()</title>
+<indexterm><primary>fmtcharRecog</primary><secondary>DemoTokenizer.DemoTokenizer</secondary></indexterm>
+<indexterm><primary>DemoTokenizer.DemoTokenizer</primary><secondary>fmtcharRecog</secondary></indexterm>
+<para><computeroutput>def DemoTokenizer.DemoTokenizer.fmtcharRecog ( text)</computeroutput></para>
+<para><literallayout><computeroutput>This is a function to enable character recognition
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2"/><section>
+    <title>performSentenceSplit()</title>
+<indexterm><primary>performSentenceSplit</primary><secondary>DemoTokenizer.DemoTokenizer</secondary></indexterm>
+<indexterm><primary>DemoTokenizer.DemoTokenizer</primary><secondary>performSentenceSplit</secondary></indexterm>
+<para><computeroutput>def DemoTokenizer.DemoTokenizer.performSentenceSplit ( text)</computeroutput></para>
+<para><literallayout><computeroutput>This is a function to enable sentence splitting in range
+</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_class_demo_tokenizer_1_1_demo_tokenizer_1aa3264a104732bd9dee0419ef93145d3c"/><section>
+    <title>tag()</title>
+<indexterm><primary>tag</primary><secondary>DemoTokenizer.DemoTokenizer</secondary></indexterm>
+<indexterm><primary>DemoTokenizer.DemoTokenizer</primary><secondary>tag</secondary></indexterm>
+<para><computeroutput>def DemoTokenizer.DemoTokenizer.tag ( lstData)</computeroutput></para>
+<para><literallayout><computeroutput>Tagging string and a function to generate a list of colors
+</computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+DemoTokenizer.py</section>
+</section>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="class_demo_tokenizer_1_1_demo_tokenizer" kind="class" language="Python" prot="public">
+    <compoundname>DemoTokenizer::DemoTokenizer</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_demo_tokenizer_1_1_demo_tokenizer_1a466754cc98ec8032207a1249c9eb3b1c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def DemoTokenizer.DemoTokenizer.fmtcharRecog</definition>
+        <argsstring>(text)</argsstring>
+        <name>fmtcharRecog</name>
+        <qualifiedname>DemoTokenizer.DemoTokenizer.fmtcharRecog</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is a function to enable character recognition
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DemoTokenizer.py" line="4" column="1" bodyfile="DemoTokenizer.py" bodystart="4" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def DemoTokenizer.DemoTokenizer.performSentenceSplit</definition>
+        <argsstring>(text)</argsstring>
+        <name>performSentenceSplit</name>
+        <qualifiedname>DemoTokenizer.DemoTokenizer.performSentenceSplit</qualifiedname>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This is a function to enable sentence splitting in range
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DemoTokenizer.py" line="19" column="1" bodyfile="DemoTokenizer.py" bodystart="19" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_demo_tokenizer_1_1_demo_tokenizer_1a856582d62e67dba40d73d51ff1e12f17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def DemoTokenizer.DemoTokenizer.performWordSplit</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>performWordSplit</name>
+        <qualifiedname>DemoTokenizer.DemoTokenizer.performWordSplit</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DemoTokenizer.py" line="31" column="1" bodyfile="DemoTokenizer.py" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_demo_tokenizer_1_1_demo_tokenizer_1aa3264a104732bd9dee0419ef93145d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def DemoTokenizer.DemoTokenizer.tag</definition>
+        <argsstring>(lstData)</argsstring>
+        <name>tag</name>
+        <qualifiedname>DemoTokenizer.DemoTokenizer.tag</qualifiedname>
+        <param>
+          <type>lstData</type>
+          <defname>lstData</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>Tagging string and a function to generate a list of colors
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DemoTokenizer.py" line="36" column="1" bodyfile="DemoTokenizer.py" bodystart="36" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="DemoTokenizer.py" line="2" column="1" bodyfile="DemoTokenizer.py" bodystart="2" bodyend="57"/>
+    <listofallmembers>
+      <member refid="class_demo_tokenizer_1_1_demo_tokenizer_1a466754cc98ec8032207a1249c9eb3b1c" prot="public" virt="non-virtual"><scope>DemoTokenizer::DemoTokenizer</scope><name>fmtcharRecog</name></member>
+      <member refid="class_demo_tokenizer_1_1_demo_tokenizer_1a1e7823d2dc53913bf4b16d87c951d4b2" prot="public" virt="non-virtual"><scope>DemoTokenizer::DemoTokenizer</scope><name>performSentenceSplit</name></member>
+      <member refid="class_demo_tokenizer_1_1_demo_tokenizer_1a856582d62e67dba40d73d51ff1e12f17" prot="public" virt="non-virtual"><scope>DemoTokenizer::DemoTokenizer</scope><name>performWordSplit</name></member>
+      <member refid="class_demo_tokenizer_1_1_demo_tokenizer_1aa3264a104732bd9dee0419ef93145d3c" prot="public" virt="non-virtual"><scope>DemoTokenizer::DemoTokenizer</scope><name>tag</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
