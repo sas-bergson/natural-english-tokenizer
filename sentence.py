@@ -52,7 +52,7 @@ class Sentence:
         '''This functions displays all the adverbs in a text and their position'''
         for m in re.finditer(r"\w+ing\b", text):
             print( 'verb:'+'%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
-    
+   
     
     #matchtextlength(sample) 
     #get_token(sample)   
@@ -60,6 +60,7 @@ class Sentence:
     #words_withV(sample)
     findalladverbs(sample)
     findallverbs(sample)
+    
     
     
     
