@@ -37,3 +37,11 @@ adverbs = [
 # conjunctions starting with the letter "b"
 conjunctions = [
     "because", "before", "behind", "below", "beneath", "beside", "between", "beyond", "but", "by", "by means of", "by virtue of", "by way of", "by virtue of", "by way of"]
+
+# list of intergecting conjunctions starting with the letter "b"
+interjections = [
+    "bah", "bam", "bang", "barf", "bark", "bawl", "beep", "behold", "bellow", "bend", "beware"]
+#list of pronouns starting with the letter "b"
+pronouns = [
+    "both", "but", "by", "by means of", "by virtue of", "by way of", "by virtue of", "by way of"]
+# pronouns = []
