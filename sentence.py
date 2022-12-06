@@ -50,9 +50,11 @@ class Sentence:
             print('%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
     
     
-    matchtextlength(sample) 
-    get_token(sample)   
-    # sentence_check(sample)
-    # words_withV(sample)
+    #matchtextlength(sample) 
+    #get_token(sample)   
+    #sentence_check(sample)
+    #words_withV(sample)
+    findalladverbs(sample)
+    
     
     
