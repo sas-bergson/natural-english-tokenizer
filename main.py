@@ -145,7 +145,11 @@ if __name__ == '__main__':
         ('Table', 'Noun'),
         ('Take', 'Verb'),
         ('Talent', 'Noun'),
-        ('Tall', 'Adjective')
+        ('Tall', 'Adjective'),
+        ('I', 'Personal Pronoun'),
+        ('He', 'Personal Pronoun'),
+        ('She', 'Personal Pronoun'),
+        
 
     ]
 
