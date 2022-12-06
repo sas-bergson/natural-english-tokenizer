@@ -130,7 +130,8 @@ class Lexer(object):
 if __name__ == '__main__':
     rules = [
         ('\d+',             'NUMBER'),
-        ('[a-zA-Z_]\w+',    'WORD'),
+        #('[a-zA-Z_]\w+',    'WORD'),
+        #('[o-wO-W_]\w+', 'NOUN'),
         ('\+',              'PLUS'),
         ('\-',              'MINUS'),
         ('\*',              'MULTIPLY'),
@@ -139,12 +140,12 @@ if __name__ == '__main__':
         ('\)',              'RP'),
         ('=',               'EQUALS'),
         #('Hello', 'NOUN'),
-        #('World', 'NOUN'),
-        #('The', 'Determiner'),
-        #('Table', 'Noun'),
-        #('Take', 'Verb'),
-        #('Talent', 'Noun'),
-        #('Tall', 'Adjective')
+        ('World', 'NOUN'),
+        ('The', 'Determiner'),
+        ('Table', 'Noun'),
+        ('Take', 'Verb'),
+        ('Talent', 'Noun'),
+        ('Tall', 'Adjective')
 
     ]
 
