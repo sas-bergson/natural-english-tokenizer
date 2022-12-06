@@ -139,7 +139,7 @@ if __name__ == '__main__':
         ('\(',              'LP'),
         ('\)',              'RP'),
         ('=',               'EQUALS'),
-        #('Hello', 'NOUN'),
+        ('Hello', 'NOUN'),
         ('World', 'NOUN'),
         ('The', 'Determiner'),
         ('Table', 'Noun'),
