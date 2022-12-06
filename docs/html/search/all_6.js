@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
-  ['retainalltokens_1',['retainAllTokens',['../classstatement_1_1statement__tokenizer.html#a4e5ac6643bd394792d52f57899951261',1,'statement::statement_tokenizer']]]
+  ['natural_20language_20tokenization_0',['Natural language Tokenization',['../md__r_e_a_d_m_e.html',1,'']]],
+  ['nouns_1',['nouns',['../namespaceparts__speech.html#adc0dc44330b0d4fd81b4339be9639e9b',1,'parts_speech']]]
 ];

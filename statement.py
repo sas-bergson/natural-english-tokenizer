@@ -77,15 +77,19 @@ class statement_tokenizer:
 
     def matchAllWordsStartingWithB(self, text):
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
-        data = re.findall(r'\b[Bb]\w+', text)
+        formatter = re.compile(r'\b[Bb]\w+', re.M)
+        data = re.findall(formatter, text)
+        print("THESE ARE ALL THE VALID WORDS STARTING WITH b OR B:")
         print(data)
+        print("\n\n\n")
         return data
 
     def identifyPartsOfSpeech(self, text):
         """This function is responsible for the identification of the parts of speech of the words in the text block. 
         it takes the list of words as an argument and returns a list of parts of speech."""
+        data = self.matchAllWordsStartingWithB(text)
         partsOfSpeech = []
-        for word in text:
+        for word in data:
             if word in nouns:
                 partsOfSpeech.append(word+" Noun")
             elif word in pronouns:

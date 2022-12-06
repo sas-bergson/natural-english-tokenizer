@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fsa_0',['fsa',['../classstatement_1_1statement__tokenizer.html#a0dc7e42213834f352a360fbc3d8f746f',1,'statement::statement_tokenizer']]]
+  ['adjectives_0',['adjectives',['../namespaceparts__speech.html#a2ce80139d0797fe1598a53e42f10adcd',1,'parts_speech']]],
+  ['adverbs_1',['adverbs',['../namespaceparts__speech.html#a2848d3ea83a370adaf4c9c248e519188',1,'parts_speech']]]
 ];

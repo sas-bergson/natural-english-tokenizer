@@ -96,26 +96,18 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="main_8py_source.html#l00029">29</a> of file <a class="el" href="main_8py_source.html">main.py</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   29</span><span class="keyword">def </span><a class="code hl_function" href="namespacemain.html#a19a7b3cd609ad62e14a361b54bbad262">main</a>():</div>
 <div class="line"><span class="lineno">   30</span>    <span class="stringliteral">&quot;&quot;&quot;! @brief Example Python program with Doxygen style comments.&quot;&quot;&quot;</span></div>
-<div class="line"><span class="lineno">   31</span>    print(<span class="stringliteral">&quot;Hello World&quot;</span>)</div>
-<div class="line"><span class="lineno">   32</span>    f = open(<span class="stringliteral">&#39;./assets/text.txt&#39;</span>, <span class="stringliteral">&#39;r&#39;</span>)</div>
-<div class="line"><span class="lineno">   33</span>    text = f.read()</div>
-<div class="line"><span class="lineno">   34</span>    f.close()</div>
-<div class="line"><span class="lineno">   35</span>    tokenizer = statement_tokenizer()</div>
-<div class="line"><span class="lineno">   36</span>    print(<span class="stringliteral">&quot;The function of to get all the tokens is: &quot;</span>,</div>
-<div class="line"><span class="lineno">   37</span>          tokenizer.getAllTokens(text))</div>
-<div class="line"><span class="lineno">   38</span>    print(<span class="stringliteral">&quot;This is the method is responsible for the token retension:&quot;</span>,</div>
-<div class="line"><span class="lineno">   39</span>          tokenizer.retainAllTokens(text))</div>
-<div class="line"><span class="lineno">   40</span>    print(<span class="stringliteral">&quot;THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND &quot;</span>)</div>
-<div class="line"><span class="lineno">   41</span>    print(tokenizer.peformSentenceSplit(text))</div>
-<div class="line"><span class="lineno">   42</span>    print(<span class="stringliteral">&quot;THIS IS RESPONSIBLE FOR MATHING ALL WORDS STARTING AN A OR a&quot;</span>)</div>
-<div class="line"><span class="lineno">   43</span>    print(tokenizer.matchAllWordsStartingWithA(text))</div>
-<div class="line"><span class="lineno">   44</span>    print(<span class="stringliteral">&quot;THIS IS A THAT PARTIAL MATCHES THE TEXT TYPES:&quot;</span>)</div>
-<div class="line"><span class="lineno">   45</span>    words = tokenizer.performWordSplit(text)</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">for</span> word <span class="keywordflow">in</span> words:</div>
-<div class="line"><span class="lineno">   48</span>        print(word+tokenizer.fsa(word))</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   31</span>    f = open(<span class="stringliteral">&#39;./assets/text.txt&#39;</span>, <span class="stringliteral">&#39;r&#39;</span>)</div>
+<div class="line"><span class="lineno">   32</span>    text = f.read()</div>
+<div class="line"><span class="lineno">   33</span>    f.close()</div>
+<div class="line"><span class="lineno">   34</span>    tokenizer = statement_tokenizer()</div>
+<div class="line"><span class="lineno">   35</span>    print(<span class="stringliteral">&quot;THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND &quot;</span>)</div>
+<div class="line"><span class="lineno">   36</span>    sentences = tokenizer.peformSentenceSplit(text)</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">for</span> sentence <span class="keywordflow">in</span> sentences:</div>
+<div class="line"><span class="lineno">   38</span>        print(sentence+<span class="stringliteral">&quot; Character Count: &quot;</span>+str(len(sentence)))</div>
+<div class="line"><span class="lineno">   39</span>    print(<span class="stringliteral">&quot;THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID WORDS STARTING WITH B:\n\n\n&quot;</span>)</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span> </div>
+<div class="line"><span class="lineno">   42</span> </div>
 <div class="ttc" id="anamespacemain_html_a19a7b3cd609ad62e14a361b54bbad262"><div class="ttname"><a href="namespacemain.html#a19a7b3cd609ad62e14a361b54bbad262">main.main</a></div><div class="ttdeci">def main()</div><div class="ttdoc">Example Python program with Doxygen style comments.</div><div class="ttdef"><b>Definition:</b> <a href="main_8py_source.html#l00029">main.py:29</a></div></div>
 </div><!-- fragment -->
 </div>

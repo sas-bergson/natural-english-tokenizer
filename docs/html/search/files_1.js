@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]]
+  ['parts_5fspeech_2epy_0',['parts_speech.py',['../parts__speech_8py.html',1,'']]]
 ];

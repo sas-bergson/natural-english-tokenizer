@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['data_0',['data',['../namespacestatement.html#a511ae0b1c13f95e5f08f1a0dd3da3d93',1,'statement']]]
+  ['adjectives_0',['adjectives',['../namespaceparts__speech.html#a2ce80139d0797fe1598a53e42f10adcd',1,'parts_speech']]],
+  ['adverbs_1',['adverbs',['../namespaceparts__speech.html#a2848d3ea83a370adaf4c9c248e519188',1,'parts_speech']]]
 ];

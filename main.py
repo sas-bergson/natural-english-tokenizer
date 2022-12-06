@@ -36,6 +36,8 @@ def main():
     sentences = tokenizer.peformSentenceSplit(text)
     for sentence in sentences:
         print(sentence+" Character Count: "+str(len(sentence)))
+    print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID WORDS STARTING WITH B:\n\n\n")
+
 
 
 if __name__ == "__main__":
