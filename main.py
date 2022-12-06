@@ -11,7 +11,7 @@
 #
 # Copyright (c) 2022 Compiler Construct.  All rights reserved.
 ##
-# @file statement.py.py
+
 #
 # @brief Example Python program with Doxygen style comments.
 #
