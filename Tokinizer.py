@@ -6,7 +6,7 @@ def sentence_split(text):
     
     #This function removes the empty values from the list.
     sentences.remove('')
-    print('sentences('+str(len(sentences))+') : ')
+    print('sentences('+str(len(sentences))+') : ')\
     for sentence in sentences:
         if (sentence != ''):
             print(' -> '+sentence)
