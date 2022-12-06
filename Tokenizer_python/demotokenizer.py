@@ -2,8 +2,8 @@ import token
 
 Test = token.tokenizer()
 
-text = 'I beleive in Christ. The choir is made up of youths, parents, and grandparents. The fear of the Lord is my salvation.'
-
+text = 'This is a test designed to verify the behaviour\
+of the tokenizer. If it succeeds, we will move to the design of a file scanner.'
 test = Test.sentence_split(text)
 test_paragraph = Test.word_split(test)
 print(test_paragraph)
