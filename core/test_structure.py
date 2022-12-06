@@ -1,4 +1,5 @@
 import pytest
+import structure
 
 from .structures import Document, sentencize, tokenize
 
