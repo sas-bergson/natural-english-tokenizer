@@ -25,3 +25,15 @@ class DummySentencizer():
             self._index+=1
             return result
         raise StopIteration
+
+class DummyTokenizer():
+    
+    def __init__(self, sentence, token_boundaries=[' ', '-'], punctuations=string.punctuation, delimiter_token='<SPLIT>'):
+       
+        self.tokens = []
+        self.raw = str(sentence)
+        self._token_boundaries = token_boundaries
+        self._delimiter_token = delimiter_token
+        self._punctuations = punctuations
+        self._index = 0
+        self._tokenize()
