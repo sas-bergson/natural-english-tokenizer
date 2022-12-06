@@ -1,3 +1,4 @@
+import pytest
 
 from .structure import Document, sentencize, tokenize
 
@@ -37,7 +38,9 @@ def test_sentencize():
     assert len(sentencize(text)) == 9
 
 def test_tokenize():
-    
+    """
+    This test is designed to verify the direct functioning of the tokenize function with some use cases. It is also designed to test internal functioning of Token creation.
+    """
     sentence = 'The number of pi is usually summarized to 3.14 for the sake of simplicity.'
     tokens = tokenize(sentence)
     assert len(tokens) == 17
