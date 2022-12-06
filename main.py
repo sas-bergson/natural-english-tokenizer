@@ -40,7 +40,9 @@ def main():
     #       tokenizer.retainAllTokens(text))
     print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND ")
     sentences = tokenizer.peformSentenceSplit(text)
-    print(sentences)
+    print("the number of sentences is: ", len(sentences),"\n")
+    for i in range(len(sentences)):
+        print ("THE {} IS -> {}\n".format(i+1, sentences[i]))
     # print("THIS IS RESPONSIBLE FOR MATHING ALL WORDS STARTING AN A OR a")
     # print(tokenizer.matchAllWordsStartingWithA(text))
     # print("THIS IS A THAT PARTIAL MATCHES THE TEXT TYPES:")
@@ -48,9 +50,15 @@ def main():
 
     # for word in words:
     #     print(word+" "+tokenizer.fsa(word))
+    
     for word in sentences:
         print(tokenizer.performWordSplit(word))
-
+    
+    for i in range(len(sentences)):
+        words = tokenizer.performWordSplit(sentences[i])
+        print("  the {} sentences have {} words".format(i + 1, len(words)))
+        for word in words:
+            print("the word is | "+word+" | the word type: "+tokenizer.wordType(word)+ " the word length: "+str(len(word)) + "\n")
 
 if __name__ == "__main__":
     main()
