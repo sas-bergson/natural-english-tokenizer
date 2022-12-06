@@ -1,5 +1,5 @@
 import os
 
-my_text = "Hello my name is Omgbwa Bindoumou Franck Etienne"
+name = input("Enter a statement: ")
 
-print(my_text.split())
+print(name.split())
