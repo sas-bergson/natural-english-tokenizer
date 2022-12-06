@@ -3,9 +3,8 @@
 def sentence_split(text):
     sentences = text.split('.')
     count = 0
-    
-    #This function removes the empty values from the list.
-    sentences.remove('')
+       
+    sentences.remove('') #This line removes the empty values from the list.
     print('sentences('+str(len(sentences))+') : ')
     for sentence in sentences:
         if (sentence != ''):
@@ -19,23 +18,27 @@ def sentence_split(text):
 #This function splits sentences into words and stores them as a list.
 def word_split(text):
     sentences_list = []
+    count = 0
+    total_words = 0
     for sentence in text:
+        count += 1
         words = sentence.split(' ')
-        if (words.count('')>=1):
-            words.remove('')
-        print('Sentence'+':\n'+ sentence)
+
+        print('\nSentence ('+str(count)+') :\n'+ sentence)
         print('Words:'+'('+str(len(words))+')')
+
+        total_words += len(words);
+
         for word in words:
             #Removing Commas from words
             #if (word.count(',')>=1):
              #   word.remove(',')
             print('-> ' + word)
         sentences_list.append(words)
+        print('\nTotal Senctences: '+ str(len(sentences_list)))
+        print('Total number of Words: '+str(total_words))
     return sentences_list
 
 
-text = 'I beleive in Christ. The choir is made up of youths, parents, and grandparents. The fear of the Lord is my salvation.'
-test = sentence_split(text)
-box = word_split(test)
-print(box)
+
 
