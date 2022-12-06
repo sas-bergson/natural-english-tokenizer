@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classerrors_1_1_tokenizer_error" kind="class" language="Python" prot="public">
+    <compoundname>errors::TokenizerError</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <derivedcompoundref refid="classerrors_1_1_phrase_end_error" prot="public" virt="non-virtual">errors.PhraseEndError</derivedcompoundref>
+    <derivedcompoundref refid="classerrors_1_1_phrase_start_error" prot="public" virt="non-virtual">errors.PhraseStartError</derivedcompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><verbatim> Base class for exceptions </verbatim> </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>errors.TokenizerError</label>
+        <link refid="classerrors_1_1_tokenizer_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>errors.PhraseEndError</label>
+        <link refid="classerrors_1_1_phrase_end_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>errors.PhraseStartError</label>
+        <link refid="classerrors_1_1_phrase_start_error"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>errors.TokenizerError</label>
+        <link refid="classerrors_1_1_tokenizer_error"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/errors.py" line="1" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/errors.py" bodystart="1" bodyend="4"/>
+    <listofallmembers>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

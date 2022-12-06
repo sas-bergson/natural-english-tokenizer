@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmain_1_1_statement_tokenizer" xml:lang="en-US">
+<title>main.StatementTokenizer Class Reference</title>
+<indexterm><primary>main.StatementTokenizer</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1aeba7e5d5a2b8886ce6b0257706089292"/>def <emphasis role="strong">__init__</emphasis> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1_statement_tokenizer_1a27f13751a4f0fcd24e749b827c09e0ec">split_sentences</link> (self, sep=&quot;.&quot;)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1_statement_tokenizer_1a2becfbd567cc27c22bbf8186ff559f6d">validate_phrase</link> (self, sentence)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a3d91e31f3690218c06241b21bb0f8851"/>def <emphasis role="strong">tokenize</emphasis> (self, word)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a85aaff399a475b1d4f1c3b5a1ac4aaa9"/>def <emphasis role="strong">remove_punc</emphasis> (self, sentence)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a19551d1c5417e04d38e7b97dbdc8b94b"/>def <emphasis role="strong">results_to_dic</emphasis> (self, word, word_type)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1_statement_tokenizer_1a5238232e605e7e76b1b82b38cea25dc4">run</link> (self)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a7e35b4e15ffad2e1d9a081278ae1559d"/>def <emphasis role="strong">counter_words</emphasis> (results)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a2912b78f6d6ff443c6528fb268cce056"/><emphasis role="strong">sentence</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1aca1aa5e71dcf15f8dc22a7e94dbd7d2f"/><emphasis role="strong">results</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a3c287a62ec01c6ef75161daa1d334af6"/><emphasis role="strong">counter</emphasis></para>
+</listitem>
+            <listitem><para><anchor xml:id="_classmain_1_1_statement_tokenizer_1a5e54e3cbfe08e30fdfe62cad0b5dbe4e"/><emphasis role="strong">sentences</emphasis></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmain_1_1_statement_tokenizer_1a5238232e605e7e76b1b82b38cea25dc4"/><section>
+    <title>run()</title>
+<indexterm><primary>run</primary><secondary>main.StatementTokenizer</secondary></indexterm>
+<indexterm><primary>main.StatementTokenizer</primary><secondary>run</secondary></indexterm>
+<para><computeroutput>def main.StatementTokenizer.run ( self)</computeroutput></para>
+<para><literallayout><computeroutput> The main function to launch </computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmain_1_1_statement_tokenizer_1a27f13751a4f0fcd24e749b827c09e0ec"/><section>
+    <title>split_sentences()</title>
+<indexterm><primary>split_sentences</primary><secondary>main.StatementTokenizer</secondary></indexterm>
+<indexterm><primary>main.StatementTokenizer</primary><secondary>split_sentences</secondary></indexterm>
+<para><computeroutput>def main.StatementTokenizer.split_sentences ( self,  sep = <computeroutput>&quot;.&quot;</computeroutput>
+)</computeroutput></para>
+<para><literallayout><computeroutput> Split sentences and return a list of all sentences
+verifies that every element of the returned list is not empty</computeroutput></literallayout> </para>
+</section>
+<anchor xml:id="_classmain_1_1_statement_tokenizer_1a2becfbd567cc27c22bbf8186ff559f6d"/><section>
+    <title>validate_phrase()</title>
+<indexterm><primary>validate_phrase</primary><secondary>main.StatementTokenizer</secondary></indexterm>
+<indexterm><primary>main.StatementTokenizer</primary><secondary>validate_phrase</secondary></indexterm>
+<para><computeroutput>def main.StatementTokenizer.validate_phrase ( self,  sentence)</computeroutput></para>
+<para><literallayout><computeroutput> Checks if the sentence starts with a capital letter and ends with a punctuation </computeroutput></literallayout> </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py</section>
+</section>

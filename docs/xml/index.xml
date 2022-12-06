@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
+  <compound refid="classerrors_1_1_phrase_end_error" kind="class"><name>errors::PhraseEndError</name>
+  </compound>
+  <compound refid="classerrors_1_1_phrase_start_error" kind="class"><name>errors::PhraseStartError</name>
+  </compound>
+  <compound refid="classmain_1_1_statement_tokenizer" kind="class"><name>main::StatementTokenizer</name>
+    <member refid="classmain_1_1_statement_tokenizer_1a2912b78f6d6ff443c6528fb268cce056" kind="variable"><name>sentence</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1aca1aa5e71dcf15f8dc22a7e94dbd7d2f" kind="variable"><name>results</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a3c287a62ec01c6ef75161daa1d334af6" kind="variable"><name>counter</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a5e54e3cbfe08e30fdfe62cad0b5dbe4e" kind="variable"><name>sentences</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1ac1f142a3b0061fdb345506ca40ce54bb" kind="variable"><name>_phrase_punctuation</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a67e06b8f12bcee6b824b074e3d83239b" kind="variable"><name>_phrase_start</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a09a4016fe269db161ee79d730c38b1eb" kind="variable"><name>_phrase_end</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a7df39adeab6102c1fda3894abcb45f10" kind="variable"><name>_space</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1aeba7e5d5a2b8886ce6b0257706089292" kind="function"><name>__init__</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a27f13751a4f0fcd24e749b827c09e0ec" kind="function"><name>split_sentences</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a2becfbd567cc27c22bbf8186ff559f6d" kind="function"><name>validate_phrase</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a3d91e31f3690218c06241b21bb0f8851" kind="function"><name>tokenize</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a85aaff399a475b1d4f1c3b5a1ac4aaa9" kind="function"><name>remove_punc</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a19551d1c5417e04d38e7b97dbdc8b94b" kind="function"><name>results_to_dic</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a5238232e605e7e76b1b82b38cea25dc4" kind="function"><name>run</name></member>
+    <member refid="classmain_1_1_statement_tokenizer_1a7e35b4e15ffad2e1d9a081278ae1559d" kind="function"><name>counter_words</name></member>
+  </compound>
+  <compound refid="classerrors_1_1_tokenizer_error" kind="class"><name>errors::TokenizerError</name>
+  </compound>
+  <compound refid="namespaceerrors" kind="namespace"><name>errors</name>
+  </compound>
+  <compound refid="namespacemain" kind="namespace"><name>main</name>
+    <member refid="main_8py_1a25943e6a22b80f2d8a2ffcbb8eb72271" kind="variable"><name>sentence</name></member>
+    <member refid="main_8py_1abf0e06e70b4afe4e39d4dd23d93966c9" kind="variable"><name>st</name></member>
+  </compound>
+  <compound refid="errors_8py" kind="file"><name>errors.py</name>
+  </compound>
+  <compound refid="main_8py" kind="file"><name>main.py</name>
+  </compound>
+</doxygenindex>

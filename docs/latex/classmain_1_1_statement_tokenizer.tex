@@ -1,0 +1,74 @@
+\hypertarget{classmain_1_1_statement_tokenizer}{}\doxysection{main.\+Statement\+Tokenizer Class Reference}
+\label{classmain_1_1_statement_tokenizer}\index{main.StatementTokenizer@{main.StatementTokenizer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_aeba7e5d5a2b8886ce6b0257706089292}\label{classmain_1_1_statement_tokenizer_aeba7e5d5a2b8886ce6b0257706089292}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1_statement_tokenizer_a27f13751a4f0fcd24e749b827c09e0ec}{split\+\_\+sentences}} (self, sep=\char`\"{}.\char`\"{})
+\item 
+def \mbox{\hyperlink{classmain_1_1_statement_tokenizer_a2becfbd567cc27c22bbf8186ff559f6d}{validate\+\_\+phrase}} (self, sentence)
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a3d91e31f3690218c06241b21bb0f8851}\label{classmain_1_1_statement_tokenizer_a3d91e31f3690218c06241b21bb0f8851}} 
+def {\bfseries tokenize} (self, word)
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a85aaff399a475b1d4f1c3b5a1ac4aaa9}\label{classmain_1_1_statement_tokenizer_a85aaff399a475b1d4f1c3b5a1ac4aaa9}} 
+def {\bfseries remove\+\_\+punc} (self, sentence)
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a19551d1c5417e04d38e7b97dbdc8b94b}\label{classmain_1_1_statement_tokenizer_a19551d1c5417e04d38e7b97dbdc8b94b}} 
+def {\bfseries results\+\_\+to\+\_\+dic} (self, word, word\+\_\+type)
+\item 
+def \mbox{\hyperlink{classmain_1_1_statement_tokenizer_a5238232e605e7e76b1b82b38cea25dc4}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a7e35b4e15ffad2e1d9a081278ae1559d}\label{classmain_1_1_statement_tokenizer_a7e35b4e15ffad2e1d9a081278ae1559d}} 
+def {\bfseries counter\+\_\+words} (results)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a2912b78f6d6ff443c6528fb268cce056}\label{classmain_1_1_statement_tokenizer_a2912b78f6d6ff443c6528fb268cce056}} 
+{\bfseries sentence}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_aca1aa5e71dcf15f8dc22a7e94dbd7d2f}\label{classmain_1_1_statement_tokenizer_aca1aa5e71dcf15f8dc22a7e94dbd7d2f}} 
+{\bfseries results}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a3c287a62ec01c6ef75161daa1d334af6}\label{classmain_1_1_statement_tokenizer_a3c287a62ec01c6ef75161daa1d334af6}} 
+{\bfseries counter}
+\item 
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a5e54e3cbfe08e30fdfe62cad0b5dbe4e}\label{classmain_1_1_statement_tokenizer_a5e54e3cbfe08e30fdfe62cad0b5dbe4e}} 
+{\bfseries sentences}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a5238232e605e7e76b1b82b38cea25dc4}\label{classmain_1_1_statement_tokenizer_a5238232e605e7e76b1b82b38cea25dc4}} 
+\index{main.StatementTokenizer@{main.StatementTokenizer}!run@{run}}
+\index{run@{run}!main.StatementTokenizer@{main.StatementTokenizer}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def main.\+Statement\+Tokenizer.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} The main function to launch \end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a27f13751a4f0fcd24e749b827c09e0ec}\label{classmain_1_1_statement_tokenizer_a27f13751a4f0fcd24e749b827c09e0ec}} 
+\index{main.StatementTokenizer@{main.StatementTokenizer}!split\_sentences@{split\_sentences}}
+\index{split\_sentences@{split\_sentences}!main.StatementTokenizer@{main.StatementTokenizer}}
+\doxysubsubsection{\texorpdfstring{split\_sentences()}{split\_sentences()}}
+{\footnotesize\ttfamily def main.\+Statement\+Tokenizer.\+split\+\_\+sentences (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sep = {\ttfamily \char`\"{}.\char`\"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Split sentences and return a list of all sentences
+verifies that every element of the returned list is not empty\end{DoxyVerb}
+ \mbox{\Hypertarget{classmain_1_1_statement_tokenizer_a2becfbd567cc27c22bbf8186ff559f6d}\label{classmain_1_1_statement_tokenizer_a2becfbd567cc27c22bbf8186ff559f6d}} 
+\index{main.StatementTokenizer@{main.StatementTokenizer}!validate\_phrase@{validate\_phrase}}
+\index{validate\_phrase@{validate\_phrase}!main.StatementTokenizer@{main.StatementTokenizer}}
+\doxysubsubsection{\texorpdfstring{validate\_phrase()}{validate\_phrase()}}
+{\footnotesize\ttfamily def main.\+Statement\+Tokenizer.\+validate\+\_\+phrase (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{sentence }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Checks if the sentence starts with a capital letter and ends with a punctuation \end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Wn\+D/\+Desktop/\+Semester/\+Assignment/compiler construction/natural-\/english-\/tokenizer/main.\+py\end{DoxyCompactItemize}

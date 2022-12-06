@@ -1,0 +1,87 @@
+.TH "main.StatementTokenizer" 3 "Tue Dec 6 2022" "tokenizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.StatementTokenizer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBsplit_sentences\fP (self, sep='\&.')"
+.br
+.ti -1c
+.RI "def \fBvalidate_phrase\fP (self, sentence)"
+.br
+.ti -1c
+.RI "def \fBtokenize\fP (self, word)"
+.br
+.ti -1c
+.RI "def \fBremove_punc\fP (self, sentence)"
+.br
+.ti -1c
+.RI "def \fBresults_to_dic\fP (self, word, word_type)"
+.br
+.ti -1c
+.RI "def \fBrun\fP (self)"
+.br
+.in -1c
+.SS "Static Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fBcounter_words\fP (results)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBsentence\fP"
+.br
+.ti -1c
+.RI "\fBresults\fP"
+.br
+.ti -1c
+.RI "\fBcounter\fP"
+.br
+.ti -1c
+.RI "\fBsentences\fP"
+.br
+.in -1c
+.SH "Member Function Documentation"
+.PP 
+.SS "def main\&.StatementTokenizer\&.run ( self)"
+
+.PP
+.nf
+ The main function to launch 
+.fi
+.PP
+ 
+.SS "def main\&.StatementTokenizer\&.split_sentences ( self,  sep = \fC'\&.'\fP)"
+
+.PP
+.nf
+ Split sentences and return a list of all sentences
+verifies that every element of the returned list is not empty
+.fi
+.PP
+ 
+.SS "def main\&.StatementTokenizer\&.validate_phrase ( self,  sentence)"
+
+.PP
+.nf
+ Checks if the sentence starts with a capital letter and ends with a punctuation 
+.fi
+.PP
+ 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for tokenizer from the source code\&.

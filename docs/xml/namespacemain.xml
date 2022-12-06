@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacemain" kind="namespace" language="Python">
+    <compoundname>main</compoundname>
+    <innerclass refid="classmain_1_1_statement_tokenizer" prot="public">main::StatementTokenizer</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8py_1a25943e6a22b80f2d8a2ffcbb8eb72271" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string main.sentence</definition>
+        <argsstring></argsstring>
+        <name>sentence</name>
+        <qualifiedname>main.sentence</qualifiedname>
+        <initializer>=  &quot;Xian phrase xenia now xes needing many word. This is the xenia second phrase!&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="120" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8py_1abf0e06e70b4afe4e39d4dd23d93966c9" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.st</definition>
+        <argsstring></argsstring>
+        <name>st</name>
+        <qualifiedname>main.st</qualifiedname>
+        <initializer>=  <ref refid="classmain_1_1_statement_tokenizer" kindref="compound">StatementTokenizer</ref>(sentence)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="121" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

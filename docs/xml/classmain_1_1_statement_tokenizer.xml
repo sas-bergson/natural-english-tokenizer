@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classmain_1_1_statement_tokenizer" kind="class" language="Python" prot="public">
+    <compoundname>main::StatementTokenizer</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a2912b78f6d6ff443c6528fb268cce056" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::sentence</definition>
+        <argsstring></argsstring>
+        <name>sentence</name>
+        <qualifiedname>main.StatementTokenizer.sentence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="13" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1aca1aa5e71dcf15f8dc22a7e94dbd7d2f" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::results</definition>
+        <argsstring></argsstring>
+        <name>results</name>
+        <qualifiedname>main.StatementTokenizer.results</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="15" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a3c287a62ec01c6ef75161daa1d334af6" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <qualifiedname>main.StatementTokenizer.counter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="16" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a5e54e3cbfe08e30fdfe62cad0b5dbe4e" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::sentences</definition>
+        <argsstring></argsstring>
+        <name>sentences</name>
+        <qualifiedname>main.StatementTokenizer.sentences</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="22" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1ac1f142a3b0061fdb345506ca40ce54bb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::_phrase_punctuation</definition>
+        <argsstring></argsstring>
+        <name>_phrase_punctuation</name>
+        <qualifiedname>main.StatementTokenizer._phrase_punctuation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="17" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a67e06b8f12bcee6b824b074e3d83239b" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::_phrase_start</definition>
+        <argsstring></argsstring>
+        <name>_phrase_start</name>
+        <qualifiedname>main.StatementTokenizer._phrase_start</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="19" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a09a4016fe269db161ee79d730c38b1eb" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::_phrase_end</definition>
+        <argsstring></argsstring>
+        <name>_phrase_end</name>
+        <qualifiedname>main.StatementTokenizer._phrase_end</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="20" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classmain_1_1_statement_tokenizer_1a7df39adeab6102c1fda3894abcb45f10" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>main.StatementTokenizer::_space</definition>
+        <argsstring></argsstring>
+        <name>_space</name>
+        <qualifiedname>main.StatementTokenizer._space</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="21" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1aeba7e5d5a2b8886ce6b0257706089292" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.__init__</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>main.StatementTokenizer.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="12" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a27f13751a4f0fcd24e749b827c09e0ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.split_sentences</definition>
+        <argsstring>(self, sep=&quot;.&quot;)</argsstring>
+        <name>split_sentences</name>
+        <qualifiedname>main.StatementTokenizer.split_sentences</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sep</type>
+          <defname>sep</defname>
+          <defval>&quot;.&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Split sentences and return a list of all sentences
+verifies that every element of the returned list is not empty</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="24" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="24" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a2becfbd567cc27c22bbf8186ff559f6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.validate_phrase</definition>
+        <argsstring>(self, sentence)</argsstring>
+        <name>validate_phrase</name>
+        <qualifiedname>main.StatementTokenizer.validate_phrase</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sentence</type>
+          <defname>sentence</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> Checks if the sentence starts with a capital letter and ends with a punctuation </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="43" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a3d91e31f3690218c06241b21bb0f8851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.tokenize</definition>
+        <argsstring>(self, word)</argsstring>
+        <name>tokenize</name>
+        <qualifiedname>main.StatementTokenizer.tokenize</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>word</type>
+          <defname>word</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="54" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="54" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a85aaff399a475b1d4f1c3b5a1ac4aaa9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.remove_punc</definition>
+        <argsstring>(self, sentence)</argsstring>
+        <name>remove_punc</name>
+        <qualifiedname>main.StatementTokenizer.remove_punc</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>sentence</type>
+          <defname>sentence</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="76" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="76" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a19551d1c5417e04d38e7b97dbdc8b94b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.results_to_dic</definition>
+        <argsstring>(self, word, word_type)</argsstring>
+        <name>results_to_dic</name>
+        <qualifiedname>main.StatementTokenizer.results_to_dic</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>word</type>
+          <defname>word</defname>
+        </param>
+        <param>
+          <type>word_type</type>
+          <defname>word_type</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="86" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a5238232e605e7e76b1b82b38cea25dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.run</definition>
+        <argsstring>(self)</argsstring>
+        <name>run</name>
+        <qualifiedname>main.StatementTokenizer.run</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim> The main function to launch </verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="97" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="97" bodyend="118"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classmain_1_1_statement_tokenizer_1a7e35b4e15ffad2e1d9a081278ae1559d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def main.StatementTokenizer.counter_words</definition>
+        <argsstring>(results)</argsstring>
+        <name>counter_words</name>
+        <qualifiedname>main.StatementTokenizer.counter_words</qualifiedname>
+        <param>
+          <type>results</type>
+          <defname>results</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="90" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="90" bodyend="96"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" line="11" column="1" bodyfile="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/main.py" bodystart="11" bodyend="118"/>
+    <listofallmembers>
+      <member refid="classmain_1_1_statement_tokenizer_1aeba7e5d5a2b8886ce6b0257706089292" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>__init__</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a09a4016fe269db161ee79d730c38b1eb" prot="private" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>_phrase_end</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1ac1f142a3b0061fdb345506ca40ce54bb" prot="private" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>_phrase_punctuation</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a67e06b8f12bcee6b824b074e3d83239b" prot="private" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>_phrase_start</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a7df39adeab6102c1fda3894abcb45f10" prot="private" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>_space</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a3c287a62ec01c6ef75161daa1d334af6" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>counter</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a7e35b4e15ffad2e1d9a081278ae1559d" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>counter_words</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a85aaff399a475b1d4f1c3b5a1ac4aaa9" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>remove_punc</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1aca1aa5e71dcf15f8dc22a7e94dbd7d2f" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>results</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a19551d1c5417e04d38e7b97dbdc8b94b" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>results_to_dic</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a5238232e605e7e76b1b82b38cea25dc4" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>run</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a2912b78f6d6ff443c6528fb268cce056" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>sentence</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a5e54e3cbfe08e30fdfe62cad0b5dbe4e" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>sentences</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a27f13751a4f0fcd24e749b827c09e0ec" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>split_sentences</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a3d91e31f3690218c06241b21bb0f8851" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>tokenize</name></member>
+      <member refid="classmain_1_1_statement_tokenizer_1a2becfbd567cc27c22bbf8186ff559f6d" prot="public" virt="non-virtual"><scope>main::StatementTokenizer</scope><name>validate_phrase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

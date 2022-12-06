@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classerrors_1_1_phrase_end_error" xml:lang="en-US">
+<title>errors.PhraseEndError Class Reference</title>
+<indexterm><primary>errors.PhraseEndError</primary></indexterm>
+<para>Inheritance diagram for errors.PhraseEndError:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classerrors_1_1_phrase_end_error.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<section>
+<title>Detailed Description</title>
+
+<para><literallayout><computeroutput> Sentence doesn&apos;t respects the ending condition </computeroutput></literallayout> </para>
+<para>
+The documentation for this class was generated from the following file:</para>
+C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/errors.py</section>
+</section>

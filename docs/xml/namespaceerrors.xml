@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespaceerrors" kind="namespace" language="Python">
+    <compoundname>errors</compoundname>
+    <innerclass refid="classerrors_1_1_phrase_end_error" prot="public">errors::PhraseEndError</innerclass>
+    <innerclass refid="classerrors_1_1_phrase_start_error" prot="public">errors::PhraseStartError</innerclass>
+    <innerclass refid="classerrors_1_1_tokenizer_error" prot="public">errors::TokenizerError</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/WnD/Desktop/Semester/Assignment/compiler construction/natural-english-tokenizer/errors.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>
