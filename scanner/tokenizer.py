@@ -26,7 +26,7 @@ class Tokenizer:
     def __str__(self) -> str:
         ret=''
         for s in self._statements:
-            ret += f"statement -> {s} (length = {len(s)})\n"
+            ret += f"statement -> {s} length = len(s)\n"
         for t in self._tokens:
                 ret += f"token -> {t} (length = {len(t)})\n"
         return ret
