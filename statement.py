@@ -5,7 +5,7 @@ class Statement_Tokenizer:
 
     def __init__(self, text: str) -> None:
 
-        self.__statement_pattern = '[\.!?]'
+        self.__statement_pattern = '[\ .!?]'
         self.__word_regex = re.compile('[^a-zA-Z]')
         self.__words = []
         text = re.sub(r"\s+", " ", text)
