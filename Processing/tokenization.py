@@ -9,3 +9,19 @@ class DummySentencizer():
         self._delimiter_token=delimiter_token
         self._index=0
         self._sentencize()
+    
+    def _sentencize(self):
+        work_sentence = self.raw
+        for character in self._split_characters:
+            work_sentence = work_sentence.replace(character, character+""+self._delimiter_token)
+        self.sentences = [x.strip() for x in work_sentence.split(self._delimiter_token) if x !='']
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self._index < len(self.sentences):
+            result = self.sentences[self._index]
+            self._index+=1
+            return result
+        raise StopIteration
