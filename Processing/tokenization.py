@@ -2,7 +2,7 @@ import string, sys
 import re
 
 sys.path.insert(1, '../core')
-from core.segments import Documen
+from structure import Document, Sentence
 
 
 class DummySentencizer():
