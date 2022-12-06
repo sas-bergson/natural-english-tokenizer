@@ -11,13 +11,16 @@ class statement_tokenizer:
         self._noun_regex = re.compile(r"([A-z])\w+([0-9])?\w+")
         self._sentences = []
         self._tokens=[]
+        self.text=""
         
-    def get_tokens(self) -> list:
+    def get_tokens(self, text) -> list:
         """This method is responsible for the splitting of the individual strings into the required tokens which takes text the text that is to be split into tokens. and returns a list of tokens."""
         #self._tokens= self._regex.split(text)
-        for s in range(len(self._sentences)):
-            self._tokens = self._sentences[s].split()
-        #return self._tokens
+        #for s in self._sentences:
+        #    sentence = s 
+        #    print(sentence)
+        #    self._tokens = sentence.split()
+        self._tokens = text.split()
     
     def list_sentences(self):
         """"This method is responsible for printing the different sentences present in the text"""
@@ -45,3 +48,5 @@ class statement_tokenizer:
                 print(s, " => is a noun")
             else:
                 print(s, " => is not a noun")
+                
+    
