@@ -13,6 +13,15 @@ class statement_tokenizer:
         self._word_pattern = r'\w+'
         self._regex = re.compile(self._sentence_pattern)
         self._tokens = []
+        self.nounList = []
+        self.pronounList = []
+        self.adjectiveList = []
+        self.verbList = []
+        self.averbList = []
+        self.conjunctionsList = []
+        self.interjectionsList = []
+        self.unknownList = []
+        self.adverbList = []
 
     def get_tokens(self, text) -> list:
         """
@@ -90,22 +99,20 @@ class statement_tokenizer:
         In cases where the 
         """
         data = self.matchAllWordsStartingWithB(text)
-        partsOfSpeech = []
         for word in data:
             if word in nouns:
-                partsOfSpeech.append(word+" Noun")
+                self.nounList.append(word)
             elif word in pronouns:
-                partsOfSpeech.append(word+" Pronoun")
+                self.pronounList.append(word)
             elif word in adjectives:
-                partsOfSpeech.append(word+" Adjective")
+                self.adjectiveList.append(word)
             elif word in verbs:
-                partsOfSpeech.append(word+" Verb")
+                self.verbList.append(word)
             elif word in adverbs:
-                partsOfSpeech.append(word+" Adverb")
+                self.adverbList.append(word)
             elif word in conjunctions:
-                partsOfSpeech.append(word+" Conjunction")
+                self.conjunctionsList.append(word)
             elif word in interjections:
-                partsOfSpeech.append(word+" Interjection")
+                self.interjectionsList.append(word)
             else:
-                partsOfSpeech.append(word+" Unknown")
-        return partsOfSpeech
+                self.unknownList.append(word+" Unknown")
