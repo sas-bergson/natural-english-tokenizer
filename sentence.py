@@ -20,7 +20,9 @@ class Sentence:
         
     def get_token(text) -> list :
         '''This functions splits the sentence into words'''
-        tokens = re.split(r'\s+', text)
+        tokens = re.split(r'[!,\.?]\B', text)
+        for word in tokens:
+            print(word)
         print(tokens)
         return tokens
     
@@ -42,11 +44,15 @@ class Sentence:
         print("".join([" ".join(words),"   (length = ", str(length), ")"]))
         #print(length)
         return length
+    def findalladverbs(text):
+        '''This functions displays all the adverbs in a text and their position'''
+        for m in re.finditer(r"\w+ly\b", text):
+            print('%02d-%02d: %s' % (m.start(), m.end(), m.group(0)))
     
     
     matchtextlength(sample) 
     get_token(sample)   
-    sentence_check(sample)
-    words_withV(sample)
+    # sentence_check(sample)
+    # words_withV(sample)
     
     
