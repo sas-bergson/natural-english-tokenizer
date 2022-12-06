@@ -84,3 +84,24 @@ class statement_tokenizer:
     def identifyPartsOfSpeech(self, text):
         """This function is responsible for the identification of the parts of speech of the words in the text block. 
         it takes the list of words as an argument and returns a list of parts of speech."""
+        partsOfSpeech = []
+        for word in text:
+            if word in nouns:
+                partsOfSpeech.append("Noun")
+            # elif word in pronouns:
+            #     partsOfSpeech.append("Pronoun")
+            elif word in adjectives:
+                partsOfSpeech.append("Adjective")
+            elif word in verbs:
+                partsOfSpeech.append("Verb")
+            elif word in adverbs:
+                partsOfSpeech.append("Adverb")
+            # elif word in prepositions:
+            #     partsOfSpeech.append("Preposition")
+            # elif word in conjunctions:
+            #     partsOfSpeech.append("Conjunction")
+            # elif word in interjections:
+            #     partsOfSpeech.append("Interjection")
+            else:
+                partsOfSpeech.append("Unknown")
+        return partsOfSpeech
