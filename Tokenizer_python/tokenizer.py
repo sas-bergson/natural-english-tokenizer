@@ -11,9 +11,9 @@ class tokenizer:
         for sentence in sentences:
             if (sentence != ''):
                 print(' -> '+sentence)
-                sentence.split(',')
             else:
                 sentences.remove(sentence)
+            sentence = sentence.split(',')
         return sentences
 
 
@@ -47,7 +47,3 @@ class tokenizer:
         print('Total Senctences: '+ str(len(sentences_list)))
         print('Total number of Tokens: '+str(total_words)+'\n')
         return sentences_list
-
-
-
-
