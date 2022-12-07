@@ -34,11 +34,23 @@ def main():
     tokenizer = statement_tokenizer()
     print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID SENTENCES AND ")
     sentences = tokenizer.peformSentenceSplit(text)
-
-    # print("THIS IS RESPONSIBLE FOR IDENTIFICATION OF VALID WORDS STARTING WITH B:\n\n\n")
     for sentence in sentences:
         print(sentence+" Character Count: "+str(len(sentence)))
-        print(tokenizer.identifyPartsOfSpeech(sentence))
+        tokenizer.identifyPartsOfSpeech(sentence)
+    print("\n\n")
+    print("part of speech classification")
+    print("Nouns:", tokenizer.nounList)
+    print("Verbs:", tokenizer.verbList)
+    print("Adverbs:", tokenizer.adverbList)
+    print("Adjectives:"+str(tokenizer.adjectiveList))
+    print("pronoun:"+str(tokenizer.pronounList))
+    print("Nouns:"+str(tokenizer.nounList))
+    print("Interjections:"+str(tokenizer.interjectionsList))
+    print("Conjunctions:"+str(tokenizer.conjunctionsList))
+    print("Unknown parts of speech:"+str(tokenizer.unknownList))
+
+
+
 
 
 if __name__ == "__main__":

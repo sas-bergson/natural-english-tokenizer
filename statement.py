@@ -88,10 +88,8 @@ class statement_tokenizer:
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
         formatter = re.compile(r'\b[Bb]\w+', re.M)
         data = re.findall(formatter, text)
-        print('Words starting with B or b are: ', data)
-
+        print('Words starting with B or b are: ', len(data))
         return data
-
     def identifyPartsOfSpeech(self, text):
         """This function is responsible for the identification of the parts of speech of the words in the text block. 
         it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file 
