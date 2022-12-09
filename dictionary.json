@@ -1,0 +1,36 @@
+{
+    "nouns":[
+        "test",
+        "tokenizer.",
+        "design",
+        "file",
+        "scanner.",
+        "behaviour",
+        "scanner",
+        "a"
+    ],
+    "verbs":[
+        "is",
+        "designed",
+        "design",
+        "succeeds",
+        "verify",
+        "move",
+        "will",
+        "a"
+
+    ],
+    "pronouns":[
+        "we",
+        "it"
+    ],
+    "conjunctions":[
+        "if"
+    ],
+    "articles":[
+        "the"
+    ],
+    "determiners":[
+        "This"
+    ]
+}
