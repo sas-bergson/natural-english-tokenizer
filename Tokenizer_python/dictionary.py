@@ -1,0 +1,8 @@
+class dictionary:
+    e = {'e-mail': 'noun', 'each': 'pronoun', 'eager': 'adjective', 'ear':'noun', 'earlier':'adjective', 'earn': 'verb', 'ease':'verb', 'easygoing':'adjective', 'east':'adverb', 'easy':'adjective', 'economic':'adjective', 'economics':'noun', 'economist':'noun', 'economy':'noun', 'ecosystem':'noun', 'edge':'noun', 'edict':'noun', 'edit':'verb', 'edition':'noun', 'educate':'verb', 'education':'noun', 'effect':'noun', 'effective':'adjective', 'effete':'adjective', 'efficient':'adjective', 'effort':'noun', 'egg':'noun', 'either':'pronoun', 'elastic':'adjective', 'elbow':'noun', 'elect':'verb', 'election':'noun', 'electric':'adjective', 'electrician':'noun', 'electricity':'noun', 'electronic':'adjective', 'element':'noun', 'else':'adverb', 'elsewhere':'adverb', 'embarass':'verb', 'embarassment':'noun', 'emerge':'verb', 'emergency':'noun', 'emission':'noun', 'emotion':'noun', 'emotional':'adjective', 'emphasis':'noun', 'emphasize':'verb', 'employee':'noun', 'employer':'noun', 'employment':'noun', 'empty':'verb, adjective', 'enable':'verb', 'encounter':'verb', 'encourage':'verb', 'end':'verb, noun', 'endangered':'adjective', 'enemy':'noun', 'energy':'noun', 'engage':'verb', 'engaged':'adjective', 'engine':'noun', 'engineer':'noun, verb', 'english':'noun, adjective', 'enjoy':'verb', 'enjoyment':'noun', 'enormous':'adjective', 'enormous':'adjective', 'enough':'pronoun'}
+
+    def __init__(self):
+        self.dictionary = {}    
+    def checkword(self, word):
+        if word in e:
+            return e[word]
