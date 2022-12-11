@@ -3,7 +3,7 @@
 # @mainpage Tokenizer Project
 #
 # @section description_main Description
-# The is the generated documentation for group 2's part of the project.
+# The is the generated documentation for group 8's part of the project.
 # generating source code documentation with Doxygen.
 #
 # @section notes_main Notes
