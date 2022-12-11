@@ -17,7 +17,7 @@ class statement_tokenizer:
         self.pronounList = []
         self.adjectiveList = []
         self.verbList = []
-        self.averbList = []
+        self.adverbList = []
         self.conjunctionsList = []
         self.interjectionsList = []
         self.unknownList = []
