@@ -16,29 +16,28 @@ class statement_tokenizer:
     def get_tokens(self, text) -> list:
         """
         This method is responsible for the splitting of the individual strings into the required tokens which
-        take text (string) the text that is to be split into tokens, and returns a list of tokens."""
+        takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
         self._tokens = self.peformSentenceSplit(text)
         return self._tokens
 
     def __str__(self) -> str:
-
         """
         This method is responsible for the printing of the tokens that are returned by the get_tokens method.
-        it takes no arguments and returns a string of the tokens. it basically overrides the default __str__ method."""
+        it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method."""
         for s in self._tokens:
             print(f"statement -> {s}")
 
     def __repr__(self) -> str:
         """
         This method is responsible for the printing of the tokens that are returned by the get_tokens method.
-        it takes no arguments and returns a string of the tokens. it basically overrides the default __repr__ method."""
+        it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method."""
         for s in self._tokens:
             print(f"statement -> {s}")
 
     def peformSentenceSplit(self, text):
-        """This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identify tokens
+        """This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens 
         based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as 
-        blocks. This will also give the possibility to the count of the number of sentences in
+        blocks. this will also give the possibility to thet count of the number of sentences in 
         """
         formatter = re.compile(self._sentence_pattern, re.M)
         return formatter.findall(text)
@@ -46,7 +45,7 @@ class statement_tokenizer:
     def performWordSplit(self, text):
         """This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens 
         based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as 
-        blocks. this will also give the possibility to the count of the number of sentences in
+        blocks. this will also give the possibility to thet count of the number of sentences in 
         """
         formatter = re.compile(self._word_pattern, re.M)
         return formatter.findall(text)
@@ -60,9 +59,9 @@ class statement_tokenizer:
 
     def retainAllTokens(self, text):
         """
-        this function is to prevent the elimination of special characters to avoid elimination during text splitting
+        this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting 
         this will be especially important what there will to be identification of known patters.
-        The function contains a special regular expression that checks all characters individually
+        The function contains a special regular expresssion that checks all characaters individually
         """
         new_text = ""
         for i in range(len(text)):
@@ -73,7 +72,7 @@ class statement_tokenizer:
             else:
                 new_text = new_text+text[i]
         return new_text
-#    generate a f unction to match all words starting with an A or a
+#    generate a dunction to match all words starting with an A or a
 
     def matchAllWordsStartingWithA(self, text):
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
