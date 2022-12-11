@@ -59,7 +59,7 @@ class statement_tokenizer:
 
     def retainAllTokens(self, text):
         """
-        this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting 
+        this fuction is to prevent the elimination of special characters to avoid elimination during text splitting 
         this will be especially important what there will to be identification of known patters.
         The function contains a special regular expresssion that checks all characaters individually
         """
