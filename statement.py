@@ -16,7 +16,7 @@ class statement_tokenizer:
     def get_tokens(self, text) -> list:
         """
         This method is responsible for the splitting of the individual strings into the required tokens which
-        takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
+        take text (string) the text that is to be split into tokens. and returns a list of tokens."""
         self._tokens = self.peformSentenceSplit(text)
         return self._tokens
 
