@@ -9,7 +9,8 @@ if __name__ =="__main__":
     sampletext= '''Do not voilate rules rather value the various varieties of verbs. quickly and running.
 A set of words that is complete in itself, typically containing a subject and predicate?'''
     
-    text = 'This is a test designed to verify the behaviour of the tokenizer. If it succeeds, we will move to the design of a file scanner.'
+    text = 'This is a test designed to verify the behaviour \
+        of the tokenizer. If it succeeds, we will move to the design of a file scanner.'
     
     tokenizer = Sentence()
     
@@ -21,8 +22,10 @@ A set of words that is complete in itself, typically containing a subject and pr
     tokenized_words = tokenizer.get_token(text)
     print('=======================')
     tokenizer.matchtextlength(tokenized_words)
+    # print('=======================')
+    # tokenizer.findalladverbs(text)
+    # print('=======================')
+    # tokenizer.findallverbs(text)
     print('=======================')
-    tokenizer.findalladverbs(text)
-    print('=======================')
-    tokenizer.findallverbs(text)
+    tokenizer.sentencesplit(text)
     

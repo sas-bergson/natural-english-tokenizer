@@ -51,6 +51,11 @@ class Sentence:
         
         # print("".join([" ".join(words),"   (length = ", str(length), ")"]))
         # return length
+    
+    def sentencesplit(self, text):
+        '''Splits each sentence in the sentence'''
+        splitted = re.split(self._space_split, text)
+        print(splitted)
 
     def findalladverbs(self, text):
         '''This functions displays all the adverbs in a text and their position'''
