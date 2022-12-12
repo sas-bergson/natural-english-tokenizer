@@ -1,3 +1,9 @@
 # natural-english-tokenizer
 
-gfghkjkk
+Group members names:
+DIKUBA KINDJEL ALICIA ASHLEY
+KILA FREDERICK
+ADRIEN..
+
+Language used:
+Python
