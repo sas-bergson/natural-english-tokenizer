@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacelexical" xml:lang="en-US">
+<title>lexical Namespace Reference</title>
+<indexterm><primary>lexical</primary></indexterm>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_namespacelexical_1af07d9b67777b3cb5d47afe9ff6b94cb1">text</link> = &quot;Its show time&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a5a4ac3688f4251e52869010a8b7232fc">punctuation</link> = [&apos;!&apos;, &apos;?&apos;,&apos;,&apos;,&apos;.&apos;,&apos;;&apos;,&apos;:&apos;]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e">noun</link> = [&apos;+&apos;, &apos;-&apos;, &apos;*&apos;, &apos;/&apos;, &apos;=&apos;, &apos;+=&apos;, &apos;-=&apos;, &apos;==&apos;, &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;&lt;=&apos;, &apos;&gt;=&apos;]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a08edda5cc39db2649d99f746b5c3fd39">adverb</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a331bfcb04bc25622e9cfed4e52c0356c">verb</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a5e4c8af01c151951897eb17fd46cde2e">in_adverb</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a9269d51e467a03d262335e8c22ab8fb2">in_spl_punctuation</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a008f385c6c32f86c9e19cf4a5481d8a0">in_noun</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a79b012a4f7c2b9de4149b3bb8d9c1240">in_verb</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a48ae17c9449f3f274d8a80dda67fa50a">in_identifiers</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a3c93b5f9ebdc7142ec904e5477253ee6">in_constants</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1ae89581a91db0ce5f2eca90a2843a35c9">tokens</link> = []</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacelexical_1a1e487213adc78c8cf7b637be9fb09850">isStr</link> = False</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacelexical_1a4b61698279ff55043bf20d2948e0b26c">isWord</link> = False</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacelexical_1aaefc2eccfb838fbc9b568ffe2e656b63">isCmt</link> = 0</para>
+</listitem>
+            <listitem><para>string <link linkend="_namespacelexical_1afa59245bd14a08d905d30bd2758ecd35">token</link> = &apos;&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_namespacelexical_1a08edda5cc39db2649d99f746b5c3fd39"/><section>
+    <title>adverb</title>
+<indexterm><primary>adverb</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>adverb</secondary></indexterm>
+<para><computeroutput>list lexical.adverb</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[<emphasis role="stringliteral">&apos;auto&apos;</emphasis>,<emphasis role="stringliteral">&apos;break&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;case&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;char&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;const&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;continue&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;default&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;do&apos;</emphasis>,&#32;
+00002 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;double&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;else&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;enum&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;extern&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;float&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;for&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;goto&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;if&apos;</emphasis>,&#32;
+00003 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;int&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;long&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;register&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;return&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;short&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;signed&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;sizeof&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;static&apos;</emphasis>,&#32;
+00004 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&apos;struct&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;switch&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;typedef&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;union&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;unsigned&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;void&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;volatile&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;while&apos;</emphasis>]
+</programlisting><para>
+Definition at line <link linkend="_lexical_8py_source_1l00009">9</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a5e4c8af01c151951897eb17fd46cde2e"/><section>
+    <title>in_adverb</title>
+<indexterm><primary>in_adverb</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_adverb</secondary></indexterm>
+<para><computeroutput>list lexical.in_adverb = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00019">19</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a3c93b5f9ebdc7142ec904e5477253ee6"/><section>
+    <title>in_constants</title>
+<indexterm><primary>in_constants</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_constants</secondary></indexterm>
+<para><computeroutput>list lexical.in_constants = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00024">24</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a48ae17c9449f3f274d8a80dda67fa50a"/><section>
+    <title>in_identifiers</title>
+<indexterm><primary>in_identifiers</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_identifiers</secondary></indexterm>
+<para><computeroutput>list lexical.in_identifiers = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00023">23</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a008f385c6c32f86c9e19cf4a5481d8a0"/><section>
+    <title>in_noun</title>
+<indexterm><primary>in_noun</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_noun</secondary></indexterm>
+<para><computeroutput>list lexical.in_noun = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00021">21</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a9269d51e467a03d262335e8c22ab8fb2"/><section>
+    <title>in_spl_punctuation</title>
+<indexterm><primary>in_spl_punctuation</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_spl_punctuation</secondary></indexterm>
+<para><computeroutput>list lexical.in_spl_punctuation = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00020">20</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a79b012a4f7c2b9de4149b3bb8d9c1240"/><section>
+    <title>in_verb</title>
+<indexterm><primary>in_verb</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>in_verb</secondary></indexterm>
+<para><computeroutput>list lexical.in_verb = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00022">22</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1aaefc2eccfb838fbc9b568ffe2e656b63"/><section>
+    <title>isCmt</title>
+<indexterm><primary>isCmt</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>isCmt</secondary></indexterm>
+<para><computeroutput>int lexical.isCmt = 0</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00029">29</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a1e487213adc78c8cf7b637be9fb09850"/><section>
+    <title>isStr</title>
+<indexterm><primary>isStr</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>isStr</secondary></indexterm>
+<para><computeroutput>bool lexical.isStr = False</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00027">27</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a4b61698279ff55043bf20d2948e0b26c"/><section>
+    <title>isWord</title>
+<indexterm><primary>isWord</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>isWord</secondary></indexterm>
+<para><computeroutput>bool lexical.isWord = False</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00028">28</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e"/><section>
+    <title>noun</title>
+<indexterm><primary>noun</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>noun</secondary></indexterm>
+<para><computeroutput>list lexical.noun = [&apos;+&apos;, &apos;-&apos;, &apos;*&apos;, &apos;/&apos;, &apos;=&apos;, &apos;+=&apos;, &apos;-=&apos;, &apos;==&apos;, &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;&lt;=&apos;, &apos;&gt;=&apos;]</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00008">8</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a5a4ac3688f4251e52869010a8b7232fc"/><section>
+    <title>punctuation</title>
+<indexterm><primary>punctuation</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>punctuation</secondary></indexterm>
+<para><computeroutput>list lexical.punctuation = [&apos;!&apos;, &apos;?&apos;,&apos;,&apos;,&apos;.&apos;,&apos;;&apos;,&apos;:&apos;]</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00007">7</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1af07d9b67777b3cb5d47afe9ff6b94cb1"/><section>
+    <title>text</title>
+<indexterm><primary>text</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>text</secondary></indexterm>
+<para><computeroutput>string lexical.text = &quot;Its show time&quot;</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00005">5</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1afa59245bd14a08d905d30bd2758ecd35"/><section>
+    <title>token</title>
+<indexterm><primary>token</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>token</secondary></indexterm>
+<para><computeroutput>string lexical.token = &apos;&apos;</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00030">30</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1ae89581a91db0ce5f2eca90a2843a35c9"/><section>
+    <title>tokens</title>
+<indexterm><primary>tokens</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>tokens</secondary></indexterm>
+<para><computeroutput>list lexical.tokens = []</computeroutput></para><para>
+Definition at line <link linkend="_lexical_8py_source_1l00026">26</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+<anchor xml:id="_namespacelexical_1a331bfcb04bc25622e9cfed4e52c0356c"/><section>
+    <title>verb</title>
+<indexterm><primary>verb</primary><secondary>lexical</secondary></indexterm>
+<indexterm><primary>lexical</primary><secondary>verb</secondary></indexterm>
+<para><computeroutput>list lexical.verb</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting linenumbering="unnumbered">00001 =&#32;&#32;[&#32;<emphasis role="stringliteral">&apos;gag&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;gain&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;gallop&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;gamble&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gargle&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;garnish&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gasp&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gather&apos;</emphasis>,<emphasis role="stringliteral">&apos;gauge&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;geld&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;generalize&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;generate&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;germinate&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;gesticulate&apos;</emphasis>,&#32;
+00002 &#32;<emphasis role="stringliteral">&apos;get&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;giggle&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;gild&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;give&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;glance&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;glaze&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gleam&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glean&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glide&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glimmer&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;glimpse&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glisten&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glitter&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glorify&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;gloss&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glow&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;glue&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gnash&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gnaw&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;go&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;goad&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;gossip&apos;</emphasis>,&#32;&#32;<emphasis role="stringliteral">&apos;govern&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;grab&apos;</emphasis>&#32;,&#32;<emphasis role="stringliteral">&apos;grace&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;grade&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;graduate&apos;</emphasis>&#32;
+00003 ,&#32;<emphasis role="stringliteral">&apos;graft&apos;</emphasis>,<emphasis role="stringliteral">&apos;grant&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;granulate&apos;</emphasis>,<emphasis role="stringliteral">&apos;grasp&apos;</emphasis>,<emphasis role="stringliteral">&apos;grate&apos;</emphasis>,<emphasis role="stringliteral">&apos;gravel&apos;</emphasis>,<emphasis role="stringliteral">&apos;gravitate&apos;</emphasis>,<emphasis role="stringliteral">&apos;graze&apos;</emphasis>,<emphasis role="stringliteral">&apos;grease&apos;</emphasis>,<emphasis role="stringliteral">&apos;greet&apos;</emphasis>,<emphasis role="stringliteral">&apos;grill&apos;</emphasis>,<emphasis role="stringliteral">&apos;grin&apos;</emphasis>,<emphasis role="stringliteral">&apos;grind&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;grip&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;groan&apos;</emphasis>,<emphasis role="stringliteral">&apos;groom&apos;</emphasis>,<emphasis role="stringliteral">&apos;grope&apos;</emphasis>,<emphasis role="stringliteral">&apos;grow&apos;</emphasis>,<emphasis role="stringliteral">&apos;growl&apos;</emphasis>,<emphasis role="stringliteral">&apos;grub&apos;</emphasis>,<emphasis role="stringliteral">&apos;grumble&apos;</emphasis>,<emphasis role="stringliteral">&apos;grunt&apos;</emphasis>,<emphasis role="stringliteral">&apos;guarantee&apos;</emphasis>,<emphasis role="stringliteral">&apos;guard&apos;</emphasis>,<emphasis role="stringliteral">&apos;guess&apos;</emphasis>,<emphasis role="stringliteral">&apos;guide&apos;</emphasis>,&#32;<emphasis role="stringliteral">&apos;gurgle&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gush&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;gut&apos;</emphasis>&#32;,<emphasis role="stringliteral">&apos;guzzle&apos;</emphasis>&#32;
+00004 ]
+</programlisting><para>
+Definition at line <link linkend="_lexical_8py_source_1l00013">13</link> of file <link linkend="_lexical_8py_source">lexical.py</link>.</para>
+</section>
+</section>
+</section>

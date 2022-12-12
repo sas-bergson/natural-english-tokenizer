@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespaceparts__speech" kind="namespace" language="Python">
+    <compoundname>parts_speech</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespaceparts__speech_1acdadfc9b9cbef9805ef5ab3c064c51b3" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.nouns</definition>
+        <argsstring></argsstring>
+        <name>nouns</name>
+        <qualifiedname>parts_speech.nouns</qualifiedname>
+        <initializer>=  [
+    &quot;bachelor&quot;, &quot;backbone&quot;, &quot;balance&quot;, &quot;brightness&quot;, &quot;benefit&quot;, &quot;being&quot;, &quot;best&quot;, &quot;booster&quot;, &quot;bachelor&quot;, &quot;babe&quot;, &quot;black&quot;, &quot;board&quot;,
+    &quot;boarder&quot;, &quot;broker&quot;, &quot;bestseller&quot;, &quot;beverage&quot;, &quot;bean&quot;, &quot;bail&quot;, &quot;beast&quot;, &quot;batch&quot;, &quot;behind&quot;, &quot;bracket&quot;, &quot;brace&quot;, &quot;builder&quot;, &quot;beefalo&quot;,
+    &quot;beef&quot;, &quot;battery&quot;, &quot;barn&quot;, &quot;bone&quot;, &quot;back&quot;, &quot;butter&quot;, &quot;bread&quot;, &quot;beeper&quot;, &quot;bowels&quot;, &quot;bacon&quot;, &quot;blaze&quot;, &quot;blowup&quot;, &quot;blackener&quot;, &quot;blackhead&quot;,
+    &quot;brisket&quot;, &quot;barberry&quot;, &quot;blueberries&quot;, &quot;bus stop&quot;, &quot;brow&quot;, &quot;bale&quot;, &quot;birthplace&quot;, &quot;berlin&quot;, &quot;bubbles&quot;, &quot;buffer&quot;, &quot;bucket&quot;, &quot;bleachers&quot;,
+    &quot;bike&quot;, &quot;book&quot;, &quot;bar&quot;, &quot;breeze&quot;, &quot;best&quot;, &quot;backing&quot;, &quot;block&quot;, &quot;blackpool&quot;, &quot;border&quot;, &quot;bracelet&quot;, &quot;bobbery&quot;, &quot;bunkup&quot;, &quot;band&quot;, &quot;bucking&quot;,
+    &quot;bag&quot;, &quot;bootes&quot;, &quot;bowtie&quot;, &quot;bridle&quot;, &quot;bettery&quot;, &quot;backhoe&quot;, &quot;bluebill&quot;, &quot;barnacle&quot;, &quot;bongo&quot;, &quot;beef&quot;, &quot;bicycle&quot;, &quot;bulldog&quot;, &quot;bluebill&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="2" column="1" bodyfile="parts_speech.py" bodystart="2" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a988d1b580e08850ec5df6ac36382c810" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.verbs</definition>
+        <argsstring></argsstring>
+        <name>verbs</name>
+        <qualifiedname>parts_speech.verbs</qualifiedname>
+        <initializer>=  [
+    &quot;bake&quot;, &quot;bark&quot;, &quot;back&quot;, &quot;backfire&quot;, &quot;balance&quot;, &quot;band&quot;, &quot;bank&quot;, &quot;baptize&quot;, &quot;bar&quot;, &quot;bargain&quot;, &quot;bark&quot;, &quot;barrack&quot;, &quot;barter&quot;, &quot;base&quot;, &quot;bash&quot;, &quot;bask&quot;,
+    &quot;baste&quot;, &quot;bat&quot;, &quot;barrow&quot;, &quot;bash&quot;, &quot;bathe&quot;, &quot;battle&quot;, &quot;bawl&quot;, &quot;be&quot;, &quot;beach&quot;, &quot;bear&quot;, &quot;beat&quot;, &quot;beath&quot;, &quot;beatify&quot;, &quot;beblood&quot;, &quot;bebleed&quot;, &quot;beblot&quot;, &quot;beclap&quot;,
+    &quot;becurl&quot;, &quot;bedas&quot;, &quot;bedribble&quot;, &quot;bedrop&quot;, &quot;bedrug&quot;, &quot;beduck&quot;, &quot;been&quot;, &quot;bedflatter&quot;, &quot;bedflower&quot;, &quot;befrill&quot;, &quot;beg&quot;, &quot;begin&quot;, &quot;begird&quot;, &quot;beg&quot;,
+    &quot;behead&quot;, &quot;behoof&quot;, &quot;being&quot;, &quot;bejumble&quot;, &quot;belate&quot;, &quot;belk&quot;, &quot;belong&quot;, &quot;belt&quot;, &quot;bemeet&quot;, &quot;bemoil&quot;, &quot;bemuse&quot;, &quot;bename&quot;, &quot;bend&quot;, &quot;benefits&quot;, &quot;bench&quot;,
+    &quot;beray&quot;, &quot;bereave&quot;, &quot;berime&quot;, &quot;bescreen&quot;, &quot;beseek&quot;, &quot;beshroud&quot;, &quot;besit&quot;, &quot;beslave&quot;, &quot;beslime&quot;, &quot;besnow&quot;, &quot;besort&quot;, &quot;bespice&quot;, &quot;best&quot;, &quot;bestain&quot;,
+    &quot;betake&quot;, &quot;betitle&quot;, &quot;bethrall&quot;, &quot;betoss&quot;, &quot;betrap&quot;, &quot;better&quot;, &quot;bevel&quot;, &quot;beware&quot;, &quot;bewitch&quot;, &quot;bewrap&quot;, &quot;bicycle&quot;, &quot;bike&quot;, &quot;bill&quot;, &quot;bind&quot;, &quot;birth&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="12" column="1" bodyfile="parts_speech.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a87a6fb07eb67d6ef54674b726722038e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.adjectives</definition>
+        <argsstring></argsstring>
+        <name>adjectives</name>
+        <qualifiedname>parts_speech.adjectives</qualifiedname>
+        <initializer>=  [
+    &quot;bad&quot;, &quot;backup&quot;, &quot;bacteria&quot;, &quot;baffling&quot;, &quot;balanced&quot;, &quot;ballsy&quot;, &quot;balmy&quot;, &quot;balsamic&quot;, &quot;banging&quot;, &quot;baronial&quot;, &quot;bashful&quot;, &quot;beady&quot;, &quot;beaming&quot;, &quot;bearing&quot;, &quot;beatific&quot;,
+    &quot;beautified&quot;, &quot;beautifu&quot;, &quot;beefy&quot;, &quot;beguiling&quot;, &quot;beginning&quot;, &quot;bejeweled&quot;, &quot;believable&quot;, &quot;belligerent&quot;, &quot;bell-like&quot;, &quot;beloved&quot;, &quot;benedictory&quot;, &quot;benefic&quot;, &quot;beneficent&quot;,
+    &quot;beneficiary&quot;, &quot;benevolent&quot;, &quot;benign&quot;, &quot;benignant&quot;, &quot;bent&quot;, &quot;best&quot;, &quot;better&quot;, &quot;bewitching&quot;, &quot;becameral&quot;, &quot;big&quot;, &quot;biggest&quot;, &quot;big-hearted&quot;, &quot;big-time&quot;, &quot;bijou&quot;,
+    &quot;blameless&quot;, &quot;blazing&quot;, &quot;blessed&quot;, &quot;blest&quot;, &quot;blissful&quot;, &quot;blistering&quot;, &quot;blithe&quot;, &quot;blooming&quot;, &quot;blue-ribbon&quot;, &quot;blushing&quot;, &quot;bodacious&quot;, &quot;boisterous&quot;, &quot;bold&quot;, &quot;bomb&quot;,
+    &quot;bombastic&quot;, &quot;bonkers&quot;, &quot;bonny&quot;, &quot;bonzer&quot;, &quot;bookish&quot;, &quot;boon&quot;, &quot;bootylicious&quot;, &quot;bosom&quot;, &quot;botanical&quot;, &quot;bouncy&quot;, &quot;bound&quot;, &quot;boundless&quot;, &quot;bounteous&quot;, &quot;bountiful&quot;, &quot;bovine&quot;,
+    &quot;bracing&quot;, &quot;brackish&quot;, &quot;brainy&quot;, &quot;brash&quot;, &quot;brave&quot;, &quot;brawny&quot;, &quot;brazen&quot;, &quot;breathtaking&quot;, &quot;breezy&quot;, &quot;brief&quot;, &quot;bright&quot;, &quot;brill&quot;, &quot;brilliant&quot;, &quot;brimming&quot;, &quot;brisk&quot;,
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="20" column="1" bodyfile="parts_speech.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a7b8920917fff772af5650c55d6c75cda" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.adverbs</definition>
+        <argsstring></argsstring>
+        <name>adverbs</name>
+        <qualifiedname>parts_speech.adverbs</qualifiedname>
+        <initializer>=  [
+    &quot;badly&quot;, &quot;back&quot;, &quot;backstage&quot;, &quot;backward&quot;, &quot;badly&quot;, &quot;barely&quot;, &quot;basically&quot;, &quot;beautifully&quot;, &quot;beforehand&quot;, &quot;begrudgingly&quot;, &quot;behaviorally&quot;, &quot;balatedly&quot;, &quot;beliievably&quot;,
+    &quot;below&quot;, &quot;beneficlly&quot;, &quot;bi-monthly&quot;, &quot;biblically&quot;, &quot;biennially&quot;, &quot;bilaterally&quot;, &quot;bimonthly&quot;, &quot;biologically&quot;, &quot;bit&quot;, &quot;bitterly&quot;, &quot;biweekly&quot;, &quot;bizarrely&quot;, &quot;blandly&quot;,
+    &quot;blanky&quot;, &quot;blatanly&quot;, &quot;blazingly&quot;, &quot;blessedly&quot;, &quot;blindingly&quot;, &quot;blindly&quot;, &quot;blissfully&quot;, &quot;blisteringly&quot;, &quot;blithely&quot;, &quot;bluntly&quot;, &quot;boldly&quot;, &quot;boringly&quot;, &quot;botanically&quot;,
+    &quot;bravely&quot;, &quot;brazenly&quot;, &quot;breathlessly&quot;, &quot;breathtakingly&quot;, &quot;briefly&quot;, &quot;brightly&quot;, &quot;brilliantly&quot;, &quot;briskly&quot;, &quot;broadly&quot;, &quot;brutally&quot;, &quot;busily&quot;, &quot;braggingly&quot;, &quot;bragly&quot;, &quot;brashly&quot;,
+],</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="30" column="1" bodyfile="parts_speech.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a92775114fe1e32ce952a4104086c05e4" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.conjunctions</definition>
+        <argsstring></argsstring>
+        <name>conjunctions</name>
+        <qualifiedname>parts_speech.conjunctions</qualifiedname>
+        <initializer>=  [
+    &quot;because&quot;, &quot;before&quot;, &quot;behind&quot;, &quot;below&quot;, &quot;beneath&quot;, &quot;beside&quot;, &quot;between&quot;, &quot;beyond&quot;, &quot;but&quot;, &quot;by&quot;, &quot;by means of&quot;, &quot;by virtue of&quot;, &quot;by way of&quot;, &quot;by virtue of&quot;, &quot;by way of&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="38" column="1" bodyfile="parts_speech.py" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a4b7d6b31718e1dc833ff5eabcb54a320" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.interjections</definition>
+        <argsstring></argsstring>
+        <name>interjections</name>
+        <qualifiedname>parts_speech.interjections</qualifiedname>
+        <initializer>=  [
+    &quot;bah&quot;, &quot;bam&quot;, &quot;bang&quot;, &quot;barf&quot;, &quot;bark&quot;, &quot;bawl&quot;, &quot;beep&quot;, &quot;behold&quot;, &quot;bellow&quot;, &quot;bend&quot;, &quot;beware&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="42" column="1" bodyfile="parts_speech.py" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceparts__speech_1a3b47658470f71448fe25feaea7a52d0e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list parts_speech.pronouns</definition>
+        <argsstring></argsstring>
+        <name>pronouns</name>
+        <qualifiedname>parts_speech.pronouns</qualifiedname>
+        <initializer>=  [
+    &quot;both&quot;, &quot;but&quot;, &quot;by&quot;, &quot;by means of&quot;, &quot;by virtue of&quot;, &quot;by way of&quot;, &quot;by virtue of&quot;, &quot;by way of&quot;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="parts_speech.py" line="45" column="1" bodyfile="parts_speech.py" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="parts_speech.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,232 @@
+.TH "main.statement_tokenizer" 3 "Mon Dec 12 2022" "natural english language tokenizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+main.statement_tokenizer
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "def \fB__init__\fP (self)"
+.br
+.ti -1c
+.RI "list \fBget_tokens\fP (self, text)"
+.br
+.ti -1c
+.RI "str \fB__str__\fP (self)"
+.br
+.ti -1c
+.RI "str \fB__repr__\fP (self)"
+.br
+.ti -1c
+.RI "def \fBpeformSentenceSplit\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBperformWordSplit\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBgetAllTokens\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBretainAllTokens\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBmatchAllWordsStartingWithB\fP (self, text)"
+.br
+.ti -1c
+.RI "def \fBidentifyPartsOfSpeech\fP (self, text)"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "\fBnounList\fP"
+.br
+.ti -1c
+.RI "\fBpronounList\fP"
+.br
+.ti -1c
+.RI "\fBadjectiveList\fP"
+.br
+.ti -1c
+.RI "\fBverbList\fP"
+.br
+.ti -1c
+.RI "\fBadverbList\fP"
+.br
+.ti -1c
+.RI "\fBconjunctionsList\fP"
+.br
+.ti -1c
+.RI "\fBinterjectionsList\fP"
+.br
+.ti -1c
+.RI "\fBunknownList\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Definition at line \fB7\fP of file \fBmain\&.py\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "def main\&.statement_tokenizer\&.__init__ ( self)"
+
+.PP
+.nf
+This method is the constructor\&. where all the regex are defined and the word that the user or the calling file will use to call the method\&.
+.fi
+.PP
+ 
+.PP
+Definition at line \fB8\fP of file \fBmain\&.py\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS " str main\&.statement_tokenizer\&.__repr__ ( self)"
+
+.PP
+.nf
+This method is responsible for the printing of the tokens that are returned by the get_tokens method\&.
+it takes no arguments and returns a string of the tokens\&. it basically overites the default __repr__ method\&.
+.fi
+.PP
+ 
+.PP
+Definition at line \fB40\fP of file \fBmain\&.py\fP\&.
+.SS " str main\&.statement_tokenizer\&.__str__ ( self)"
+
+.PP
+.nf
+This method is responsible for the printing of the tokens that are returned by the get_tokens method\&.
+it takes no arguments and returns a string of the tokens\&. it basically overites the default __str__ method\&.
+.fi
+.PP
+ 
+.PP
+Definition at line \fB33\fP of file \fBmain\&.py\fP\&.
+.SS " list main\&.statement_tokenizer\&.get_tokens ( self,  text)"
+
+.PP
+.nf
+This method is responsible for the splitting of the individual strings into the required tokens which
+takes  text (string) the text that is to be split into tokens\&. and returns a list of tokens\&.
+.fi
+.PP
+ 
+.PP
+Definition at line \fB26\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.getAllTokens ( self,  text)"
+
+.PP
+.nf
+This function is responsible for the tokenization of the whole text block\&. it takes the text block as an argument and returns a list of tokens\&.
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB63\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.identifyPartsOfSpeech ( self,  text)"
+
+.PP
+.nf
+This function is responsible for the identification of the parts of speech of the words in the text block\&.
+it takes the list of words as an argument and returns a list of parts of speech\&. This will make use of the [parts_speech] file
+which contains the list of parts of speech and the words that belong to each part of speech\&. The group works on code that deals with the letter B
+In cases where the
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB93\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.matchAllWordsStartingWithB ( self,  text)"
+
+.PP
+.nf
+The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression
+.fi
+.PP
+ 
+.PP
+Definition at line \fB87\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.peformSentenceSplit ( self,  text)"
+
+.PP
+.nf
+This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word\&. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks\&. this will also give the possibility to thet count of the number of sentences in
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB47\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.performWordSplit ( self,  text)"
+
+.PP
+.nf
+This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word\&. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks\&. this will also give the possibility to thet count of the number of sentences in
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB55\fP of file \fBmain\&.py\fP\&.
+.SS "def main\&.statement_tokenizer\&.retainAllTokens ( self,  text)"
+
+.PP
+.nf
+this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
+this will be especially important what there will to be identification of known patters\&.
+The function contains a special regular expresssion that checks all characaters individually
+
+.fi
+.PP
+ 
+.PP
+Definition at line \fB70\fP of file \fBmain\&.py\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "main\&.statement_tokenizer\&.adjectiveList"
+
+.PP
+Definition at line \fB18\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.adverbList"
+
+.PP
+Definition at line \fB20\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.conjunctionsList"
+
+.PP
+Definition at line \fB21\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.interjectionsList"
+
+.PP
+Definition at line \fB22\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.nounList"
+
+.PP
+Definition at line \fB16\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.pronounList"
+
+.PP
+Definition at line \fB17\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.unknownList"
+
+.PP
+Definition at line \fB23\fP of file \fBmain\&.py\fP\&.
+.SS "main\&.statement_tokenizer\&.verbList"
+
+.PP
+Definition at line \fB19\fP of file \fBmain\&.py\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for natural english language tokenizer from the source code\&.

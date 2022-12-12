@@ -1,0 +1,121 @@
+\hypertarget{main_8py_source}{}\doxysection{main.\+py}
+\mbox{\hyperlink{main_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00001}\mbox{\hyperlink{namespacemain}{00001}} \textcolor{keyword}{import} re}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00002}00002 \textcolor{keyword}{from} parts\_speech \textcolor{keyword}{import} *}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00004}00004 \textcolor{stringliteral}{"{}"{}"{}! @brief Example Python program with Doxygen style comments."{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00007}\mbox{\hyperlink{classmain_1_1statement__tokenizer}{00007}} \textcolor{keyword}{class }\mbox{\hyperlink{classmain_1_1statement__tokenizer}{statement\_tokenizer}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00008}\mbox{\hyperlink{classmain_1_1statement__tokenizer_ad69e6f7c8f99f1e12e40c495952e00e3}{00008}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_ad69e6f7c8f99f1e12e40c495952e00e3}{\_\_init\_\_}}(self):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00009}00009         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00010}00010 \textcolor{stringliteral}{        This method }\textcolor{keywordflow}{is} the constructor. where all the regex are defined \textcolor{keywordflow}{and} the word that the user \textcolor{keywordflow}{or} the calling file will use to call the method.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00011}00011 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a7b99cd25f29acb6fe3dc0f3c65bfbf5e}{\_pattern}} = r"{}[A-\/Z]+[a-\/z]*\(\backslash\)s\(\backslash\)."{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00012}00012         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_ae0524455667d6dc8697083a304272e9e}{\_sentence\_pattern}} = \textcolor{stringliteral}{r'([A-\/Z][\string^\(\backslash\).!?]*[\(\backslash\).!?])'}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00013}00013         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a102bd7c1d1ac8c1824b6471952aaaeae}{\_word\_pattern}} = \textcolor{stringliteral}{r'\(\backslash\)w+'}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00014}00014         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_acb340652fbfa1cb86b8f21e5dfb05b67}{\_regex}} = re.compile(self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_ae0524455667d6dc8697083a304272e9e}{\_sentence\_pattern}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00015}00015         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8ab7cc298ab0ec6d81b9be7e4904cde7}{\_tokens}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00016}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}{00016}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}{nounList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00017}\mbox{\hyperlink{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}{00017}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}{pronounList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00018}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}{00018}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}{adjectiveList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00019}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}{00019}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}{verbList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00020}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}{00020}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}{adverbList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00021}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}{00021}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}{conjunctionsList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00022}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}{00022}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}{interjectionsList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00023}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}{00023}}         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}{unknownList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00024}00024         self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}{adverbList}} = []}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00026}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a695b1cb78882a051f601d83dc02a5b1f}{00026}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a695b1cb78882a051f601d83dc02a5b1f}{get\_tokens}}(self, text) -\/> list:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00027}00027         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00028}00028 \textcolor{stringliteral}{        This method }\textcolor{keywordflow}{is} responsible \textcolor{keywordflow}{for} the splitting of the individual strings into the required tokens which}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00029}00029         takes  text (string) the text that \textcolor{keywordflow}{is} to be split into tokens. \textcolor{keywordflow}{and} returns a list of tokens.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00030}00030 \textcolor{stringliteral}{        self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8ab7cc298ab0ec6d81b9be7e4904cde7}{\_tokens}} = self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}{peformSentenceSplit}}(text)}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00031}00031 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8ab7cc298ab0ec6d81b9be7e4904cde7}{\_tokens}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00033}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a07a6fae900a0361a1169001e5300a935}{00033}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a07a6fae900a0361a1169001e5300a935}{\_\_str\_\_}}(self) -\/> str:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00034}00034         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00035}00035 \textcolor{stringliteral}{        This method }\textcolor{keywordflow}{is} responsible \textcolor{keywordflow}{for} the printing of the tokens that are returned by the get\_tokens method.}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00036}00036         it takes no arguments \textcolor{keywordflow}{and} returns a string of the tokens. it basically overites the default \_\_str\_\_ method.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00037}00037 \textcolor{stringliteral}{        }\textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8ab7cc298ab0ec6d81b9be7e4904cde7}{\_tokens}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00038}00038             print(f\textcolor{stringliteral}{"{}statement -\/> \{s\}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00040}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a13e7472cbf6f1e025916d043fbe32289}{00040}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a13e7472cbf6f1e025916d043fbe32289}{\_\_repr\_\_}}(self) -\/> str:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00041}00041         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00042}00042 \textcolor{stringliteral}{        This method }\textcolor{keywordflow}{is} responsible \textcolor{keywordflow}{for} the printing of the tokens that are returned by the get\_tokens method.}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00043}00043         it takes no arguments \textcolor{keywordflow}{and} returns a string of the tokens. it basically overites the default \_\_repr\_\_ method.\textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00044}00044 \textcolor{stringliteral}{        }\textcolor{keywordflow}{for} s \textcolor{keywordflow}{in} self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8ab7cc298ab0ec6d81b9be7e4904cde7}{\_tokens}}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00045}00045             print(f\textcolor{stringliteral}{"{}statement -\/> \{s\}"{}})}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00047}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}{00047}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}{peformSentenceSplit}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00048}00048         \textcolor{stringliteral}{"{}"{}"{}This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00049}00049 \textcolor{stringliteral}{        based on specific word. This }\textcolor{keywordflow}{is} a part which makes the whole system modular making it possible \textcolor{keywordflow}{for} the sentence to be handled \textcolor{keyword}{as}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00050}00050         blocks. this will also give the possibility to thet count of the number of sentences \textcolor{keywordflow}{in}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00051}00051         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00052}00052 \textcolor{stringliteral}{        formatter = re.compile(self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_ae0524455667d6dc8697083a304272e9e}{\_sentence\_pattern}}, re.M)}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00053}00053 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} formatter.findall(text)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00055}\mbox{\hyperlink{classmain_1_1statement__tokenizer_abdac0a8fb895b8ddd348b882747b05db}{00055}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_abdac0a8fb895b8ddd348b882747b05db}{performWordSplit}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00056}00056         \textcolor{stringliteral}{"{}"{}"{}This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00057}00057 \textcolor{stringliteral}{        based on specific word. This }\textcolor{keywordflow}{is} a part which makes the whole system modular making it possible \textcolor{keywordflow}{for} the sentence to be handled \textcolor{keyword}{as}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00058}00058         blocks. this will also give the possibility to thet count of the number of sentences \textcolor{keywordflow}{in}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00059}00059         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00060}00060 \textcolor{stringliteral}{        formatter = re.compile(self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a102bd7c1d1ac8c1824b6471952aaaeae}{\_word\_pattern}}, re.M)}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00061}00061 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} formatter.findall(text)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00063}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a91cf2ca25a0cc576d029920853392860}{00063}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a91cf2ca25a0cc576d029920853392860}{getAllTokens}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00064}00064         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00065}00065 \textcolor{stringliteral}{        This function }\textcolor{keywordflow}{is} responsible \textcolor{keywordflow}{for} the tokenization of the whole text block. it takes the text block \textcolor{keyword}{as} an argument \textcolor{keywordflow}{and} returns a list of tokens.}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00066}00066         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00067}00067 \textcolor{stringliteral}{        textData = self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}{retainAllTokens}}(text)}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00068}00068 \textcolor{stringliteral}{        }\textcolor{keywordflow}{return} textData.split()}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00070}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}{00070}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}{retainAllTokens}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00071}00071         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00072}00072 \textcolor{stringliteral}{        this fuction }\textcolor{keywordflow}{is} tp prevent the elimination of special characters to avoid elimination during text splitting}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00073}00073         this will be especially important what there will to be identification of known patters.}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00074}00074         The function contains a special regular expresssion that checks all characaters individually}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00075}00075         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00076}00076 \textcolor{stringliteral}{        new\_text = "{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00077}00077         \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} range(len(text)):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00078}00078             \textcolor{keywordflow}{if} re.match(\textcolor{stringliteral}{r'\(\backslash\).|,|\(\backslash\)?|\(\backslash\)'|\(\backslash\))|\(\backslash\)\}|\(\backslash\)]|\(\backslash\):|\(\backslash\);'}, text[i]):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00079}00079                 new\_text = new\_text+\textcolor{stringliteral}{"{} "{}}+text[i]}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00080}00080             \textcolor{keywordflow}{elif} re.match(\textcolor{stringliteral}{r'\(\backslash\)(|\(\backslash\)\{|\(\backslash\)[|\(\backslash\)s'}, text[i]):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00081}00081                 new\_text = new\_text+text[i]+\textcolor{stringliteral}{"{} "{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00082}00082             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00083}00083                 new\_text = new\_text+text[i]}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00084}00084         \textcolor{keywordflow}{return} new\_text}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00085}00085 \textcolor{comment}{\#    generate a dunction to match all words starting with an A or a}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00087}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}{00087}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}{matchAllWordsStartingWithB}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00088}00088         \textcolor{stringliteral}{"{}"{}"{}The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00089}00089         formatter = re.compile(\textcolor{stringliteral}{r'\(\backslash\)b[Bb]\(\backslash\)w+'}, re.M)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00090}00090         data = re.findall(formatter, text)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00091}00091         print(\textcolor{stringliteral}{'Words starting with B or b are: '}, len(data))}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00092}00092         \textcolor{keywordflow}{return} data}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00093}\mbox{\hyperlink{classmain_1_1statement__tokenizer_a07b22ae554127eec66337e8bb0455d11}{00093}}     \textcolor{keyword}{def }\mbox{\hyperlink{classmain_1_1statement__tokenizer_a07b22ae554127eec66337e8bb0455d11}{identifyPartsOfSpeech}}(self, text):}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00094}00094         \textcolor{stringliteral}{"{}"{}"{}This function is responsible for the identification of the parts of speech of the words in the text block.}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00095}00095 \textcolor{stringliteral}{        it takes the list of words }\textcolor{keyword}{as} an argument \textcolor{keywordflow}{and} returns a list of parts of speech. This will make use of the [parts\_speech] file}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00096}00096         which contains the list of parts of speech \textcolor{keywordflow}{and} the words that belong to each part of speech. The group works on code that deals \textcolor{keyword}{with} the letter B}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00097}00097         In cases where the}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00098}00098         \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00099}00099 \textcolor{stringliteral}{        data = self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}{matchAllWordsStartingWithB}}(text)}}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00100}00100 \textcolor{stringliteral}{        }\textcolor{keywordflow}{for} word \textcolor{keywordflow}{in} data:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00101}00101             \textcolor{keywordflow}{if} word \textcolor{keywordflow}{in} nouns:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00102}00102                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}{nounList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00103}00103             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} pronouns:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00104}00104                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}{pronounList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00105}00105             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} adjectives:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00106}00106                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}{adjectiveList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00107}00107             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} verbs:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00108}00108                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}{verbList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00109}00109             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} adverbs:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00110}00110                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}{adverbList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00111}00111             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} conjunctions:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00112}00112                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}{conjunctionsList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00113}00113             \textcolor{keywordflow}{elif} word \textcolor{keywordflow}{in} interjections:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00114}00114                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}{interjectionsList}}.append(word)}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00115}00115             \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{main_8py_source_l00116}00116                 self.\mbox{\hyperlink{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}{unknownList}}.append(word+\textcolor{stringliteral}{"{} Unknown"{}})}
+
+\end{DoxyCode}

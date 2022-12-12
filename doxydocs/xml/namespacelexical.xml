@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="namespacelexical" kind="namespace" language="Python">
+    <compoundname>lexical</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacelexical_1af07d9b67777b3cb5d47afe9ff6b94cb1" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lexical.text</definition>
+        <argsstring></argsstring>
+        <name>text</name>
+        <qualifiedname>lexical.text</qualifiedname>
+        <initializer>=  &quot;Its show time&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="5" column="1" bodyfile="lexical.py" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a5a4ac3688f4251e52869010a8b7232fc" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.punctuation</definition>
+        <argsstring></argsstring>
+        <name>punctuation</name>
+        <qualifiedname>lexical.punctuation</qualifiedname>
+        <initializer>=  [&apos;!&apos;, &apos;?&apos;,&apos;,&apos;,&apos;.&apos;,&apos;;&apos;,&apos;:&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="7" column="1" bodyfile="lexical.py" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.noun</definition>
+        <argsstring></argsstring>
+        <name>noun</name>
+        <qualifiedname>lexical.noun</qualifiedname>
+        <initializer>=  [&apos;+&apos;, &apos;-&apos;, &apos;*&apos;, &apos;/&apos;, &apos;=&apos;, &apos;+=&apos;, &apos;-=&apos;, &apos;==&apos;, &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;&lt;=&apos;, &apos;&gt;=&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="8" column="1" bodyfile="lexical.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a08edda5cc39db2649d99f746b5c3fd39" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.adverb</definition>
+        <argsstring></argsstring>
+        <name>adverb</name>
+        <qualifiedname>lexical.adverb</qualifiedname>
+        <initializer>=  [&apos;auto&apos;,&apos;break&apos;, &apos;case&apos;, &apos;char&apos;, &apos;const&apos;, &apos;continue&apos;, &apos;default&apos;, &apos;do&apos;, 
+			&apos;double&apos;, &apos;else&apos;, &apos;enum&apos;, &apos;extern&apos;, &apos;float&apos;, &apos;for&apos;, &apos;goto&apos;, &apos;if&apos;, 
+			&apos;int&apos;, &apos;long&apos;, &apos;register&apos;, &apos;return&apos;, &apos;short&apos;, &apos;signed&apos;, &apos;sizeof&apos;, &apos;static&apos;, 
+			&apos;struct&apos;, &apos;switch&apos;, &apos;typedef&apos;, &apos;union&apos;, &apos;unsigned&apos;, &apos;void&apos;, &apos;volatile&apos;, &apos;while&apos;]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="9" column="1" bodyfile="lexical.py" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a331bfcb04bc25622e9cfed4e52c0356c" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.verb</definition>
+        <argsstring></argsstring>
+        <name>verb</name>
+        <qualifiedname>lexical.verb</qualifiedname>
+        <initializer>=  [ &apos;gag&apos; , &apos;gain&apos; , &apos;gallop&apos;, &apos;gamble&apos; ,&apos;gargle&apos; ,&apos;garnish&apos; ,&apos;gasp&apos; ,&apos;gather&apos;,&apos;gauge&apos; ,&apos;geld&apos; ,&apos;generalize&apos; ,&apos;generate&apos; , &apos;germinate&apos; , &apos;gesticulate&apos;, 
+ &apos;get&apos; , &apos;giggle&apos;, &apos;gild&apos; ,&apos;give&apos;, &apos;glance&apos;, &apos;glaze&apos; ,&apos;gleam&apos; ,&apos;glean&apos; ,&apos;glide&apos; ,&apos;glimmer&apos;, &apos;glimpse&apos; ,&apos;glisten&apos; ,&apos;glitter&apos; ,&apos;glorify&apos;, &apos;gloss&apos; ,&apos;glow&apos; ,&apos;glue&apos; ,&apos;gnash&apos; ,&apos;gnaw&apos; ,&apos;go&apos; ,&apos;goad&apos;, &apos;gossip&apos;,  &apos;govern&apos; ,&apos;grab&apos; , &apos;grace&apos; ,&apos;grade&apos; ,&apos;graduate&apos; 
+, &apos;graft&apos;,&apos;grant&apos;, &apos;granulate&apos;,&apos;grasp&apos;,&apos;grate&apos;,&apos;gravel&apos;,&apos;gravitate&apos;,&apos;graze&apos;,&apos;grease&apos;,&apos;greet&apos;,&apos;grill&apos;,&apos;grin&apos;,&apos;grind&apos;, &apos;grip&apos;, &apos;groan&apos;,&apos;groom&apos;,&apos;grope&apos;,&apos;grow&apos;,&apos;growl&apos;,&apos;grub&apos;,&apos;grumble&apos;,&apos;grunt&apos;,&apos;guarantee&apos;,&apos;guard&apos;,&apos;guess&apos;,&apos;guide&apos;, &apos;gurgle&apos; ,&apos;gush&apos; ,&apos;gut&apos; ,&apos;guzzle&apos; 
+]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="13" column="1" bodyfile="lexical.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a5e4c8af01c151951897eb17fd46cde2e" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_adverb</definition>
+        <argsstring></argsstring>
+        <name>in_adverb</name>
+        <qualifiedname>lexical.in_adverb</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="19" column="1" bodyfile="lexical.py" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a9269d51e467a03d262335e8c22ab8fb2" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_spl_punctuation</definition>
+        <argsstring></argsstring>
+        <name>in_spl_punctuation</name>
+        <qualifiedname>lexical.in_spl_punctuation</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="20" column="1" bodyfile="lexical.py" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a008f385c6c32f86c9e19cf4a5481d8a0" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_noun</definition>
+        <argsstring></argsstring>
+        <name>in_noun</name>
+        <qualifiedname>lexical.in_noun</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="21" column="1" bodyfile="lexical.py" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a79b012a4f7c2b9de4149b3bb8d9c1240" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_verb</definition>
+        <argsstring></argsstring>
+        <name>in_verb</name>
+        <qualifiedname>lexical.in_verb</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="22" column="1" bodyfile="lexical.py" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a48ae17c9449f3f274d8a80dda67fa50a" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_identifiers</definition>
+        <argsstring></argsstring>
+        <name>in_identifiers</name>
+        <qualifiedname>lexical.in_identifiers</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="23" column="1" bodyfile="lexical.py" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a3c93b5f9ebdc7142ec904e5477253ee6" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.in_constants</definition>
+        <argsstring></argsstring>
+        <name>in_constants</name>
+        <qualifiedname>lexical.in_constants</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="24" column="1" bodyfile="lexical.py" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1ae89581a91db0ce5f2eca90a2843a35c9" prot="public" static="no" mutable="no">
+        <type>list</type>
+        <definition>list lexical.tokens</definition>
+        <argsstring></argsstring>
+        <name>tokens</name>
+        <qualifiedname>lexical.tokens</qualifiedname>
+        <initializer>=  []</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="26" column="1" bodyfile="lexical.py" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a1e487213adc78c8cf7b637be9fb09850" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lexical::isStr</definition>
+        <argsstring></argsstring>
+        <name>isStr</name>
+        <qualifiedname>lexical.isStr</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="27" column="1" bodyfile="lexical.py" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1a4b61698279ff55043bf20d2948e0b26c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool lexical::isWord</definition>
+        <argsstring></argsstring>
+        <name>isWord</name>
+        <qualifiedname>lexical.isWord</qualifiedname>
+        <initializer>=  False</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="28" column="1" bodyfile="lexical.py" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1aaefc2eccfb838fbc9b568ffe2e656b63" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int lexical::isCmt</definition>
+        <argsstring></argsstring>
+        <name>isCmt</name>
+        <qualifiedname>lexical.isCmt</qualifiedname>
+        <initializer>=  0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="29" column="1" bodyfile="lexical.py" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacelexical_1afa59245bd14a08d905d30bd2758ecd35" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string lexical::token</definition>
+        <argsstring></argsstring>
+        <name>token</name>
+        <qualifiedname>lexical.token</qualifiedname>
+        <initializer>=  &apos;&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="lexical.py" line="30" column="1" bodyfile="lexical.py" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="lexical.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

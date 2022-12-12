@@ -1,0 +1,230 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmain_1_1statement__tokenizer" xml:lang="en-US">
+<title>main.statement_tokenizer Class Reference</title>
+<indexterm><primary>main.statement_tokenizer</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1ad69e6f7c8f99f1e12e40c495952e00e3">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classmain_1_1statement__tokenizer_1a695b1cb78882a051f601d83dc02a5b1f">get_tokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmain_1_1statement__tokenizer_1a07a6fae900a0361a1169001e5300a935">__str__</link> (self)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classmain_1_1statement__tokenizer_1a13e7472cbf6f1e025916d043fbe32289">__repr__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1a892f3c06d122cf209f32be6eefdbf5ef">peformSentenceSplit</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1abdac0a8fb895b8ddd348b882747b05db">performWordSplit</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1a91cf2ca25a0cc576d029920853392860">getAllTokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1a6b94dcf6889b89105910bca6a62bfe64">retainAllTokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1a0b0ba2147afd261c75986b242926b15c">matchAllWordsStartingWithB</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classmain_1_1statement__tokenizer_1a07b22ae554127eec66337e8bb0455d11">identifyPartsOfSpeech</link> (self, text)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a5c645ea998ef0569b7e292e4be29cc60">nounList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1afd78f7a9c9e49e70eff211e394d51e62">pronounList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a2632648ba3e0bab916fa5eeb06cb71bb">adjectiveList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a24c4eed7b89ee5776869a02ffe12b9a4">verbList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a8d588b23dd51598c21aa8db357a605c4">adverbList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a588793a987c8ca33478a89ce83d2fc98">conjunctionsList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a925c7c14ab6750a9aa8bf1e811ca93e8">interjectionsList</link></para>
+</listitem>
+            <listitem><para><link linkend="_classmain_1_1statement__tokenizer_1a90d8cf9378c9353c8c8c4aec38374479">unknownList</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00007">7</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1ad69e6f7c8f99f1e12e40c495952e00e3"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.__init__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00008">8</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a13e7472cbf6f1e025916d043fbe32289"/><section>
+    <title>__repr__()</title>
+<indexterm><primary>__repr__</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>__repr__</secondary></indexterm>
+<para><computeroutput> str main.statement_tokenizer.__repr__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00040">40</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a07a6fae900a0361a1169001e5300a935"/><section>
+    <title>__str__()</title>
+<indexterm><primary>__str__</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>__str__</secondary></indexterm>
+<para><computeroutput> str main.statement_tokenizer.__str__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00033">33</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a695b1cb78882a051f601d83dc02a5b1f"/><section>
+    <title>get_tokens()</title>
+<indexterm><primary>get_tokens</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>get_tokens</secondary></indexterm>
+<para><computeroutput> list main.statement_tokenizer.get_tokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the splitting of the individual strings into the required tokens which
+takes  text (string) the text that is to be split into tokens. and returns a list of tokens.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00026">26</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a91cf2ca25a0cc576d029920853392860"/><section>
+    <title>getAllTokens()</title>
+<indexterm><primary>getAllTokens</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>getAllTokens</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.getAllTokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00063">63</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a07b22ae554127eec66337e8bb0455d11"/><section>
+    <title>identifyPartsOfSpeech()</title>
+<indexterm><primary>identifyPartsOfSpeech</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>identifyPartsOfSpeech</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.identifyPartsOfSpeech ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function is responsible for the identification of the parts of speech of the words in the text block.
+it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file
+which contains the list of parts of speech and the words that belong to each part of speech. The group works on code that deals with the letter B
+In cases where the
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00093">93</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a0b0ba2147afd261c75986b242926b15c"/><section>
+    <title>matchAllWordsStartingWithB()</title>
+<indexterm><primary>matchAllWordsStartingWithB</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>matchAllWordsStartingWithB</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.matchAllWordsStartingWithB ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00087">87</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a892f3c06d122cf209f32be6eefdbf5ef"/><section>
+    <title>peformSentenceSplit()</title>
+<indexterm><primary>peformSentenceSplit</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>peformSentenceSplit</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.peformSentenceSplit ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00047">47</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1abdac0a8fb895b8ddd348b882747b05db"/><section>
+    <title>performWordSplit()</title>
+<indexterm><primary>performWordSplit</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>performWordSplit</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.performWordSplit ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00055">55</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a6b94dcf6889b89105910bca6a62bfe64"/><section>
+    <title>retainAllTokens()</title>
+<indexterm><primary>retainAllTokens</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>retainAllTokens</secondary></indexterm>
+<para><computeroutput>def main.statement_tokenizer.retainAllTokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
+this will be especially important what there will to be identification of known patters.
+The function contains a special regular expresssion that checks all characaters individually
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_main_8py_source_1l00070">70</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Data Documentation</title>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a2632648ba3e0bab916fa5eeb06cb71bb"/><section>
+    <title>adjectiveList</title>
+<indexterm><primary>adjectiveList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>adjectiveList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.adjectiveList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00018">18</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a8d588b23dd51598c21aa8db357a605c4"/><section>
+    <title>adverbList</title>
+<indexterm><primary>adverbList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>adverbList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.adverbList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00020">20</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a588793a987c8ca33478a89ce83d2fc98"/><section>
+    <title>conjunctionsList</title>
+<indexterm><primary>conjunctionsList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>conjunctionsList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.conjunctionsList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00021">21</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a925c7c14ab6750a9aa8bf1e811ca93e8"/><section>
+    <title>interjectionsList</title>
+<indexterm><primary>interjectionsList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>interjectionsList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.interjectionsList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00022">22</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a5c645ea998ef0569b7e292e4be29cc60"/><section>
+    <title>nounList</title>
+<indexterm><primary>nounList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>nounList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.nounList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00016">16</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1afd78f7a9c9e49e70eff211e394d51e62"/><section>
+    <title>pronounList</title>
+<indexterm><primary>pronounList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>pronounList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.pronounList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00017">17</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a90d8cf9378c9353c8c8c4aec38374479"/><section>
+    <title>unknownList</title>
+<indexterm><primary>unknownList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>unknownList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.unknownList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00023">23</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<anchor xml:id="_classmain_1_1statement__tokenizer_1a24c4eed7b89ee5776869a02ffe12b9a4"/><section>
+    <title>verbList</title>
+<indexterm><primary>verbList</primary><secondary>main.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>main.statement_tokenizer</primary><secondary>verbList</secondary></indexterm>
+<para><computeroutput>main.statement_tokenizer.verbList</computeroutput></para><para>
+Definition at line <link linkend="_main_8py_source_1l00019">19</link> of file <link linkend="_main_8py_source">main.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_main_8py">main.py</link></section>
+</section>

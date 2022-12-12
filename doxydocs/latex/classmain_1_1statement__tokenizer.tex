@@ -1,0 +1,272 @@
+\hypertarget{classmain_1_1statement__tokenizer}{}\doxysection{main.\+statement\+\_\+tokenizer Class Reference}
+\label{classmain_1_1statement__tokenizer}\index{main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_ad69e6f7c8f99f1e12e40c495952e00e3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+list \mbox{\hyperlink{classmain_1_1statement__tokenizer_a695b1cb78882a051f601d83dc02a5b1f}{get\+\_\+tokens}} (self, text)
+\item 
+str \mbox{\hyperlink{classmain_1_1statement__tokenizer_a07a6fae900a0361a1169001e5300a935}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \mbox{\hyperlink{classmain_1_1statement__tokenizer_a13e7472cbf6f1e025916d043fbe32289}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}{peform\+Sentence\+Split}} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_abdac0a8fb895b8ddd348b882747b05db}{perform\+Word\+Split}} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_a91cf2ca25a0cc576d029920853392860}{get\+All\+Tokens}} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}{retain\+All\+Tokens}} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}{match\+All\+Words\+Starting\+WithB}} (self, text)
+\item 
+def \mbox{\hyperlink{classmain_1_1statement__tokenizer_a07b22ae554127eec66337e8bb0455d11}{identify\+Parts\+Of\+Speech}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}{noun\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}{pronoun\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}{adjective\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}{verb\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}{adverb\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}{conjunctions\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}{interjections\+List}}
+\item 
+\mbox{\hyperlink{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}{unknown\+List}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00007}{7}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_ad69e6f7c8f99f1e12e40c495952e00e3}\label{classmain_1_1statement__tokenizer_ad69e6f7c8f99f1e12e40c495952e00e3}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00008}{8}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a13e7472cbf6f1e025916d043fbe32289}\label{classmain_1_1statement__tokenizer_a13e7472cbf6f1e025916d043fbe32289}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily  str main.\+statement\+\_\+tokenizer.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00040}{40}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a07a6fae900a0361a1169001e5300a935}\label{classmain_1_1statement__tokenizer_a07a6fae900a0361a1169001e5300a935}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily  str main.\+statement\+\_\+tokenizer.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00033}{33}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a695b1cb78882a051f601d83dc02a5b1f}\label{classmain_1_1statement__tokenizer_a695b1cb78882a051f601d83dc02a5b1f}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!get\_tokens@{get\_tokens}}
+\index{get\_tokens@{get\_tokens}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{get\_tokens()}{get\_tokens()}}
+{\footnotesize\ttfamily  list main.\+statement\+\_\+tokenizer.\+get\+\_\+tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method is responsible for the splitting of the individual strings into the required tokens which
+takes  text (string) the text that is to be split into tokens. and returns a list of tokens.\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00026}{26}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a91cf2ca25a0cc576d029920853392860}\label{classmain_1_1statement__tokenizer_a91cf2ca25a0cc576d029920853392860}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!getAllTokens@{getAllTokens}}
+\index{getAllTokens@{getAllTokens}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{getAllTokens()}{getAllTokens()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+get\+All\+Tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00063}{63}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a07b22ae554127eec66337e8bb0455d11}\label{classmain_1_1statement__tokenizer_a07b22ae554127eec66337e8bb0455d11}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!identifyPartsOfSpeech@{identifyPartsOfSpeech}}
+\index{identifyPartsOfSpeech@{identifyPartsOfSpeech}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{identifyPartsOfSpeech()}{identifyPartsOfSpeech()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+identify\+Parts\+Of\+Speech (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is responsible for the identification of the parts of speech of the words in the text block.
+it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file
+which contains the list of parts of speech and the words that belong to each part of speech. The group works on code that deals with the letter B
+In cases where the
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00093}{93}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}\label{classmain_1_1statement__tokenizer_a0b0ba2147afd261c75986b242926b15c}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!matchAllWordsStartingWithB@{matchAllWordsStartingWithB}}
+\index{matchAllWordsStartingWithB@{matchAllWordsStartingWithB}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{matchAllWordsStartingWithB()}{matchAllWordsStartingWithB()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+match\+All\+Words\+Starting\+WithB (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00087}{87}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}\label{classmain_1_1statement__tokenizer_a892f3c06d122cf209f32be6eefdbf5ef}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!peformSentenceSplit@{peformSentenceSplit}}
+\index{peformSentenceSplit@{peformSentenceSplit}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{peformSentenceSplit()}{peformSentenceSplit()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+peform\+Sentence\+Split (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00047}{47}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_abdac0a8fb895b8ddd348b882747b05db}\label{classmain_1_1statement__tokenizer_abdac0a8fb895b8ddd348b882747b05db}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!performWordSplit@{performWordSplit}}
+\index{performWordSplit@{performWordSplit}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{performWordSplit()}{performWordSplit()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+perform\+Word\+Split (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00055}{55}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}\label{classmain_1_1statement__tokenizer_a6b94dcf6889b89105910bca6a62bfe64}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!retainAllTokens@{retainAllTokens}}
+\index{retainAllTokens@{retainAllTokens}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{retainAllTokens()}{retainAllTokens()}}
+{\footnotesize\ttfamily def main.\+statement\+\_\+tokenizer.\+retain\+All\+Tokens (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
+this will be especially important what there will to be identification of known patters.
+The function contains a special regular expresssion that checks all characaters individually
+\end{DoxyVerb}
+ 
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00070}{70}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}\label{classmain_1_1statement__tokenizer_a2632648ba3e0bab916fa5eeb06cb71bb}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!adjectiveList@{adjectiveList}}
+\index{adjectiveList@{adjectiveList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{adjectiveList}{adjectiveList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+adjective\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00018}{18}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}\label{classmain_1_1statement__tokenizer_a8d588b23dd51598c21aa8db357a605c4}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!adverbList@{adverbList}}
+\index{adverbList@{adverbList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{adverbList}{adverbList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+adverb\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00020}{20}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}\label{classmain_1_1statement__tokenizer_a588793a987c8ca33478a89ce83d2fc98}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!conjunctionsList@{conjunctionsList}}
+\index{conjunctionsList@{conjunctionsList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{conjunctionsList}{conjunctionsList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+conjunctions\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00021}{21}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}\label{classmain_1_1statement__tokenizer_a925c7c14ab6750a9aa8bf1e811ca93e8}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!interjectionsList@{interjectionsList}}
+\index{interjectionsList@{interjectionsList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{interjectionsList}{interjectionsList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+interjections\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00022}{22}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}\label{classmain_1_1statement__tokenizer_a5c645ea998ef0569b7e292e4be29cc60}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!nounList@{nounList}}
+\index{nounList@{nounList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{nounList}{nounList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+noun\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00016}{16}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}\label{classmain_1_1statement__tokenizer_afd78f7a9c9e49e70eff211e394d51e62}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!pronounList@{pronounList}}
+\index{pronounList@{pronounList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{pronounList}{pronounList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+pronoun\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00017}{17}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}\label{classmain_1_1statement__tokenizer_a90d8cf9378c9353c8c8c4aec38374479}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!unknownList@{unknownList}}
+\index{unknownList@{unknownList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{unknownList}{unknownList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+unknown\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00023}{23}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+\mbox{\Hypertarget{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}\label{classmain_1_1statement__tokenizer_a24c4eed7b89ee5776869a02ffe12b9a4}} 
+\index{main.statement\_tokenizer@{main.statement\_tokenizer}!verbList@{verbList}}
+\index{verbList@{verbList}!main.statement\_tokenizer@{main.statement\_tokenizer}}
+\doxysubsubsection{\texorpdfstring{verbList}{verbList}}
+{\footnotesize\ttfamily main.\+statement\+\_\+tokenizer.\+verb\+List}
+
+
+
+Definition at line \mbox{\hyperlink{main_8py_source_l00019}{19}} of file \mbox{\hyperlink{main_8py_source}{main.\+py}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{main_8py}{main.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,107 @@
+\hypertarget{lexical_8py_source}{}\doxysection{lexical.\+py}
+\mbox{\hyperlink{lexical_8py}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00001}\mbox{\hyperlink{namespacelexical}{00001}} \textcolor{keyword}{import} sys}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00002}00002 \textcolor{keyword}{import} re}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00005}\mbox{\hyperlink{namespacelexical_af07d9b67777b3cb5d47afe9ff6b94cb1}{00005}} text = \textcolor{stringliteral}{"{}Its show time"{}}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00007}\mbox{\hyperlink{namespacelexical_a5a4ac3688f4251e52869010a8b7232fc}{00007}} punctuation = [\textcolor{stringliteral}{'!'}, \textcolor{stringliteral}{'?'},\textcolor{stringliteral}{','},\textcolor{stringliteral}{'.'},\textcolor{stringliteral}{';'},\textcolor{stringliteral}{':'}]}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00008}\mbox{\hyperlink{namespacelexical_a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e}{00008}} noun = [\textcolor{stringliteral}{'+'}, \textcolor{stringliteral}{'-\/'}, \textcolor{stringliteral}{'*'}, \textcolor{stringliteral}{'/'}, \textcolor{stringliteral}{'='}, \textcolor{stringliteral}{'+='}, \textcolor{stringliteral}{'-\/='}, \textcolor{stringliteral}{'=='}, \textcolor{stringliteral}{'<'}, \textcolor{stringliteral}{'>'}, \textcolor{stringliteral}{'<='}, \textcolor{stringliteral}{'>='}]}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00009}\mbox{\hyperlink{namespacelexical_a08edda5cc39db2649d99f746b5c3fd39}{00009}} adverb = [\textcolor{stringliteral}{'auto'},\textcolor{stringliteral}{'break'}, \textcolor{stringliteral}{'case'}, \textcolor{stringliteral}{'char'}, \textcolor{stringliteral}{'const'}, \textcolor{stringliteral}{'continue'}, \textcolor{stringliteral}{'default'}, \textcolor{stringliteral}{'do'}, }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00010}00010             \textcolor{stringliteral}{'double'}, \textcolor{stringliteral}{'else'}, \textcolor{stringliteral}{'enum'}, \textcolor{stringliteral}{'extern'}, \textcolor{stringliteral}{'float'}, \textcolor{stringliteral}{'for'}, \textcolor{stringliteral}{'goto'}, \textcolor{stringliteral}{'if'}, }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00011}00011             \textcolor{stringliteral}{'int'}, \textcolor{stringliteral}{'long'}, \textcolor{stringliteral}{'register'}, \textcolor{stringliteral}{'return'}, \textcolor{stringliteral}{'short'}, \textcolor{stringliteral}{'signed'}, \textcolor{stringliteral}{'sizeof'}, \textcolor{stringliteral}{'static'}, }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00012}00012             \textcolor{stringliteral}{'struct'}, \textcolor{stringliteral}{'switch'}, \textcolor{stringliteral}{'typedef'}, \textcolor{stringliteral}{'union'}, \textcolor{stringliteral}{'unsigned'}, \textcolor{stringliteral}{'void'}, \textcolor{stringliteral}{'volatile'}, \textcolor{stringliteral}{'while'}]}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00013}\mbox{\hyperlink{namespacelexical_a331bfcb04bc25622e9cfed4e52c0356c}{00013}} verb = [ \textcolor{stringliteral}{'gag'} , \textcolor{stringliteral}{'gain'} , \textcolor{stringliteral}{'gallop'}, \textcolor{stringliteral}{'gamble'} ,\textcolor{stringliteral}{'gargle'} ,\textcolor{stringliteral}{'garnish'} ,\textcolor{stringliteral}{'gasp'} ,\textcolor{stringliteral}{'gather'},\textcolor{stringliteral}{'gauge'} ,\textcolor{stringliteral}{'geld'} ,\textcolor{stringliteral}{'generalize'} ,\textcolor{stringliteral}{'generate'} , \textcolor{stringliteral}{'germinate'} , \textcolor{stringliteral}{'gesticulate'}, }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00014}00014  \textcolor{stringliteral}{'get'} , \textcolor{stringliteral}{'giggle'}, \textcolor{stringliteral}{'gild'} ,\textcolor{stringliteral}{'give'}, \textcolor{stringliteral}{'glance'}, \textcolor{stringliteral}{'glaze'} ,\textcolor{stringliteral}{'gleam'} ,\textcolor{stringliteral}{'glean'} ,\textcolor{stringliteral}{'glide'} ,\textcolor{stringliteral}{'glimmer'}, \textcolor{stringliteral}{'glimpse'} ,\textcolor{stringliteral}{'glisten'} ,\textcolor{stringliteral}{'glitter'} ,\textcolor{stringliteral}{'glorify'}, \textcolor{stringliteral}{'gloss'} ,\textcolor{stringliteral}{'glow'} ,\textcolor{stringliteral}{'glue'} ,\textcolor{stringliteral}{'gnash'} ,\textcolor{stringliteral}{'gnaw'} ,\textcolor{stringliteral}{'go'} ,\textcolor{stringliteral}{'goad'}, \textcolor{stringliteral}{'gossip'},  \textcolor{stringliteral}{'govern'} ,\textcolor{stringliteral}{'grab'} , \textcolor{stringliteral}{'grace'} ,\textcolor{stringliteral}{'grade'} ,\textcolor{stringliteral}{'graduate'} }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00015}00015 , \textcolor{stringliteral}{'graft'},\textcolor{stringliteral}{'grant'}, \textcolor{stringliteral}{'granulate'},\textcolor{stringliteral}{'grasp'},\textcolor{stringliteral}{'grate'},\textcolor{stringliteral}{'gravel'},\textcolor{stringliteral}{'gravitate'},\textcolor{stringliteral}{'graze'},\textcolor{stringliteral}{'grease'},\textcolor{stringliteral}{'greet'},\textcolor{stringliteral}{'grill'},\textcolor{stringliteral}{'grin'},\textcolor{stringliteral}{'grind'}, \textcolor{stringliteral}{'grip'}, \textcolor{stringliteral}{'groan'},\textcolor{stringliteral}{'groom'},\textcolor{stringliteral}{'grope'},\textcolor{stringliteral}{'grow'},\textcolor{stringliteral}{'growl'},\textcolor{stringliteral}{'grub'},\textcolor{stringliteral}{'grumble'},\textcolor{stringliteral}{'grunt'},\textcolor{stringliteral}{'guarantee'},\textcolor{stringliteral}{'guard'},\textcolor{stringliteral}{'guess'},\textcolor{stringliteral}{'guide'}, \textcolor{stringliteral}{'gurgle'} ,\textcolor{stringliteral}{'gush'} ,\textcolor{stringliteral}{'gut'} ,\textcolor{stringliteral}{'guzzle'} }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00016}00016 ]}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00017}00017 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00019}\mbox{\hyperlink{namespacelexical_a5e4c8af01c151951897eb17fd46cde2e}{00019}} in\_adverb = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00020}\mbox{\hyperlink{namespacelexical_a9269d51e467a03d262335e8c22ab8fb2}{00020}} in\_spl\_punctuation = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00021}\mbox{\hyperlink{namespacelexical_a008f385c6c32f86c9e19cf4a5481d8a0}{00021}} in\_noun = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00022}\mbox{\hyperlink{namespacelexical_a79b012a4f7c2b9de4149b3bb8d9c1240}{00022}} in\_verb = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00023}\mbox{\hyperlink{namespacelexical_a48ae17c9449f3f274d8a80dda67fa50a}{00023}} in\_identifiers = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00024}\mbox{\hyperlink{namespacelexical_a3c93b5f9ebdc7142ec904e5477253ee6}{00024}} in\_constants = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00026}\mbox{\hyperlink{namespacelexical_ae89581a91db0ce5f2eca90a2843a35c9}{00026}} tokens = []}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00027}\mbox{\hyperlink{namespacelexical_a1e487213adc78c8cf7b637be9fb09850}{00027}} isStr = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00028}\mbox{\hyperlink{namespacelexical_a4b61698279ff55043bf20d2948e0b26c}{00028}} isWord = \textcolor{keyword}{False}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00029}\mbox{\hyperlink{namespacelexical_aaefc2eccfb838fbc9b568ffe2e656b63}{00029}} isCmt = 0}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00030}\mbox{\hyperlink{namespacelexical_afa59245bd14a08d905d30bd2758ecd35}{00030}} token = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00032}00032 \textcolor{keywordflow}{for} i \textcolor{keywordflow}{in} text:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00033}00033     \textcolor{keywordflow}{if} i == \textcolor{stringliteral}{'/'}:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00034}00034         isCmt = isCmt+1}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00036}00036     \textcolor{keywordflow}{elif} isCmt == 2:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00037}00037         \textcolor{keywordflow}{if} i == \textcolor{stringliteral}{'\(\backslash\)n'}:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00038}00038             token = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00039}00039             isCmt = 0}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00040}00040     }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00041}00041     \textcolor{keywordflow}{elif} i == \textcolor{stringliteral}{'"{}'} \textcolor{keywordflow}{or} i == \textcolor{stringliteral}{"{}'"{}}:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00042}00042         \textcolor{keywordflow}{if} isStr:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00043}00043             tokens.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00044}00044             token = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00045}00045         isStr = \textcolor{keywordflow}{not} isStr }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00047}00047     \textcolor{keywordflow}{elif} isStr:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00048}00048         token = token+i}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00049}00049     }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00050}00050     \textcolor{keywordflow}{elif} i \textcolor{keywordflow}{in} punctuation:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00051}00051         tokens.append(i)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00052}00052            }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00053}00053     \textcolor{keywordflow}{elif} i.isalnum() \textcolor{keywordflow}{and} \textcolor{keywordflow}{not} isWord:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00054}00054         isWord = \textcolor{keyword}{True}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00055}00055         token = i}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00056}00056     }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00057}00057     \textcolor{keywordflow}{elif} (i \textcolor{keywordflow}{in} verb) \textcolor{keywordflow}{or} (i \textcolor{keywordflow}{in} noun):}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00058}00058         \textcolor{keywordflow}{if} token:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00059}00059             tokens.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00060}00060             token = \textcolor{stringliteral}{''}}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00061}00061         }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00062}00062         \textcolor{keywordflow}{if} \textcolor{keywordflow}{not} (i==\textcolor{stringliteral}{' '} \textcolor{keywordflow}{or} i==\textcolor{stringliteral}{'\(\backslash\)n'} \textcolor{keywordflow}{or} i==\textcolor{stringliteral}{'   '}):}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00063}00063             tokens.append(i)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00065}00065     \textcolor{keywordflow}{elif} isWord:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00066}00066         token = token+i}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00068}00068 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00069}00069 \textcolor{keywordflow}{for} token \textcolor{keywordflow}{in} tokens:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00070}00070     \textcolor{keywordflow}{if} token \textcolor{keywordflow}{in} punctuation:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00071}00071         in\_spl\_punctuation.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00072}00072 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00073}00073     \textcolor{keywordflow}{elif} token \textcolor{keywordflow}{in} noun:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00074}00074         in\_noun.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00076}00076     \textcolor{keywordflow}{elif} token \textcolor{keywordflow}{in} adverb:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00077}00077         in\_adverb.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00078}00078                 }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00079}00079     \textcolor{keywordflow}{elif} re.search(\textcolor{stringliteral}{"{}\string^[\_a-\/zA-\/Z][\_a-\/zA-\/Z0-\/9]*\$"{}},token):}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00080}00080         in\_identifiers.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00081}00081         }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00082}00082     \textcolor{keywordflow}{elif} token \textcolor{keywordflow}{in} verb:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00083}00083         in\_verb.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00084}00084         }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00085}00085     \textcolor{keywordflow}{else}:}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00086}00086         in\_constants.append(token)}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00087}00087     }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00088}00088                         }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00089}00089 print(\textcolor{stringliteral}{"{}No of tokens = "{}}, len(tokens))   }
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00090}00090 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of adverb = "{}},len(in\_adverb))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00091}00091 print(in\_adverb);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00092}00092 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of special punctuation = "{}},len(in\_spl\_punctuation))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00093}00093 print(in\_spl\_punctuation);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00094}00094 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of noun = "{}},len(in\_noun))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00095}00095 print(in\_noun);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00096}00096 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of identifiers = "{}},len(in\_identifiers))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00097}00097 print(in\_identifiers);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00098}00098 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of constants = "{}},len(in\_constants))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00099}00099 print(in\_constants);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00100}00100 print(\textcolor{stringliteral}{"{}\(\backslash\)nNo. of verb = "{}},len(in\_verb))}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00101}00101 print(in\_verb);}
+\DoxyCodeLine{\Hypertarget{lexical_8py_source_l00102}00102 f.close()   }
+
+\end{DoxyCode}

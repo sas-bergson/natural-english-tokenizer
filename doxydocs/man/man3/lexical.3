@@ -1,0 +1,143 @@
+.TH "lexical" 3 "Mon Dec 12 2022" "natural english language tokenizer" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+lexical
+.SH SYNOPSIS
+.br
+.PP
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "string \fBtext\fP = 'Its show time'"
+.br
+.ti -1c
+.RI "list \fBpunctuation\fP = ['!', '?',',','\&.',';',':']"
+.br
+.ti -1c
+.RI "list \fBnoun\fP = ['+', '\-', '*', '/', '=', '+=', '\-=', '==', '<', '>', '<=', '>=']"
+.br
+.ti -1c
+.RI "list \fBadverb\fP"
+.br
+.ti -1c
+.RI "list \fBverb\fP"
+.br
+.ti -1c
+.RI "list \fBin_adverb\fP = []"
+.br
+.ti -1c
+.RI "list \fBin_spl_punctuation\fP = []"
+.br
+.ti -1c
+.RI "list \fBin_noun\fP = []"
+.br
+.ti -1c
+.RI "list \fBin_verb\fP = []"
+.br
+.ti -1c
+.RI "list \fBin_identifiers\fP = []"
+.br
+.ti -1c
+.RI "list \fBin_constants\fP = []"
+.br
+.ti -1c
+.RI "list \fBtokens\fP = []"
+.br
+.ti -1c
+.RI "bool \fBisStr\fP = False"
+.br
+.ti -1c
+.RI "bool \fBisWord\fP = False"
+.br
+.ti -1c
+.RI "int \fBisCmt\fP = 0"
+.br
+.ti -1c
+.RI "string \fBtoken\fP = ''"
+.br
+.in -1c
+.SH "Variable Documentation"
+.PP 
+.SS "list lexical\&.adverb"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  ['auto','break', 'case', 'char', 'const', 'continue', 'default', 'do', 
+2             'double', 'else', 'enum', 'extern', 'float', 'for', 'goto', 'if', 
+3             'int', 'long', 'register', 'return', 'short', 'signed', 'sizeof', 'static', 
+4             'struct', 'switch', 'typedef', 'union', 'unsigned', 'void', 'volatile', 'while']
+.fi
+.PP
+Definition at line \fB9\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_adverb = []"
+
+.PP
+Definition at line \fB19\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_constants = []"
+
+.PP
+Definition at line \fB24\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_identifiers = []"
+
+.PP
+Definition at line \fB23\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_noun = []"
+
+.PP
+Definition at line \fB21\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_spl_punctuation = []"
+
+.PP
+Definition at line \fB20\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.in_verb = []"
+
+.PP
+Definition at line \fB22\fP of file \fBlexical\&.py\fP\&.
+.SS "int lexical\&.isCmt = 0"
+
+.PP
+Definition at line \fB29\fP of file \fBlexical\&.py\fP\&.
+.SS "bool lexical\&.isStr = False"
+
+.PP
+Definition at line \fB27\fP of file \fBlexical\&.py\fP\&.
+.SS "bool lexical\&.isWord = False"
+
+.PP
+Definition at line \fB28\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.noun = ['+', '\-', '*', '/', '=', '+=', '\-=', '==', '<', '>', '<=', '>=']"
+
+.PP
+Definition at line \fB8\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.punctuation = ['!', '?',',','\&.',';',':']"
+
+.PP
+Definition at line \fB7\fP of file \fBlexical\&.py\fP\&.
+.SS "string lexical\&.text = 'Its show time'"
+
+.PP
+Definition at line \fB5\fP of file \fBlexical\&.py\fP\&.
+.SS "string lexical\&.token = ''"
+
+.PP
+Definition at line \fB30\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.tokens = []"
+
+.PP
+Definition at line \fB26\fP of file \fBlexical\&.py\fP\&.
+.SS "list lexical\&.verb"
+\fBInitial value:\fP
+.PP
+.nf
+1 =  [ 'gag' , 'gain' , 'gallop', 'gamble' ,'gargle' ,'garnish' ,'gasp' ,'gather','gauge' ,'geld' ,'generalize' ,'generate' , 'germinate' , 'gesticulate', 
+2  'get' , 'giggle', 'gild' ,'give', 'glance', 'glaze' ,'gleam' ,'glean' ,'glide' ,'glimmer', 'glimpse' ,'glisten' ,'glitter' ,'glorify', 'gloss' ,'glow' ,'glue' ,'gnash' ,'gnaw' ,'go' ,'goad', 'gossip',  'govern' ,'grab' , 'grace' ,'grade' ,'graduate' 
+3 , 'graft','grant', 'granulate','grasp','grate','gravel','gravitate','graze','grease','greet','grill','grin','grind', 'grip', 'groan','groom','grope','grow','growl','grub','grumble','grunt','guarantee','guard','guess','guide', 'gurgle' ,'gush' ,'gut' ,'guzzle' 
+4 ]
+.fi
+.PP
+Definition at line \fB13\fP of file \fBlexical\&.py\fP\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for natural english language tokenizer from the source code\&.

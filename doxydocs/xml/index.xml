@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.5" xml:lang="en-US">
+  <compound refid="classmain_1_1statement__tokenizer" kind="class"><name>main::statement_tokenizer</name>
+    <member refid="classmain_1_1statement__tokenizer_1a7b99cd25f29acb6fe3dc0f3c65bfbf5e" kind="variable"><name>_pattern</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1ae0524455667d6dc8697083a304272e9e" kind="variable"><name>_sentence_pattern</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a102bd7c1d1ac8c1824b6471952aaaeae" kind="variable"><name>_word_pattern</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1acb340652fbfa1cb86b8f21e5dfb05b67" kind="variable"><name>_regex</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a8ab7cc298ab0ec6d81b9be7e4904cde7" kind="variable"><name>_tokens</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a5c645ea998ef0569b7e292e4be29cc60" kind="variable"><name>nounList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1afd78f7a9c9e49e70eff211e394d51e62" kind="variable"><name>pronounList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a2632648ba3e0bab916fa5eeb06cb71bb" kind="variable"><name>adjectiveList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a24c4eed7b89ee5776869a02ffe12b9a4" kind="variable"><name>verbList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a8d588b23dd51598c21aa8db357a605c4" kind="variable"><name>adverbList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a588793a987c8ca33478a89ce83d2fc98" kind="variable"><name>conjunctionsList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a925c7c14ab6750a9aa8bf1e811ca93e8" kind="variable"><name>interjectionsList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a90d8cf9378c9353c8c8c4aec38374479" kind="variable"><name>unknownList</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1ad69e6f7c8f99f1e12e40c495952e00e3" kind="function"><name>__init__</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a695b1cb78882a051f601d83dc02a5b1f" kind="function"><name>get_tokens</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a07a6fae900a0361a1169001e5300a935" kind="function"><name>__str__</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a13e7472cbf6f1e025916d043fbe32289" kind="function"><name>__repr__</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a892f3c06d122cf209f32be6eefdbf5ef" kind="function"><name>peformSentenceSplit</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1abdac0a8fb895b8ddd348b882747b05db" kind="function"><name>performWordSplit</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a91cf2ca25a0cc576d029920853392860" kind="function"><name>getAllTokens</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a6b94dcf6889b89105910bca6a62bfe64" kind="function"><name>retainAllTokens</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a0b0ba2147afd261c75986b242926b15c" kind="function"><name>matchAllWordsStartingWithB</name></member>
+    <member refid="classmain_1_1statement__tokenizer_1a07b22ae554127eec66337e8bb0455d11" kind="function"><name>identifyPartsOfSpeech</name></member>
+  </compound>
+  <compound refid="classstatement_1_1statement__tokenizer" kind="class"><name>statement::statement_tokenizer</name>
+    <member refid="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" kind="variable"><name>_pattern</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a6014c2bbeb9f5d74430d8079c8e79380" kind="variable"><name>_sentence_pattern</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a60f9e3d9dd21647a3ecdb891b0820e5d" kind="variable"><name>_word_pattern</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" kind="variable"><name>_regex</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" kind="variable"><name>_tokens</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b" kind="function"><name>__init__</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965" kind="function"><name>get_tokens</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" kind="function"><name>__str__</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a85a8d55580c14f82f58e630ba075026d" kind="function"><name>__repr__</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a9e8a94c666203e2e3a1e502381afcbec" kind="function"><name>peformSentenceSplit</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a10eb35f9e1c1f020d416d494e0ba5f5b" kind="function"><name>performWordSplit</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a43a95712f250e8ded2b23ef48988bc86" kind="function"><name>getAllTokens</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1afa19774ffa56f61147efb0a4e84f88b1" kind="function"><name>retainAllTokens</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1a6736292ecfe03911105e95b9d36c6d97" kind="function"><name>matchAllWordsStartingWithA</name></member>
+    <member refid="classstatement_1_1statement__tokenizer_1af571c51d84cfeb007f10f703bc7e65c4" kind="function"><name>fsa</name></member>
+  </compound>
+  <compound refid="namespacelexical" kind="namespace"><name>lexical</name>
+    <member refid="namespacelexical_1af07d9b67777b3cb5d47afe9ff6b94cb1" kind="variable"><name>text</name></member>
+    <member refid="namespacelexical_1a5a4ac3688f4251e52869010a8b7232fc" kind="variable"><name>punctuation</name></member>
+    <member refid="namespacelexical_1a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e" kind="variable"><name>noun</name></member>
+    <member refid="namespacelexical_1a08edda5cc39db2649d99f746b5c3fd39" kind="variable"><name>adverb</name></member>
+    <member refid="namespacelexical_1a331bfcb04bc25622e9cfed4e52c0356c" kind="variable"><name>verb</name></member>
+    <member refid="namespacelexical_1a5e4c8af01c151951897eb17fd46cde2e" kind="variable"><name>in_adverb</name></member>
+    <member refid="namespacelexical_1a9269d51e467a03d262335e8c22ab8fb2" kind="variable"><name>in_spl_punctuation</name></member>
+    <member refid="namespacelexical_1a008f385c6c32f86c9e19cf4a5481d8a0" kind="variable"><name>in_noun</name></member>
+    <member refid="namespacelexical_1a79b012a4f7c2b9de4149b3bb8d9c1240" kind="variable"><name>in_verb</name></member>
+    <member refid="namespacelexical_1a48ae17c9449f3f274d8a80dda67fa50a" kind="variable"><name>in_identifiers</name></member>
+    <member refid="namespacelexical_1a3c93b5f9ebdc7142ec904e5477253ee6" kind="variable"><name>in_constants</name></member>
+    <member refid="namespacelexical_1ae89581a91db0ce5f2eca90a2843a35c9" kind="variable"><name>tokens</name></member>
+    <member refid="namespacelexical_1a1e487213adc78c8cf7b637be9fb09850" kind="variable"><name>isStr</name></member>
+    <member refid="namespacelexical_1a4b61698279ff55043bf20d2948e0b26c" kind="variable"><name>isWord</name></member>
+    <member refid="namespacelexical_1aaefc2eccfb838fbc9b568ffe2e656b63" kind="variable"><name>isCmt</name></member>
+    <member refid="namespacelexical_1afa59245bd14a08d905d30bd2758ecd35" kind="variable"><name>token</name></member>
+  </compound>
+  <compound refid="namespacemain" kind="namespace"><name>main</name>
+  </compound>
+  <compound refid="namespaceparts__speech" kind="namespace"><name>parts_speech</name>
+    <member refid="namespaceparts__speech_1acdadfc9b9cbef9805ef5ab3c064c51b3" kind="variable"><name>nouns</name></member>
+    <member refid="namespaceparts__speech_1a988d1b580e08850ec5df6ac36382c810" kind="variable"><name>verbs</name></member>
+    <member refid="namespaceparts__speech_1a87a6fb07eb67d6ef54674b726722038e" kind="variable"><name>adjectives</name></member>
+    <member refid="namespaceparts__speech_1a7b8920917fff772af5650c55d6c75cda" kind="variable"><name>adverbs</name></member>
+    <member refid="namespaceparts__speech_1a92775114fe1e32ce952a4104086c05e4" kind="variable"><name>conjunctions</name></member>
+    <member refid="namespaceparts__speech_1a4b7d6b31718e1dc833ff5eabcb54a320" kind="variable"><name>interjections</name></member>
+    <member refid="namespaceparts__speech_1a3b47658470f71448fe25feaea7a52d0e" kind="variable"><name>pronouns</name></member>
+  </compound>
+  <compound refid="namespacestatement" kind="namespace"><name>statement</name>
+  </compound>
+  <compound refid="lexical_8py" kind="file"><name>lexical.py</name>
+  </compound>
+  <compound refid="main_8py" kind="file"><name>main.py</name>
+  </compound>
+  <compound refid="parts__speech_8py" kind="file"><name>parts_speech.py</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="statement_8py" kind="file"><name>statement.py</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md_README</name>
+  </compound>
+</doxygenindex>

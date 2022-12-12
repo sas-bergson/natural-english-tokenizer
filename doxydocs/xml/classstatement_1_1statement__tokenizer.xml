@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="classstatement_1_1statement__tokenizer" kind="class" language="Python" prot="public">
+    <compoundname>statement::statement_tokenizer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>statement.statement_tokenizer::_pattern</definition>
+        <argsstring></argsstring>
+        <name>_pattern</name>
+        <qualifiedname>statement.statement_tokenizer._pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="10" column="1" bodyfile="statement.py" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1a6014c2bbeb9f5d74430d8079c8e79380" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>statement.statement_tokenizer::_sentence_pattern</definition>
+        <argsstring></argsstring>
+        <name>_sentence_pattern</name>
+        <qualifiedname>statement.statement_tokenizer._sentence_pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="11" column="1" bodyfile="statement.py" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1a60f9e3d9dd21647a3ecdb891b0820e5d" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>statement.statement_tokenizer::_word_pattern</definition>
+        <argsstring></argsstring>
+        <name>_word_pattern</name>
+        <qualifiedname>statement.statement_tokenizer._word_pattern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="12" column="1" bodyfile="statement.py" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>statement.statement_tokenizer::_regex</definition>
+        <argsstring></argsstring>
+        <name>_regex</name>
+        <qualifiedname>statement.statement_tokenizer._regex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="13" column="1" bodyfile="statement.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" prot="private" static="no" mutable="no">
+        <type></type>
+        <definition>statement.statement_tokenizer::_tokens</definition>
+        <argsstring></argsstring>
+        <name>_tokens</name>
+        <qualifiedname>statement.statement_tokenizer._tokens</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="14" column="1" bodyfile="statement.py" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.__init__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__init__</name>
+        <qualifiedname>statement.statement_tokenizer.__init__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="7" column="1" bodyfile="statement.py" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>list</type>
+        <definition> list statement.statement_tokenizer.get_tokens</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>get_tokens</name>
+        <qualifiedname>statement.statement_tokenizer.get_tokens</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This method is responsible for the splitting of the individual strings into the required tokens which
+takes  text (string) the text that is to be split into tokens. and returns a list of tokens.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="16" column="1" bodyfile="statement.py" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str statement.statement_tokenizer.__str__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__str__</name>
+        <qualifiedname>statement.statement_tokenizer.__str__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="23" column="1" bodyfile="statement.py" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a85a8d55580c14f82f58e630ba075026d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>str</type>
+        <definition> str statement.statement_tokenizer.__repr__</definition>
+        <argsstring>(self)</argsstring>
+        <name>__repr__</name>
+        <qualifiedname>statement.statement_tokenizer.__repr__</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method.</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="30" column="1" bodyfile="statement.py" bodystart="30" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a9e8a94c666203e2e3a1e502381afcbec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.peformSentenceSplit</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>peformSentenceSplit</name>
+        <qualifiedname>statement.statement_tokenizer.peformSentenceSplit</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="37" column="1" bodyfile="statement.py" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a10eb35f9e1c1f020d416d494e0ba5f5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.performWordSplit</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>performWordSplit</name>
+        <qualifiedname>statement.statement_tokenizer.performWordSplit</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="45" column="1" bodyfile="statement.py" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a43a95712f250e8ded2b23ef48988bc86" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.getAllTokens</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>getAllTokens</name>
+        <qualifiedname>statement.statement_tokenizer.getAllTokens</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="53" column="1" bodyfile="statement.py" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1afa19774ffa56f61147efb0a4e84f88b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.retainAllTokens</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>retainAllTokens</name>
+        <qualifiedname>statement.statement_tokenizer.retainAllTokens</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
+this will be especially important what there will to be identification of known patters.
+The function contains a special regular expresssion that checks all characaters individually
+</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="60" column="1" bodyfile="statement.py" bodystart="60" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1a6736292ecfe03911105e95b9d36c6d97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.matchAllWordsStartingWithA</definition>
+        <argsstring>(self, text)</argsstring>
+        <name>matchAllWordsStartingWithA</name>
+        <qualifiedname>statement.statement_tokenizer.matchAllWordsStartingWithA</qualifiedname>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>text</type>
+          <defname>text</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><verbatim>The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression</verbatim> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="77" column="1" bodyfile="statement.py" bodystart="77" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classstatement_1_1statement__tokenizer_1af571c51d84cfeb007f10f703bc7e65c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def statement.statement_tokenizer.fsa</definition>
+        <argsstring>(word)</argsstring>
+        <name>fsa</name>
+        <qualifiedname>statement.statement_tokenizer.fsa</qualifiedname>
+        <param>
+          <type>word</type>
+          <defname>word</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="statement.py" line="81" column="1" bodyfile="statement.py" bodystart="81" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="statement.py" line="6" column="1" bodyfile="statement.py" bodystart="6" bodyend="104"/>
+    <listofallmembers>
+      <member refid="classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>__init__</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a85a8d55580c14f82f58e630ba075026d" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>__repr__</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>__str__</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1ab1964d81535413d9a90d7808efa15f16" prot="private" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>_pattern</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a9b0e58181d537ac5ad3f9943fb5f59f6" prot="private" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>_regex</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a6014c2bbeb9f5d74430d8079c8e79380" prot="private" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>_sentence_pattern</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1ae3e4a3059da14fb5b9c8801bc9d96ff8" prot="private" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>_tokens</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a60f9e3d9dd21647a3ecdb891b0820e5d" prot="private" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>_word_pattern</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1af571c51d84cfeb007f10f703bc7e65c4" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>fsa</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>get_tokens</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a43a95712f250e8ded2b23ef48988bc86" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>getAllTokens</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a6736292ecfe03911105e95b9d36c6d97" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>matchAllWordsStartingWithA</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a9e8a94c666203e2e3a1e502381afcbec" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>peformSentenceSplit</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1a10eb35f9e1c1f020d416d494e0ba5f5b" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>performWordSplit</name></member>
+      <member refid="classstatement_1_1statement__tokenizer_1afa19774ffa56f61147efb0a4e84f88b1" prot="public" virt="non-virtual"><scope>statement::statement_tokenizer</scope><name>retainAllTokens</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

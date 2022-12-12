@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_lexical_8py" xml:lang="en-US">
+<title>lexical.py File Reference</title>
+<indexterm><primary>lexical.py</primary></indexterm>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespacelexical">lexical</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>string <link linkend="_namespacelexical_1af07d9b67777b3cb5d47afe9ff6b94cb1">lexical.text</link> = &quot;Its show time&quot;</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a5a4ac3688f4251e52869010a8b7232fc">lexical.punctuation</link> = [&apos;!&apos;, &apos;?&apos;,&apos;,&apos;,&apos;.&apos;,&apos;;&apos;,&apos;:&apos;]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a8fe4e5fa0f02ae8f8f5b3eb2f46fd25e">lexical.noun</link> = [&apos;+&apos;, &apos;-&apos;, &apos;*&apos;, &apos;/&apos;, &apos;=&apos;, &apos;+=&apos;, &apos;-=&apos;, &apos;==&apos;, &apos;&lt;&apos;, &apos;&gt;&apos;, &apos;&lt;=&apos;, &apos;&gt;=&apos;]</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a08edda5cc39db2649d99f746b5c3fd39">lexical.adverb</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a331bfcb04bc25622e9cfed4e52c0356c">lexical.verb</link></para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a5e4c8af01c151951897eb17fd46cde2e">lexical.in_adverb</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a9269d51e467a03d262335e8c22ab8fb2">lexical.in_spl_punctuation</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a008f385c6c32f86c9e19cf4a5481d8a0">lexical.in_noun</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a79b012a4f7c2b9de4149b3bb8d9c1240">lexical.in_verb</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a48ae17c9449f3f274d8a80dda67fa50a">lexical.in_identifiers</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1a3c93b5f9ebdc7142ec904e5477253ee6">lexical.in_constants</link> = []</para>
+</listitem>
+            <listitem><para>list <link linkend="_namespacelexical_1ae89581a91db0ce5f2eca90a2843a35c9">lexical.tokens</link> = []</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacelexical_1a1e487213adc78c8cf7b637be9fb09850">lexical.isStr</link> = False</para>
+</listitem>
+            <listitem><para>bool <link linkend="_namespacelexical_1a4b61698279ff55043bf20d2948e0b26c">lexical.isWord</link> = False</para>
+</listitem>
+            <listitem><para>int <link linkend="_namespacelexical_1aaefc2eccfb838fbc9b568ffe2e656b63">lexical.isCmt</link> = 0</para>
+</listitem>
+            <listitem><para>string <link linkend="_namespacelexical_1afa59245bd14a08d905d30bd2758ecd35">lexical.token</link> = &apos;&apos;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

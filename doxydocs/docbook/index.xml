@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>natural english language tokenizer</title>
+    </info>
+<chapter>
+    <title>Namespace Documentation</title>
+<xi:include href="namespacelexical.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacemain.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespaceparts__speech.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="namespacestatement.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classmain_1_1statement__tokenizer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classstatement_1_1statement__tokenizer.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="lexical_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="lexical_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="main_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parts__speech_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="parts__speech_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="statement_8py.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="statement_8py_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classstatement_1_1statement__tokenizer" xml:lang="en-US">
+<title>statement.statement_tokenizer Class Reference</title>
+<indexterm><primary>statement.statement_tokenizer</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b">__init__</link> (self)</para>
+</listitem>
+            <listitem><para>list <link linkend="_classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965">get_tokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186">__str__</link> (self)</para>
+</listitem>
+            <listitem><para>str <link linkend="_classstatement_1_1statement__tokenizer_1a85a8d55580c14f82f58e630ba075026d">__repr__</link> (self)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a9e8a94c666203e2e3a1e502381afcbec">peformSentenceSplit</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a10eb35f9e1c1f020d416d494e0ba5f5b">performWordSplit</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a43a95712f250e8ded2b23ef48988bc86">getAllTokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1afa19774ffa56f61147efb0a4e84f88b1">retainAllTokens</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1a6736292ecfe03911105e95b9d36c6d97">matchAllWordsStartingWithA</link> (self, text)</para>
+</listitem>
+            <listitem><para>def <link linkend="_classstatement_1_1statement__tokenizer_1af571c51d84cfeb007f10f703bc7e65c4">fsa</link> (word)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00006">6</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a539e367f627418c7f0d210d6f1983f2b"/><section>
+    <title>__init__()</title>
+<indexterm><primary>__init__</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>__init__</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.__init__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00007">7</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a85a8d55580c14f82f58e630ba075026d"/><section>
+    <title>__repr__()</title>
+<indexterm><primary>__repr__</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>__repr__</secondary></indexterm>
+<para><computeroutput> str statement.statement_tokenizer.__repr__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00030">30</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a9449283c6a72dff3aa0ede6aed4f0186"/><section>
+    <title>__str__()</title>
+<indexterm><primary>__str__</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>__str__</secondary></indexterm>
+<para><computeroutput> str statement.statement_tokenizer.__str__ ( self)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the printing of the tokens that are returned by the get_tokens method.
+it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00023">23</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1af571c51d84cfeb007f10f703bc7e65c4"/><section>
+    <title>fsa()</title>
+<indexterm><primary>fsa</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>fsa</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.fsa ( word)</computeroutput></para><para>
+Definition at line <link linkend="_statement_8py_source_1l00081">81</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1af31fdead83a1bf102c9c769855cc5965"/><section>
+    <title>get_tokens()</title>
+<indexterm><primary>get_tokens</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>get_tokens</secondary></indexterm>
+<para><computeroutput> list statement.statement_tokenizer.get_tokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This method is responsible for the splitting of the individual strings into the required tokens which
+takes  text (string) the text that is to be split into tokens. and returns a list of tokens.</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00016">16</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a43a95712f250e8ded2b23ef48988bc86"/><section>
+    <title>getAllTokens()</title>
+<indexterm><primary>getAllTokens</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>getAllTokens</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.getAllTokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00053">53</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a6736292ecfe03911105e95b9d36c6d97"/><section>
+    <title>matchAllWordsStartingWithA()</title>
+<indexterm><primary>matchAllWordsStartingWithA</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>matchAllWordsStartingWithA</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.matchAllWordsStartingWithA ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00077">77</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a9e8a94c666203e2e3a1e502381afcbec"/><section>
+    <title>peformSentenceSplit()</title>
+<indexterm><primary>peformSentenceSplit</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>peformSentenceSplit</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.peformSentenceSplit ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00037">37</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1a10eb35f9e1c1f020d416d494e0ba5f5b"/><section>
+    <title>performWordSplit()</title>
+<indexterm><primary>performWordSplit</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>performWordSplit</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.performWordSplit ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
+based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
+blocks. this will also give the possibility to thet count of the number of sentences in
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00045">45</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<anchor xml:id="_classstatement_1_1statement__tokenizer_1afa19774ffa56f61147efb0a4e84f88b1"/><section>
+    <title>retainAllTokens()</title>
+<indexterm><primary>retainAllTokens</primary><secondary>statement.statement_tokenizer</secondary></indexterm>
+<indexterm><primary>statement.statement_tokenizer</primary><secondary>retainAllTokens</secondary></indexterm>
+<para><computeroutput>def statement.statement_tokenizer.retainAllTokens ( self,  text)</computeroutput></para>
+<para><literallayout><computeroutput>this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
+this will be especially important what there will to be identification of known patters.
+The function contains a special regular expresssion that checks all characaters individually
+</computeroutput></literallayout> </para>
+<para>
+Definition at line <link linkend="_statement_8py_source_1l00060">60</link> of file <link linkend="_statement_8py_source">statement.py</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="_statement_8py">statement.py</link></section>
+</section>
