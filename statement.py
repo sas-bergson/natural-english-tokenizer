@@ -1,5 +1,5 @@
 import re
-from parts_speech import *
+from parts_speech import nouns,verbs,adverbs,adjectives,pronouns,interjections,conjunctions
 
 """! @brief Example Python program with Doxygen style comments."""
 
@@ -90,8 +90,12 @@ class statement_tokenizer:
         data = re.findall(formatter, text)
         print('Words starting with B or b are: ', len(data))
         return data
+
+    # hello i am a boy and i have a bag
+
     def identifyPartsOfSpeech(self, text):
-        """This function is responsible for the identification of the parts of speech of the words in the text block. 
+        """
+        This function is responsible for the identification of the parts of speech of the words in the text block. 
         it takes the list of words as an argument and returns a list of parts of speech. This will make use of the [parts_speech] file 
         which contains the list of parts of speech and the words that belong to each part of speech. The group works on code that deals with the letter B
         In cases where the 
