@@ -1,5 +1,5 @@
 from statement import Statement_Tokenizer
-from data import Dict_Data
+from dictionary import Dict_Data
 
 
 class KTokenizer(Statement_Tokenizer):
