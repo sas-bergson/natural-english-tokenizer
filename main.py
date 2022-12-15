@@ -15,7 +15,7 @@
 #
 # @brief Example Python program with Doxygen style comments.
 #
-# @section description_doxygen_example Description
+# @section description_doxygen_example description
 # @section author_doxygen_example Author(s)
 # - Created by Victory Jonathan N Israel on 06/12/2022.
 # - Modified by Dimla Happiness on 06/12/2022.
