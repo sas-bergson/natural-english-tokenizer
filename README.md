@@ -41,7 +41,7 @@ sentence += word
 
 sentence = object + predicate || predicate and object
 
-object = object || interjection + conjunction + adverb + preposition + pronoun + adjective + object
+object = object || article + interjection + conjunction + adverb + preposition + pronoun + adjective + object
 
 predicate = verb + object + endmark || adverb + verb + object + endmark
 

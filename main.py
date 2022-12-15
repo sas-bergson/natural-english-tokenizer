@@ -14,24 +14,25 @@ if __name__ == "__main__":
     text1 = "This is a test designed to verify the behaviour of the tokenizer. If it succeeds, we will move to the design of a file scanner."
 
 # printing array of phrases
-    print("\n 1. Sentence count and poor presentation...")
+    print("\n 1. Sentence count and proper presentation...")
     obj = statement_tokenizer()
     sentencized_text = obj.sentence_scanner(text)
-    print(sentencized_text)
-
-# more comprehensive presentation of array of phrases
-    print("\n 2. Proper presentation...")
     sentence_presentation = obj.sentence_presentation(sentencized_text)
 
 # printing tokens
-    print("\n 3. Unclean tokens...")
+    print("\n 2. Unclean tokens...")
     tokens = obj.word_scanner(sentencized_text)
-    print(tokens)
+    # print(tokens)
 
 # printing cleaned up tokens
-    print("\n 4. Cleaned up tokens...")
+    print("\n 3. Cleaned up tokens...")
     clean_tokens = obj.tokens_cleanup(tokens)
     print(clean_tokens)
 
+# parsing clean tokens
+    print("\n 4. Parsing Tokens...")
+    parsed_tokens = obj.token_parser(clean_tokens)
 
-    url = obj.api_organiser(obj._endpoint["Entries"], obj._lang_code["English"], clean_tokens[0])
+
+
+    url = obj.api_organiser(obj._endpoint["entries"], obj._lang_code["english"], clean_tokens[0])
