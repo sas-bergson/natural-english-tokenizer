@@ -2,12 +2,12 @@
 
 class Dictionary:
 
-    def __init__(self, dictionary_file):
-        """!The StatementTokenizer class initializer."""
+    def __init__(self):
+        """!The Dictionary class initializer."""
 
         # Load dictionary words from 'dictionary.txt' file which contains the 100 first words in natural english
         # language
-        file = open(dictionary_file, 'r')
+        file = open('dictionary.txt', 'r')
         lines = file.readlines()
         count = 0
         self.dictionary = []

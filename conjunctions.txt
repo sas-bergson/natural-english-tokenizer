@@ -1,0 +1,7 @@
+and,Conjunction coordinating
+or,Conjunction coordinating
+but,Conjunction coordinating
+for,Conjunction coordinating
+so,Conjunction coordinating
+yet,Conjunction coordinating
+nor,Conjunction coordinating

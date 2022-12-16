@@ -7,7 +7,7 @@
 #
 # @section notes_main Notes
 
-import statement as st
+import compiler as cmp
 
 
 # Press the green button in the gutter to run the script.
@@ -15,9 +15,10 @@ if __name__ == '__main__':
     statements = [
         'This is a test designed to verify the behaviour\
                 of the tokenizer. If it succeeds, we will move to the design of a file scanner.',
-        'Nadir is too null. He is too negligent.'
+        'Nadir is negligent and too null.'
     ]
-    st = st.StatementTokenizer()
-    st.get_tokens(statements[1])
-    print(st.__str__())
+    # 'Nadir is too null. He is too negligent.'
+    cmp_object = cmp.Compiler(statements[1])
+    # print(cmp_object.get_tokens())
+    print(cmp_object.get_ast())
 
