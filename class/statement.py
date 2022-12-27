@@ -1,7 +1,7 @@
 import re
 
 """! @brief Example Python program with Doxygen style comments."""
-from parts_speech import noun, verbs, adjectives, adverbs
+from data.parts_speech import noun, verbs, adjectives, adverbs
 class statement_tokenizer:
     def __init__(self):
         """
