@@ -1,7 +1,6 @@
 import re
-
+import json
 """! @brief Example Python program with Doxygen style comments."""
-from data.parts_speech import noun, verbs, adjectives, adverbs
 class statement_tokenizer:
     def __init__(self):
         """
@@ -77,7 +76,24 @@ class statement_tokenizer:
         """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
         return re.findall(r'\b[Aa]\w+', text)
 
+    def sentence_type(self,sent):
+        words = sent.split()
+        if len(words) < 5:
+            return "Simple Sentence"
+        else:
+            num_clauses = 0
+            for word in words:
+                if word in ["and", "but", "or", "nor", "for", "yet", "so"]:
+                    num_clauses += 1
+            if num_clauses == 0:
+                return "Compound Sentence"
+            else:
+                return "Complex Sentence"
+
     def wordType(self, word):
+        f = open('data/data.json')
+        data = json.load(f)
+        data = data['data']
         if re.search(r'.*ance$', word) or re.search(r'.*ence$', word) or re.search(r'.*ar$', word) or re.search(r'.*er$', word) or re.search(r'.*ir$', word) or re.search(r'.*or$', word) or re.search(r'.*ur$', word) or re.search(r'.*ism$', word) or re.search(r'.*ment$', word) or re.search(r'.*age$', word) or re.search(r'.*hood$', word) or re.search(r'.*ness$', word) or re.search(r'.*irt$', word) or re.search(r'.*er$', word) or re.search(r'.*bots', word):
             return "noun"
         elif re.search(r'.*able$', word) or re.search(r'.*ible$', word) or re.search(r'.*ant$', word) or re.search(r'.*ent$', word) or re.search(r'.*ists$', word) or re.search(r'.*ist$', word) or re.search(r'.*ous$', word) or re.search(r'.*ful$', word) or re.search(r'.*ish', word) or re.search(r'.*ive$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ify$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ed$', word) or re.search(r'.*ate$', word) or re.search(r'.*y$', word) or re.search(r'.*ons$', word) or re.search(r'.*ing', word) or re.search(r'.*de', word) or re.search(r'.*ound', word):
@@ -86,13 +102,13 @@ class statement_tokenizer:
             return "adverb"
         else:
             #check if adverbs
-            if word in noun:
+            if word in data['Nouns']:
                 return "noun"
-            elif word in verbs:
+            elif word in data['Verbs']:
                 return "verb"
-            elif word in adverbs:
-                return "adverb"
-            elif word in adjectives:
+            elif word in data['Pronouns']:
+                return "Pronouns"
+            elif word in data['Adjectives']:
                 return "adjective"
             else:
-                return "not recognized in regular expression and dictionary"
+                return "Out Of Scoped"

@@ -2,9 +2,9 @@
     "name": "natural english language processing",
     "description": "natural language processing",
     "data":{
-            "Nouns": ["Dawn", "Desk", "Diamond", "Drum", "Dove", "Dollar", "Drawer", "Dresser", "Duck", "Dune", "Dewdrop", "Dragonfly", "Doll", "Dirt", "Dinner", "Doorway", "Degree", "Dish", "Dormitory", "Dream"],
-            "Adjectives": ["Dashing", "Dangerous", "Difficult", "Discerning", "Daring", "Dazzling", "Diligent", "Detailed", "Dripping", "Doorstep", "Dramatic", "Drifting", "Dank", "Damp", "Dusted", "Determined", "Dreamy", "Dapper", "Dandy", "Dutiful"],
-            "Pronouns": ["Dare", "Door", "Duty", "Discipline", "Dare", "Determination", "Dignity", "Due", "Deposit", "Deem", "Duty", "Dignity", "Demand", "Draught", "Delivery", "Demur", "Deny", "Disciple", "Differ", "Diversion"],
-            "Verbs": ["Dazzle", "Deliver", "Dabble", "Dally", "Dance", "Dash", "Define", "Deter", "Devise", "Dine", "Dispense", "Display", "Distinguish", "Doodle", "Draw", "Dream", "Divide", "Dote", "Doubt", "Drag"]
+            "Nouns": ["dawn","the","darkness", "desk", "diamond", "drum", "dove", "dollar", "drawer", "dresser", "duck", "dune", "dewdrop", "dragonfly", "doll", "dirt", "dinner", "doorway", "degree", "dish", "dormitory", "dream", "dragonflies"],
+            "Adjectives": ["Disconsolate","dashing", "dangerous", "difficult", "discerning", "daring", "dazzling", "diligent", "detailed", "dripping", "doorstep", "dramatic", "drifting", "dank", "damp", "dusted", "determined", "dreamy", "dapper", "dandy", "dutiful"],
+            "Pronouns": ["dare", "door", "duty", "discipline", "dare", "determination", "dignity", "due", "deposit", "deem", "duty", "dignity", "demand", "draught", "delivery", "demur", "deny", "disciple", "differ", "diversion", "this", "those", "these", "that", "there", "they"],
+            "Verbs": ["dazzle", "Devouring","dawdled", "deliver", "dabble", "dally", "dance", "dash", "define", "deter", "devise", "dine", "dispense", "display", "distinguish", "doodle", "draw", "dream", "divide", "dote", "doubt", "drag", "is", "are", "has","descended", "have", "was", "were", "had"]
     }
 }
