@@ -2,6 +2,9 @@
     "name": "natural english language processing",
     "description": "natural language processing",
     "data":{
-        "noun": "dog"
+            "Nouns": ["Dawn", "Desk", "Diamond", "Drum", "Dove", "Dollar", "Drawer", "Dresser", "Duck", "Dune", "Dewdrop", "Dragonfly", "Doll", "Dirt", "Dinner", "Doorway", "Degree", "Dish", "Dormitory", "Dream"],
+            "Adjectives": ["Dashing", "Dangerous", "Difficult", "Discerning", "Daring", "Dazzling", "Diligent", "Detailed", "Dripping", "Doorstep", "Dramatic", "Drifting", "Dank", "Damp", "Dusted", "Determined", "Dreamy", "Dapper", "Dandy", "Dutiful"],
+            "Pronouns": ["Dare", "Door", "Duty", "Discipline", "Dare", "Determination", "Dignity", "Due", "Deposit", "Deem", "Duty", "Dignity", "Demand", "Draught", "Delivery", "Demur", "Deny", "Disciple", "Differ", "Diversion"],
+            "Verbs": ["Dazzle", "Deliver", "Dabble", "Dally", "Dance", "Dash", "Define", "Deter", "Devise", "Dine", "Dispense", "Display", "Distinguish", "Doodle", "Draw", "Dream", "Divide", "Dote", "Doubt", "Drag"]
     }
 }

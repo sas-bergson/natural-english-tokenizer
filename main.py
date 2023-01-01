@@ -28,7 +28,7 @@ import sys
     # caution: path[0] is reserved for script path (or '' in REPL)
 sys.path.append( "../")
 
-from .class.statement import statement_tokenizer
+from statement import statement_tokenizer
     
 def main():
     """! @brief Example Python program with Doxygen style comments."""
