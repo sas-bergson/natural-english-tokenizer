@@ -1,103 +1,234 @@
+import os
 import re
-
-"""! @brief Example Python program with Doxygen style comments."""
 
 
 class statement_tokenizer:
     def __init__(self):
-        """
-        This method is the constructor. where all the regex are defined and the word that the user or the calling file will use to call the method."""
-        self._pattern = r"[A-Z]+[a-z]*\s\."
-        self._sentence_pattern = r'([A-Z][^\.!?]*[\.!?])'
-        self._word_pattern = r'\w+'
-        self._regex = re.compile(self._sentence_pattern)
+        self._pattern = 'r"[A-Z]+[a-z]*\s\."'
+        self._regex = re.compile(self._pattern)
+        self._stop_mark = ".?!"
         self._tokens = []
+        self._stopwords = ""
+    # parts of speech
+        self._interjections = ["ah", "alas", "dear", "eh", "er", "god", "hello", "holla", "hi", "hey", "hmm", "oh", "o", "ok", "okay", "ouch", "uh", "huh", "um", "wow"]
+        self._conjunctions = ["accordingly", "actually", "after", "afterwards", "also", "and", "another", "because", "before", "besides", "briefly", "but", "consequently",
+                              "conversely", "finally", "furthermore", "gradually", "hence", "however", "least", "first", "second", "last", "later", "meanwhile", "moreover",
+                              "nevertheless", "next", "nonetheless", "now", "nor", "or", "presently", "similarly", "since", "so", "soon", "still", "subsequently", "then",
+                              "thereafter", "therefore", "third", "thus", "too", "ultimately", "what", "whatever", "whoever", "whereas", "whomever", "when", "while", "yet"
+        ]
+        self._adverbs = ["abnormally", "absentmindedly", "accidentally", "actually", "adventurously", "afterwards", "almost", "always", "annually", "anxiously", "arrogantly",
+                         "awkwardly", "bashfully", "beautifully", "bitterly", "bleakly", "blindly", "blissfully", "boastfully", "boldly", "bravely", "briefly", "brightly",
+                         "briskly", "broadly", "busily", "calmly", "carefully", "carelessly", "cautiously", "certainly", "cheerfully", "clearly", "cleverly", "closely",
+                         "coaxingly", "colorfully", "commonly", "continually", "coolly", "correctly", "courageously", "crossly", "cruelly", "curiously", "daily", "daintily",
+                         "dearly", "deceivingly", "deeply", "defiantly", "deliberately", "delightfully", "diligently", "dimly", "doubtfully", "dreamily", "easily",  "elegantly",
+                         "energetically", "enormously", "enthusiastically", "equally", "especially", "evenly", "eventually", "exactly", "excitedly", "extremely", "fairly",
+                         "faithfully", "famously", "far", "fast", "fatally", "ferociously", "fervently", "fiercely", "fondly", "foolishly", "fortunately", "frankly",
+                         "frantically", "freely", "frenetically", "frightfully", "fully", "furiously", "generally", "generously", "gently", "gladly", "gleefully", "gracefully",
+                         "gratefully", "greatly", "greedily", "happily", "hastily", "healthily", "heavily", "helpfully", "helplessly", "highly", "honestly", "hopelessly",
+                         "hourly", "hungrily", "immediately", "innocently", "inquisitively", "instantly", "intensely", "intently", "interestingly", "inwardly", "irritably",
+                         "jaggedly", "jealously", "jovially", "joyfully", "joyously", "jubilantly", "judgmentally", "justly", "keenly", "kiddingly", "kindheartedly", "kindly",
+                         "knavishly", "knowingly", "knowledgeably", "kookily", "lazily", "lightly", "likely", "limply", "lively", "loftily", "longingly", "loosely", "loudly",
+                         "lovingly", "loyally", "madly", "majestically", "meaningfully", "mechanically", "merrily", "miserably", "mockingly", "monthly", "more", "mortally",
+                         "mostly", "mysteriously", "naturally", "hopelessly", "hourly", "hungrily", "immediately", "innocently", "inquisitively", "instantly", "intensely",
+                         "intently", "interestingly", "inwardly", "irritably", "jaggedly", "jealously", "jovially", "joyfully", "joyously", "jubilantly", "judgmentally",
+                         "justly", "keenly", "kiddingly", "kindheartedly", "kindly", "knavishly", "knowingly", "knowledgeably", "kookily", "lazily", "less", "lightly", "likely",
+                         "limply", "lively", "loftily", "longingly", "loosely", "loudly", "lovingly", "loyally", "madly", "majestically", "meaningfully", "mechanically",
+                         "merrily", "miserably", "mockingly", "monthly", "more", "mortally", "mostly", "mysteriously", "naturally", "nearly", "neatly", "nervously", "never",
+                         "nicely", "noisily", "not", "obediently", "obnoxiously", "oddly", "offensively", "officially", "often", "only", "openly", "optimistically",
+                         "overconfidently", "painfully", "partially", "patiently", "perfectly", "physically", "playfully", "politely", "poorly", "positively", "potentially",
+                         "powerfully", "promptly", "properly", "punctually", "quaintly", "queasily", "queerly", "questionably", "quicker", "quickly", "quietly", "quirkily",
+                         "quizzically", "randomly", "rapidly", "rarely", "readily", "really", "reassuringly", "recklessly", "regularly", "reluctantly", "repeatedly",
+                         "reproachfully", "restfully", "righteously", "rightfully", "rigidly", "roughly", "rudely", "safely", "scarcely", "scarily", "searchingly", "sedately",
+                         "seemingly", "seldom", "selfishly", "separately", "seriously", "shakily", "sharply", "sheepishly", "shrilly", "shyly", "silently", "sleepily", "slowly",
+                         "smoothly", "softly", "solemnly", "solidly", "sometimes", "soon", "speedily", "stealthily", "sternly", "strictly", "successfully", "suddenly",
+                         "supposedly", "surprisingly", "suspiciously", "sweetly", "swiftly", "sympathetically", "tenderly", "tensely", "terribly", "thankfully", "thoroughly",
+                         "thoughtfully", "tightly", "tomorrow", "too", "tremendously", "triumphantly", "truly", "truthfully", "rightfully", "scarcely", "searchingly",
+                         "sedately", "seemingly", "selfishly", "separately", "seriously", "sheepishly", "smoothly", "solemnly", "sometimes", "speedily", "stealthily",
+                         "successfully", "suddenly", "supposedly", "surprisingly", "suspiciously", "sympathetically", "tenderly", "thankfully", "thoroughly", "thoughtfully",
+                         "tomorrow", "tremendously", "triumphantly", "truthfully", "ultimately", "unabashedly", "unaccountably", "unbearably", "unethically", "unexpectedly",
+                         "unfortunately", "unimpressively", "unnaturally", "unnecessarily", "upbeat", "upright", "upward", "urgently", "usefully","uselessly", "usually",
+                         "utterly", "vacantly", "vaguely", "vainly", "valiantly", "vastly", "verbally", "very", "viciously", "victoriously", "violently", "vivaciously",
+                         "voluntarily", "warmly", "weakly", "wearily", "well", "wetly", "wholly", "wildly", "willfully", "wisely", "woefully", "wonderfully", "worriedly",
+                         "wrongly", "yawningly", "yearly", "yearningly", "yesterday", "yieldingly", "youthfully", "zealously", "zestfully", "zestily"
+        ]
+        self._prepositions = ["about", "after", "ago", "around", "at", "before", "by", "circa", "during", "following", "for", "from", "gone", "in", "on", "past", "since",
+                              "until", "till", "aboard", "above", "across", "against", "alongside", "amid", "among", "apart", "from", "astride", "at", "atop", "behind", "below",
+                              "beneath", "beside", "between", "beyond", "by", "close", "to", "far", "from", "in", "inside", "into", "minus", "near", "of", "off", "on",
+                              "onto", "Upon", "opposite", "out", "outside", "over", "round", "through", "throughout", "to", "together", "with", "toward", "under", "underneath",
+                              "with", "within", "without", "above", "across", "against", "ahead", "along", "amid", "around", "away", "behind", "below", "beneath", "down", "into",
+                              "off", "on", "onto", "over", "past", "round", "through", "under", "up", "via", "about", "anti", "as", "beside", "by", "but", "concerning",
+                              "considering", "counting", "despite", "except", "given", "including", "less", "like", "notwithstanding", "of", "pending", "per", "plus", "pro",
+                              "than", "unlike", "versus", "with", "worth"
+        ]
+        self._pronouns = ["all", "another", "any", "anybody", "anyone", "anything", "as", "aught", "both", "each", "other", "either", "enough", "everybody", "everyone",
+                          "everything", "few", "he", "her", "hers", "herself", "him", "himself", "his", "I", "idem", "it", "its", "itself", "many", "me", "mine", "most", "my",
+                          "myself", "naught", "neither", "no", "one", "nobody", "none", "nothing", "nought", "another", "other", "our", "ours", "ourself", "ourselves",
+                          "several", "she", "some", "somebody", "someone", "something", "somewhat", "such", "suchlike", "that", "thee", "their", "theirs", "theirself",
+                          "theirselves", "them", "themself", "themselves", "there", "these", "they", "thine", "this", "those", "thou", "thy", "thyself", "us", "we", "what",
+                          "whatever", "whatnot", "whatsoever", "whence", "where", "whereby", "wherefrom", "wherein", "whereinto", "whereof", "whereon", "wherever",
+                          "wheresoever", "whereto", "whereunto", "wherewith", "wherewithal", "whether", "which", "whichever", "whichsoever", "who", "whoever", "whom",
+                          "whomever", "whomso", "whomsoever", "whose", "whosever", "whosesoever", "whoso", "whosoever", "ye", "yon", "yonder", "you", "your", "yours",
+                          "yourself", "yourselves"
+        ]
+        self._adjectives = ["adorable", "adventurous", "aggressive", "agreeable", "alert", "alive", "amused", "angry", "annoyed", "annoying", "anxious", "arrogant", "ashamed",
+                            "attractive", "average", "awful", "bad", "beautiful", "better", "bewildered", "black", "bloody", "blue", "blushing", "bored", "brainy", "brave",
+                            "breakable", "bright", "busy", "calm", "careful", "cautious", "charming", "cheerful", "clean", "clear", "clever", "cloudy", "clumsy", "colorful",
+                            "combative", "comfortable", "concerned", "condemned", "confused", "cooperative", "courageous", "crazy", "creepy", "crowded", "cruel", "curious",
+                            "cute", "dangerous", "dark", "dead", "defeated", "defiant", "delightful", "depressed", "determined", "different", "difficult", "disgusted",
+                            "distinct", "disturbed", "dizzy", "doubtful", "drab", "dull", "eager", "easy", "elated", "elegant", "embarrassed", "enchanting", "encouraging",
+                            "energetic", "enthusiastic", "envious", "evil", "excited", "expensive", "exuberant", "fair", "faithful", "famous", "fancy", "fantastic", "fierce",
+                            "filth", "fine", "foolish", "fragile", "frail", "frantic", "friendly", "frightened", "funny", "gentle", "gifted", "glamorous", "gleaming", "glorious",
+                            "good", "gorgeous", "graceful", "grieving", "grotesque", "grumpy", "handsome", "happy", "healthy", "helpful", "helpless", "hilarious", "homeless",
+                            "homely", "horrible", "hungry", "hurt", "ill", "important", "impossible", "inexpensive", "innocent", "inquisitive", "itchy", "jealous", "jittery",
+                            "jolly", "joyous", "kind", "lazy", "light", "lively", "lonely", "long", "lovely", "lucky", "magnificent", "misty", "modern", "motionless", "muddy",
+                            "mushy", "mysterious", "nasty", "naughty", "nervous", "nice", "nutty", "obedient", "obnoxious", "odd", "open", "outrageous", "outstanding", "panicky",
+                            "perfect", "plain", "pleasant","poised", "poor", "powerful", "precious", "prickly", "proud", "putrid", "puzzled", "quaint", "real", "relieved",
+                            "repulsive", "rich", "scary", "selfish", "shiny", "shy", "silly", "sleepy", "smiling", "smoggy", "sore", "sparkling", "splendid", "spotless",
+                            "stormy", "strange", "stupid", "successful", "super", "talented", "tame", "tasty", "tender", "tense", "terrible", "thankful", "thoughtful",
+                            "thoughtless", "tired", "tough", "troubled", "ugliest", "ugly", "uninterested", "unsightly", "unusual", "upset", "uptight", "vast", "victorious",
+                            "vivacious", "wandering", "weary", "wicked", "wide", "wild", "witty", "worried", "worrisome", "wrong", "zany", "zealous"
+        ]
+        self._articlesOfSpeech = ["the", "a", "an"]
+        self._verbs = ["was", "has", "had", "been", "said"]
+        self.nouns = []
+    # api variables
+        self._endpoint = {
+                          "entries": "Entries",
+                          "lemmas": "Lemmas",
+                          "search": "Search",
+                          "translations": "Translations",
+                          "thesaurus": "Thesaurus",
+                          "utility": "Utility",
+                          "sentences": "Sentences",
+                          "words": "Words",
+                          "inflections": "Inflections"
+                         }
+        self._lang_code = {
+                            "english": "EN",
+                            "arabic": "AR",
+                            "chinese": "ZH",
+                            "french": "FR",
+                            "german": "DE",
+                            "hausa": "HA",
+                            "igbo": "IG",
+                            "portuguese": "PT",
+                            "russian": "RU",
+                            "spanish": "ES",
+                            "yoruba": "YO",
+                          }
+        self._word_id = "Hello"
+# refer https://developer.oxforddictionaries.com/documentation/making-requests-to-the-api
+# for more info on the endpoint, lang_code and word_id
+        self.api_url = f"https://od-api.oxforddictionaries.com/api/v2/{self._endpoint}/{self._lang_code}/{self._word_id}"
 
     def get_tokens(self, text) -> list:
-        """
-        This method is responsible for the splitting of the individual strings into the required tokens which
-        takes  text (string) the text that is to be split into tokens. and returns a list of tokens."""
-        self._tokens = self.peformSentenceSplit(text)
+        self._tokens = self._regex.split(text)
         return self._tokens
 
     def __str__(self) -> str:
-        """
-        This method is responsible for the printing of the tokens that are returned by the get_tokens method.
-        it takes no arguments and returns a string of the tokens. it basically overites the default __str__ method."""
         for s in self._tokens:
             print(f"statement -> {s}")
 
-    def __repr__(self) -> str:
-        """
-        This method is responsible for the printing of the tokens that are returned by the get_tokens method.
-        it takes no arguments and returns a string of the tokens. it basically overites the default __repr__ method."""
-        for s in self._tokens:
-            print(f"statement -> {s}")
+# splitting into phrases
+    def sentence_scanner(self, text: str):
+        temp_phrase = ""
+        list_of_phrases = []
+        no_of_sentences = 0
 
-    def peformSentenceSplit(self, text):
-        """This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
-        based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
-        blocks. this will also give the possibility to thet count of the number of sentences in
-        """
-        formatter = re.compile(self._sentence_pattern, re.M)
-        return formatter.findall(text)
+        for char in text:
+            temp_phrase += char
+            if char in self._stop_mark:
+                no_of_sentences += 1
+                list_of_phrases.append(temp_phrase.strip())
+                temp_phrase = ""
 
-    def performWordSplit(self, text):
-        """This function takes part in tokenization of whole text blocks to aid the word tokenizer to be able to identifty tokens
-        based on specific word. This is a part which makes the whole system modular making it possible for the sentence to be handled as
-        blocks. this will also give the possibility to thet count of the number of sentences in
-        """
-        formatter = re.compile(self._word_pattern, re.M)
-        return formatter.findall(text)
+        print("no of sentences: ", no_of_sentences)
+        return list_of_phrases
 
-    def getAllTokens(self, text):
-        """
-        This function is responsible for the tokenization of the whole text block. it takes the text block as an argument and returns a list of tokens.
-        """
-        textData = self.retainAllTokens(text)
-        return textData.split()
+# output from sentence_parser in more presentable way
+    def sentence_presentation(self, array_of_phrases: []):
+        phrase_count = 0
+        for phrase in array_of_phrases:
+            print(f"phrase_{phrase_count + 1}: {phrase}")
+            phrase_count += 1
 
-    def retainAllTokens(self, text):
-        """
-        this fuction is tp prevent the elimination of special characters to avoid elimination during text splitting
-        this will be especially important what there will to be identification of known patters.
-        The function contains a special regular expresssion that checks all characaters individually
-        """
-        new_text = ""
-        for i in range(len(text)):
-            if re.match(r'\.|,|\?|\'|\)|\}|\]|\:|\;', text[i]):
-                new_text = new_text+" "+text[i]
-            elif re.match(r'\(|\{|\[|\s', text[i]):
-                new_text = new_text+text[i]+" "
+# splitting into words and making lowercase
+    def word_scanner(self, array_of_phrases: []):
+        for phrase in array_of_phrases:
+            temp_words = phrase.split()
+            for word in temp_words:
+                self._tokens.append(word.lower())
+
+        print("word count: ", self._tokens.__len__())
+        return self._tokens
+
+# lemmatizing tokens
+    def tokens_cleanup(self, tokens: []):
+        clean_tokens = []
+        for word in tokens:
+            for char in word:
+        # checking for ' in words
+                if char == "'":
+                    temp_char_pos = word.find(char)
+                    next_char_pos = temp_char_pos + 1
+                    next_char = word[next_char_pos]
+                    prev_char_pos = temp_char_pos - 1
+                    prev_char=word[prev_char_pos]
+                # checking for negated short form words e.g. isn't
+                    if prev_char == "n" and next_char == "t":
+                        word = word[0: prev_char_pos]
+                        clean_tokens.append(word)
+                # checking for past or future short form words e.g. he's, they'd
+                    if next_char == "d" or next_char == "s":
+                        word = word[0: temp_char_pos]
+                        clean_tokens.append(word)
+
+                    word = ""
+            clean_tokens.append(word)
+
+    # cleaning up new tokens list
+        for word in clean_tokens:
+            if word == "":
+                word_pos = clean_tokens.index(word)
+                clean_tokens.pop(word_pos)
+
+        print("refined word count: ", len(clean_tokens))
+        return clean_tokens
+
+# parsing clean-up tokens into their meanings
+    def token_parser(self, clean_tokens: []):
+        parsed_data = {}
+        for token in clean_tokens:
+            if token in self._articlesOfSpeech:
+                parsed_data[token] = "article of speech"
+            elif token in self._interjections:
+                parsed_data[token] = "interjection"
+            elif token in self._conjunctions:
+                parsed_data[token] = "conjunction"
+            elif token in self._adverbs:
+                parsed_data[token] = "adverb"
+            elif token in self._prepositions:
+                parsed_data[token] = "preposition"
+            elif token in self._pronouns:
+                parsed_data[token] = "pronoun"
+            elif token in self._adjectives:
+                parsed_data[token] = "adjective"
+        # checking verbs
+            elif token.endswith("ing") or token.endswith("ed") or token in self._verbs:
+                parsed_data[token] = "verb"
+        # checking nouns
+            # converting values of dict into list and targetting last value
+            elif list(parsed_data.values())[-1] or " " == "conjunction":
+                parsed_data[token] = "noun"
             else:
-                new_text = new_text+text[i]
-        return new_text
-#    generate a dunction to match all words starting with an A or a
+                parsed_data[token] = "N/A"
 
-    def matchAllWordsStartingWithA(self, text):
-        """The aim of this function is to match all words starting with an A or a this is performed by the use of a regular expression"""
-        return re.findall(r'\b[Aa]\w+', text)
+        for key, value in parsed_data.items():
+            print(key, ":", value)
 
-    def fsa(word):
-        if(re.search(r'^a.+', word)):
-            if re.search(r'.*ance$', word) or re.search(r'.*ence$', word) or re.search(r'.*ar$', word) or re.search(r'.*er$', word) or re.search(r'.*ir$', word) or re.search(r'.*or$', word) or re.search(r'.*ur$', word) or re.search(r'.*ism$', word) or re.search(r'.*ment$', word) or re.search(r'.*age$', word) or re.search(r'.*hood$', word) or re.search(r'.*ness$', word) or re.search(r'.*irt$', word) or re.search(r'.*er$', word) or re.search(r'.*bots', word):
-                return "noun"
-            elif re.search(r'.*able$', word) or re.search(r'.*ible$', word) or re.search(r'.*ant$', word) or re.search(r'.*ent$', word) or re.search(r'.*ists$', word) or re.search(r'.*ist$', word) or re.search(r'.*ous$', word) or re.search(r'.*ful$', word) or re.search(r'.*ish', word) or re.search(r'.*ive$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ify$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ate$', word) or re.search(r'.*ise$', word) or re.search(r'.*ize$', word) or re.search(r'.*ed$', word) or re.search(r'.*ate$', word) or re.search(r'.*y$', word) or re.search(r'.*ons$', word) or re.search(r'.*ing', word) or re.search(r'.*de', word) or re.search(r'.*ound', word):
-                return "verb"
-            elif re.search(r'.*ly$', word) or re.search(r'.*ry$', word) or word == "right" or re.search(r'.*here$', word) or word == "wrong" or re.search(r'.*here$', word) or word == 'soon' or re.search(r'.*soon$', word) or re.search(r'.*times$', word) or re.search(r'.*in$', word):
-                return "adverb"
-            else:
-                return "valid but unknown"
-        else:
-            return "invalid word"
-    # generate a function to identify all parts of speech in a text
-    # def identifyAllPartsOfSpeech(self, text):
-
-
-# if __name__ == "__main__":
-#     data = statement_tokenizer()
-#     text = """Today, technology is a subject of debate because it is considered to be a double-edged sword. While it has helped humanity in extending its potential with outstanding inventions, it is nonetheless threatening humankind through some other destructive ones. In addition to polluting the earth in unprecedented ways, wars have become more and more devastating due to technological inventions. Ethical dimensions of recent technological developments, such as DNA engineering, have become a focal point of questioning and discussion. Philosophical debates have arisen over the use of technology, with disagreements over whether technology improves the human condition or worsens it.
-# To make matters worse, a consensus definition of technology has become more difficult to find due to recent evolution in science and its applications. It is especially confusing to decide whether technology refers to the machines (or more precisely the hardware), the rules that govern or make them work, the system that operates them or the different applications of science that are related to them. What is sure is that technology has shaped societies and adapted itself to people's changing needs.
-# """
-#     formatted = data.retainAllTokens(text.strip())
-#     print(" ".join(data.matchAllWordsStartingWithA(formatted)))
+# returns api with desired arguments
+    def api_organiser(self, endpoint, lang_code, word_id):
+        self.api_url = f"https://od-api.oxforddictionaries.com/api/v2/{endpoint}/{lang_code}/{word_id}"
+        print(self.api_url)
+        return self.api_url
+# what you have to do now is make the api work and check the meanings
