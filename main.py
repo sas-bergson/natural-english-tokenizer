@@ -1,13 +1,13 @@
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # lexer.py
 #
 # A generic regex-based Lexer/tokenizer tool.
 # See the if __main__ section in the bottom for an example.
-#GitHub: Prime689
+# GitHub: Prime689
 # Mister Prime (misterprime74@gmail.com)
 # This code is in the public domain
 # Last modified: November 2022
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 import re
 import sys
 import Token
@@ -29,6 +29,7 @@ class Token(object):
     """ A simple Token structure.
         Contains the token type, value and position.
     """
+
     def __init__(self, type, val, pos):
         self.type = type
         self.val = val
@@ -43,6 +44,7 @@ class LexerError(Exception):
         pos:
             Position in the input line where the error occurred.
     """
+
     def __init__(self, pos):
         self.pos = pos
 
@@ -51,6 +53,7 @@ class Lexer(object):
     """ A simple regex-based lexer/tokenizer.
         See below for an example of usage.
     """
+
     def __init__(self, rules, skip_whitespace=True):
         """ Create a lexer.
             rules:
@@ -131,29 +134,29 @@ class Lexer(object):
 
 if __name__ == '__main__':
     rules = [
-        ('\d+',             'NUMBER'),
-        #('[a-zA-Z_]\w+',    'WORD'),
-        #('[o-wO-W_]\w+', 'NOUN'),
-        ('\+',              'PLUS'),
-        ('\-',              'MINUS'),
-        ('\*',              'MULTIPLY'),
-        ('\/',              'DIVIDE'),
-        ('\(',              'LP'),
-        ('\)',              'RP'),
-        ('=',               'EQUALS'),
+        ('\d+', 'NUMBER'),
+        # ('[a-zA-Z_]\w+',    'WORD'),
+        # ('[o-wO-W_]\w+', 'NOUN'),
+        ('\+', 'PLUS'),
+        ('\-', 'MINUS'),
+        ('\*', 'MULTIPLY'),
+        ('\/', 'DIVIDE'),
+        ('\(', 'LP'),
+        ('\)', 'RP'),
+        ('\.', 'Full stop'),
         ('Hello', 'NOUN'),
         ('World', 'NOUN'),
-        ('The', 'Determiner'),
+        ('the', 'Determiner'),
         ('This', 'Determiner'),
-        #('Table', 'Noun'),
+        # ('Table', 'Noun'),
         ('Take', 'Verb'),
-        #('Talent', 'Noun'),
+        # ('Talent', 'Noun'),
         ('Tall', 'Adjective'),
         #('I', 'Personal Pronoun'),
         ('is', 'Verb'),
         ('a', 'Article'),
         ('test', 'Noun Singular'),
-        ('designed','Verb'),
+        ('designed', 'Verb'),
         ('to', 'Preposition'),
         ('of', 'Preposition'),
         ('it', 'Pronoun'),
@@ -161,28 +164,28 @@ if __name__ == '__main__':
         ('If', 'Preposition'),
         ('verify', 'Preposition'),
         ('behaviour', 'Adjective'),
-        ('tokenizer', 'Noun'),
+        ('tukenizer', 'Noun'),
         ('will', 'Verb'),
         ('move', 'Verb'),
         ('design', 'Noun'),
         ('file', 'Noun'),
-        ('scanner','Noun'),
+        ('scanner', 'Noun'),
         ('He', 'Personal Pronoun'),
-        ('we', 'Personal Pronoun'),
+
         ('She', 'Personal Pronoun'),
         ('your', 'Possessive Adjective'),
         ('What', 'WH Pronoun'),
         ('favorite', 'Adjective'),
         ('succeeds', 'Verb'),
+        ('we', 'P Pronoun'),
         ('programming', 'Noun Singular'),
         ('language', 'Noun Singular'),
-
-        
 
     ]
 
     lx = Lexer(rules, skip_whitespace=True)
-    lx.input('What is your verify favorite programming language')
+    lx.input(' This is a test designed to verify the behaviour\
+        of the tukenizer If it succeeds we will move to the design of a file scanner.')
 
     try:
         for tok in lx.tokens():
